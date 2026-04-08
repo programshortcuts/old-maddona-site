@@ -3,12 +3,14 @@
 }
 
 .page-wrapper {
-    position: fixed;
     height: 100vh;
 }
 .main-landing-page > section {
     height: 10vh;
     border: 1px solid red
+}
+.main-landing-page > section >p{
+    height: 10vh;
 }
 .main-landing-page > section > img{
     max-width: 120px;

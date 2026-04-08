@@ -1,6 +1,4 @@
-// animations.js
 // Wait for everything to load
-let scale = .5
 let frame = 0
 window.onload = () => {
   
@@ -38,7 +36,7 @@ window.onload = () => {
 
         if (data.data[index + 3] > 128) {
           particles.push({
-            x: x * scale,
+            x: x ,
             y: y,
             vx: (Math.random() - 0.5) * 2,
             vy: (Math.random() - 0.5) * 2
@@ -101,11 +99,11 @@ window.onload = () => {
         const target = imagePoints[i % imagePoints.length];
 
         // Smooth morph toward image
-        p.x += (target.x - p.x) * scale * scale;
-        p.y += (target.y - p.y) * scale * scale;
+        p.x += (target.x - p.x) * 0.04;
+        p.y += (target.y - p.y) * 0.04;
       } else {
         // Smoke phase
-        p.x += p.vx * scale;
+        p.x += p.vx;
         p.y += p.vy;
 
         p.vx += (Math.random() - 0.5) * 0.05;

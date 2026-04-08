@@ -20,10 +20,7 @@
     right: 0;
     z-index: 2;
 }
-.main-landing-page > section > .video-wrapper{
-    float: left;
-    /* margin-left: 10%; */
-}
+
 p::after{
     content: "";
     display: block;
@@ -32,6 +29,10 @@ p::after{
 .main-landing-page > section {
     position: relative;
     background-color: rgba(0,0,0,0)
+}
+.main-landing-page > section > .video-wrapper{
+    float: left;
+    /* margin-left: 10%; */
 }
 .section-links{
     position: absolute;
