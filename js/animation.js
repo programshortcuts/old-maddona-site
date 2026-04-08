@@ -7,8 +7,7 @@ window.onload = () => {
   const img = document.getElementById("target");
 
   // Canvas setup
-  canvas.width = 500;
-  canvas.height = 500;
+  
 
   let particles = [];
   let imagePoints = [];

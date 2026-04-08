@@ -1,40 +1,5 @@
 /* position.css */
-.page-wrapper {
-    position: relative;
-}
-.main-landing-page{
-    position: relative;
-}
-
-
-.nav-menu {
-    position: absolute;
-    background-color: white !important;
-    z-index: 1;
-    right: 0;
+.nav-menu{
+    position: fixed;
     bottom: 0;
-}
-
-.animation-container {
-    position: absolute;
-    right: 0;
-    z-index: 2;
-}
-
-p::after{
-    content: "";
-    display: block;
-    clear:  both;
-}
-.main-landing-page > section {
-    position: relative;
-    background-color: rgba(0,0,0,0)
-}
-.main-landing-page > section > .video-wrapper{
-    float: left;
-    /* margin-left: 10%; */
-}
-.section-links{
-    position: absolute;
-    bottom: 80%;
 }

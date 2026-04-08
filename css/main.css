@@ -1,7 +1,9 @@
 /* main.css */
 @import url('animations.css');
 @import url('videos.css');
+@import url('responsive.css');
 /* utilities */
+@import url('utilities/borders.css');
 @import url('utilities/backgrounds.css');
 @import url('utilities/colors.css');
 @import url('utilities/effects.css');
