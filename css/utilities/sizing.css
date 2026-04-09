@@ -3,19 +3,19 @@
     height: 100vh;
 }
 
-section > .video-wrapper{
+section > .content > .video-wrapper{
     width: fit-content;
     height: fit-content;
 }
 
-section > .section-logo-wrapper{
+section > .content > .section-logo-wrapper{
     /* width: fit-content; */
     /* height: fit-content; */
     border-radius: 20px;
     min-width: 100px;
     max-width: 120px;
 }
-section > .section-logo-wrapper > img{
+section > .content > .section-logo-wrapper > img{
     width: 100%;
     height: 100%;
 }

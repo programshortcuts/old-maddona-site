@@ -21,9 +21,7 @@ section iframe{
 .nav-menu {
     height: 10vh;
 }
-
 .nav-menu > ul > li > a{
-    /* padding: 4% 0; */
     padding-top: 10%;
     padding-left: 8%;
 }

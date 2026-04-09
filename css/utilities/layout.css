@@ -1,4 +1,7 @@
 /* layout.css */
+.hide {
+    display: none;
+}
 .page-header{
     display: flex;
     /* align-items: center; */
@@ -14,11 +17,11 @@
 }
 .page-header > .animation-container > #canvas {
 }
-section > .section-logo-wrapper{
+section > .content > .section-logo-wrapper{
     float: right;
 
 }
-section > iframe{
+section > .content > iframe{
     float: left;
     
 }
