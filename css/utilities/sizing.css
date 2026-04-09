@@ -1,9 +1,9 @@
 /* sizing.css */
-.nav-menu ul li a{
-    width: 100%;
-    height: 100%;
+.page-wrapper{
+    height: 100vh;
 }
-.main-landing-page > section > .video-wrapper{
+
+section > .video-wrapper{
     width: fit-content;
     height: fit-content;
 }
@@ -14,12 +14,20 @@ section > .section-logo-wrapper{
     border-radius: 20px;
     min-width: 100px;
     max-width: 120px;
- }
- section > .section-logo-wrapper > img{
+}
+section > .section-logo-wrapper > img{
     width: 100%;
     height: 100%;
- }
- #botoxAndFillers > .section-logo-wrapper {
+}
+#botoxAndFillers > .section-logo-wrapper {
     min-width: 100px;
     max-width: 200px;
+}
+ 
+ .nav-menu{
+    width: 100%;
  }
+ .nav-menu ul li a{
+    width: 100%;
+    height: 100%;
+}

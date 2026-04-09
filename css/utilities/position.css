@@ -1,14 +1,11 @@
 /* position.css */
 .nav-menu{
-    /* position: fixed; */
-    /* bottom: 0; */
+    position: fixed;
+
+    bottom: 0;
 }
 .animation-container{
-    /* border: 2px solid magenta; */
     position: absolute;
     right: 0;
-    /* bottom: 0; */
-}
-.animation-container #canvas{
-
+    top: 0;
 }

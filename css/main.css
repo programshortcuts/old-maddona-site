@@ -1,7 +1,10 @@
 /* main.css */
 /* contact-styles */
 @import url('contact-styles.css');
-@import url('animations.css');
+
+/* animations/ */
+@import url('visuals/animations.css');
+@import url('visuals/carousel.css');
 @import url('videos.css');
 @import url('responsive.css');
 /* utilities */

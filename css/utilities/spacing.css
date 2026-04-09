@@ -1,7 +1,5 @@
 /* spacing.css */
-.nav-menu > ul > li > a{
-    padding-left: 2%;
-}
+
 .main-landing-page{
     margin: 0 2%;
 }
@@ -20,4 +18,11 @@ section iframe{
 }
 .animation-container #canvas{
     margin-top: 5%;
+}
+
+.nav-menu {
+}
+.nav-menu > ul > li > a{
+    padding: 4% 0;
+    padding-left: 2%;
 }
