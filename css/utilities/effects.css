@@ -1,5 +1,6 @@
 a:active,
 a:focus{
-    box-shadow: 0 0  20px 2px  rosybrown;
+    /* box-shadow: 0 0  20px 2px  rosybrown; */
     outline: none;
+    border: 1px solid black;
 }

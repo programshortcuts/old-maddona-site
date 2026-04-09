@@ -1,20 +1,33 @@
 /* layout.css */
+.page-header{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+.title-page {
+    display: block;
+    text-wrap: none;
+    white-space: none;
+    border: 1px solid orange;
+}
+.page-header > .animation-container > #canvas {
+}
 .nav-menu{
     display: flex;
     
     ul {
         display: flex;
         justify-content: space-around;
+        flex-grow: 1;
         li{
-            flex-basis: 20%;
+            flex-basis: 25%;
+            a{
+                display: inline-flex;
+            }
         }
     }
 }
-.page-header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+
 
 .main-landing-page > section{
     /* position: relative; */
