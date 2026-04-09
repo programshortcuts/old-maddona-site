@@ -10,7 +10,8 @@ section {
     border: 1px solid black;
     border-radius: 4px;
 }
-section .video-wrapper{
+section iframe{
     border: 1px solid black;
+    border-radius: 8px;
 
 }
