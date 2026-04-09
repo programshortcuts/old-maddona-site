@@ -1,0 +1,12 @@
+.info-contact{
+    border-right: 1px solid black;
+}
+.contact-container{
+    padding: 4% 1%;
+    /* padding-top: 5%; */
+    display: flex;
+    border: 1px solid black;
+}
+.contact-container > *{
+    flex-basis: 50%;
+}

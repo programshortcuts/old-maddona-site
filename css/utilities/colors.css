@@ -1,7 +1,11 @@
 :root {
     /* --font-p-clr: rgb(181, 183, 167); */
     --font-p-clr: rgb(80, 81, 75);
-    --bg-clr: rgb(181, 183, 167);
+    /* --bg-clr: rgb(181, 183, 167); */
+    --bg-clr: rgb(183, 181, 167);
+}
+.section > h2{
+    color: var(--font-p-clr);
 }
 *{
     /* background-color: rgba(77, 76, 76, 0.869); */
@@ -21,8 +25,8 @@
     color: var(--font-p-clr);
 }
 
-.main-landing-page > section,
-.main-landing-page > article {
+.medical-spa-services-container > section,
+.medical-spa-services-container > article {
     background-color: rgb(0,0,0,0) !important;
     /* background-color: cadetblue !important; */
 }

@@ -29,16 +29,16 @@
         }
     }
 }
-
-
-.main-landing-page > section{
-    /* position: relative; */
+.med-spa-serv-container > section {
 }
-.main-landing-page > section > .section-logo-wrapper{
+.med-spa-serv-container > section > h2{
+
+}
+.med-spa-serv-container > section > .section-logo-wrapper{
     float: right;
 
 }
-.main-landing-page > section > .video-wrapper{
+.med-spa-serv-container > section > .video-wrapper{
     float: left;
 
 }

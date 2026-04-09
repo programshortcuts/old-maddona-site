@@ -1,4 +1,6 @@
 /* main.css */
+/* contact-styles */
+@import url('contact-styles.css');
 @import url('animations.css');
 @import url('videos.css');
 @import url('responsive.css');
