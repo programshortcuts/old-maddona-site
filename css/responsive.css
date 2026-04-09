@@ -1,6 +1,9 @@
 /* responsive.css */
-@media screen and (min-width:800px) {
+@media screen and (min-width:720px) {
     section > .section-logo-wrapper{
-        /* max-width: 220px !important; */
+        height: 220px;
+        width: 220px;
+        max-width: 220px !important;
+        max-height: 220px !important;
     }
 }
