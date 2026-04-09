@@ -1,3 +1,4 @@
+// drop-down.js
 export function initDropDown(){
     const dropDowns = document.querySelector('.drop-down')
     dropDowns.addEventListener('click', toggleContent)

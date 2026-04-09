@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <meta http-equiv="Content-Security-Policy" content="
+    script-src 'self' https://www.youtube.com https://www.gstatic.com;
+    frame-src https://www.youtube.com;
+    ">
 </head>
 <body>
     <div class="page-wrapper">
@@ -94,8 +98,8 @@
                                 </div>
                         
                                 <!-- Optional navigation -->
-                                <div class="swiper-button-next"></div>
-                                <div class="swiper-button-prev"></div>
+                                <!-- <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div> -->
                         
                                 <!-- Pagination dots -->
                                 <div class="swiper-pagination"></div>
@@ -111,15 +115,16 @@
                 </section>
                 <section id="botoxAndFillers">
                     <h2><a href="#" class="section-title"> botox & fillers</a></h2>
+                    <div class="section-logo-wrapper">
+                        <img src="imgs/botox-filler.webp" alt="">
+                    </div>
                     <!-- <div class="section-logo-wrapper">
                         <img src="imgs/biote-cert.jpeg" alt="">
                     </div> -->
                     <p>
                         &emsp;Percise  
                     </p>
-                    <div class="section-logo-wrapper">
-                        <img src="imgs/botox-filler.webp" alt="">
-                    </div>
+                    
                     <!-- <iframe 
                         src="https://www.youtube.com/embed/ryzaVL3xA7U" 
                         title="BioTE Medical"

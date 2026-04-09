@@ -1,4 +1,7 @@
 /* layout.css */
+.page-wrapper{
+    overflow-x: hidden;
+}
 .hide {
     display: none;
 }
@@ -33,21 +36,17 @@ section::after{
 #botoxAndFillers > .section-logo-wrapper{
     float: left;
 }
-
 .nav-menu {
     display: flex;
 }
-
 .nav-menu ul {
     display: flex;
     justify-content: space-around;
     flex-grow: 1;
 }
-
 .nav-menu ul li {
     flex-basis: 25%;
 }
-
 .nav-menu ul li a {
     display: inline-flex;
 }

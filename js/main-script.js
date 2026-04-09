@@ -1,3 +1,4 @@
+// main-script.js
 import { initLetterNav } from "./nav/letter-nav.js";
 import { initDropDown } from "./ui/drop-down.js";
 const pageWrapper = document.querySelector('.page-wrapper')
@@ -19,8 +20,7 @@ function initMain(){
 }
 initMain()
 function initGlobalListeners(){
-    addEventListener('keydown', e =>{
-        initDropDown()
-    })
+    initDropDown()
+    
 }
 initGlobalListeners()

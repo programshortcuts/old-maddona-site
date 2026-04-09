@@ -1,4 +1,29 @@
 // letter-nav.js
+export function isActuallyVisible(el) {
+    if (!el) return false;
+    // 1. Sidebar collapsed → block ALL sidebar descendants
+
+    // 2. CSS visibility checks
+    const style = getComputedStyle(el);
+    if (style.display === 'none' || style.visibility === 'hidden' || style.opacity === '0') {
+        return false;
+    }
+    // 3. Zero-size or clipped
+    const rect = el.getBoundingClientRect();
+    if (rect.width === 0 || rect.height === 0) {
+        return false;
+    }
+    // 4. Any hidden ancestor (dropdowns, containers, etc.)
+    let parent = el.parentElement;
+    while (parent) {
+        const ps = getComputedStyle(parent);
+        if (ps.display === 'none' || ps.visibility === 'hidden') {
+            return false;
+        }
+        parent = parent.parentElement;
+    }
+    return true;
+}
 export function initLetterNav({
     container = document,
 } = {}) {
@@ -87,28 +112,4 @@ export function initLetterNav({
     });
 }
 
-export function isActuallyVisible(el) {
-    if (!el) return false;
-    // 1. Sidebar collapsed → block ALL sidebar descendants
-    
-    // 2. CSS visibility checks
-    const style = getComputedStyle(el);
-    if (style.display === 'none' || style.visibility === 'hidden' || style.opacity === '0') { 
-        return false;
-    }
-    // 3. Zero-size or clipped
-    const rect = el.getBoundingClientRect();
-    if (rect.width === 0 || rect.height === 0) {
-        return false;
-    }
-    // 4. Any hidden ancestor (dropdowns, containers, etc.)
-    let parent = el.parentElement;
-    while (parent) {
-        const ps = getComputedStyle(parent);
-        if (ps.display === 'none' || ps.visibility === 'hidden') {
-            return false;
-        }
-        parent = parent.parentElement;
-    }
-    return true;
-}
+
