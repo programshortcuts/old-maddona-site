@@ -28,5 +28,5 @@ section > .content > .section-logo-wrapper > img{
     height: 100%;
 }
 #botoxAndFillers{
-    /* min-height: 20vh !important; */
+    min-height: 20vh;
 }
