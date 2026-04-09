@@ -1,5 +1,4 @@
 /* spacing.css */
-
 .main-landing-page{
     margin: 0 2%;
 }
@@ -21,8 +20,10 @@ section iframe{
 }
 
 .nav-menu {
+    height: 10vh;
 }
 .nav-menu > ul > li > a{
-    padding: 4% 0;
+    /* padding: 4% 0; */
+    padding-top: 6%;
     padding-left: 2%;
 }
