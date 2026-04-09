@@ -1,11 +1,15 @@
 :root {
-    --font-p-clr: rgb(181, 183, 167);
+    /* --font-p-clr: rgb(181, 183, 167); */
+    --font-p-clr: rgb(80, 81, 75);
+    --bg-clr: rgb(181, 183, 167);
 }
 *{
     /* background-color: rgba(77, 76, 76, 0.869); */
+    background-color: var(--bg-clr);
 }
 .title-page{
     color: var(--font-p-clr);
+    
 }
 .tel-num{
     color: var(--font-p-clr);

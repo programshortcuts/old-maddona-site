@@ -1,1 +1,4 @@
 /* spacing.css */
+.nav-menu > ul > li > a{
+    padding-left: 2%;
+}
