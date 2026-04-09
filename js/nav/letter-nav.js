@@ -46,7 +46,6 @@ export function initLetterNav({
         let iAllEls = allEls.indexOf(activeEl)
         let iMatching = matching.indexOf(activeEl)
         let newIndex
-
         if (key !== lastLetterPressed) {
             if (iAllEls === -1) {
                 // nothing focused: pick first/last
@@ -84,9 +83,7 @@ export function initLetterNav({
             }
         }
         target = matching[newIndex]
-        
         target?.focus()
-        
         lastLetterPressed = key
     });
 }
