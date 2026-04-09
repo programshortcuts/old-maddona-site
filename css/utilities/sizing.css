@@ -9,16 +9,26 @@
 }
 
 section > .section-logo-wrapper{
-    width: fit-content;
-    height: fit-content;
+    /* width: fit-content; */
+    /* height: fit-content; */
     border-radius: 20px;
+    min-width: 100px;
+    max-width: 200px;
  }
  section > .section-logo-wrapper > img{
- }
- section > .video-wrapper > iframe{
     width: 100%;
     height: 100%;
+ }
+ section > .video-wrapper {
+    /* width:  100%; */
+    /* height: 100%; */
+}
+ section > .video-wrapper > iframe{
+    /* width: 100%; */
+    /* height: 100%; */
 }
 .section{
-    width: 50%;
+    /* width: 50%; */
+    /* max-height: 50vh; */
+    /* min-height: 50vh; */
 }

@@ -14,31 +14,37 @@
 }
 .page-header > .animation-container > #canvas {
 }
-.nav-menu{
+.nav-menu {
     display: flex;
-    
-    ul {
-        display: flex;
-        justify-content: space-around;
-        flex-grow: 1;
-        li{
-            flex-basis: 25%;
-            a{
-                display: inline-flex;
-            }
-        }
-    }
 }
-.med-spa-serv-container > section {
-}
-.med-spa-serv-container > section > h2{
 
+.nav-menu ul {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
 }
-.med-spa-serv-container > section > .section-logo-wrapper{
+
+.nav-menu ul li {
+    flex-basis: 25%;
+}
+
+.nav-menu ul li a {
+    display: inline-flex;
+}
+section > .section-logo-wrapper{
     float: right;
 
 }
-.med-spa-serv-container > section > .video-wrapper{
+section > iframe{
     float: left;
-
+    
+}
+/* section > .video-wrapper::after{ */
+section::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.clear {
+    /* clear: both; */
 }

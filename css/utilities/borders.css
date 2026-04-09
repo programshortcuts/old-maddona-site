@@ -1,6 +1,16 @@
 .nav-menu{
     border: 1px solid black
 }
+
 section > .section-logo-wrapper{
     border: 1px solid black
- }
+}
+
+section {
+    border: 1px solid black;
+    border-radius: 4px;
+}
+section .video-wrapper{
+    border: 1px solid black;
+
+}
