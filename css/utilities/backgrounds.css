@@ -8,13 +8,7 @@
     /* background-color: rgba(77, 76, 76, 0.869); */
     background-color: var(--bg-clr);
 }
-/* section#biote {
-    background-image: url('../../imgs/biote-cert.jpeg');
-    background-repeat: no-repeat;
-    background-position-y: 0;
-    background-position-x: 90%;
-    background-color: white;
-} */
+
  section,
  article {
     background-color: rgb(0,0,0,0) !important;

@@ -7,18 +7,6 @@ section > .content > .video-wrapper{
     height: fit-content;
 }
 
-section > .content > .section-logo-wrapper{
-    /* width: fit-content; */
-    /* height: fit-content; */
-    border-radius: 20px;
-    min-width: 100px;
-    max-width: 120px;
-}
-section > .content > .section-logo-wrapper > img{
-    width: 100%;
-    height: 100%;
-}
-
 .nav-menu{
     width: 100%;
     height: 15vh;
@@ -29,4 +17,20 @@ section > .content > .section-logo-wrapper > img{
 }
 #botoxAndFillers{
     min-height: 20vh;
+}
+section>.content>.section-logo-wrapper {
+    border-radius: 20px;
+    min-width: 100px;
+    max-width: 120px;
+}
+
+.section-logo-wrapper>img {
+    width: 100%;
+    height: 100%;
+}
+.section > .section-logo-wrapper{
+    max-height: 120px !important;
+    border-radius: 8px;
+    max-width: 120px  !important;
+    /* border: 10px solid red */
 }

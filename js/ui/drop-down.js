@@ -12,7 +12,9 @@ export function initDropDown(){
         const content = section.querySelector('.content')
         if(e.type == 'click'){
             // content.classList.toggle('hide')
-            console.log(e.target)
+            e.preventDefault()
+            e.stopPropagation()
+            console.log('click')
             
         }
         if(e.type == 'keydown'){
