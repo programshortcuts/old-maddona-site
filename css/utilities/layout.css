@@ -20,22 +20,7 @@
 }
 .page-header > .animation-container > #canvas {
 }
-section > .content > .section-logo-wrapper{
-    float: right;
 
-}
-section > .content > iframe{
-    float: left;
-    
-}
-section::after{
-    content: "";
-    display: block;
-    clear: both;
-}
-#botoxAndFillers > .section-logo-wrapper{
-    float: left;
-}
 .nav-menu {
     display: flex;
 }
@@ -49,4 +34,25 @@ section::after{
 }
 .nav-menu ul li a {
     display: inline-flex;
+}
+
+section>.content>.section-logo-wrapper {
+    float: right;
+}
+section>.content>iframe {
+    float: left;
+}
+section::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+#botoxAndFillers>.section-logo-wrapper {
+    float: left !important;
+}
+#hairRestoration>.section-logo-wrapper {
+    float: left;
+}
+#vaginalRejuvenation>.section-logo-wrapper {
+    float: right;
 }

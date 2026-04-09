@@ -2,7 +2,6 @@
 .page-wrapper{
     height: 100vh;
 }
-
 section > .content > .video-wrapper{
     width: fit-content;
     height: fit-content;
@@ -19,15 +18,15 @@ section > .content > .section-logo-wrapper > img{
     width: 100%;
     height: 100%;
 }
-#botoxAndFillers > .section-logo-wrapper {
-    min-width: 100px;
-    max-width: 200px;
-}
- 
- .nav-menu{
+
+.nav-menu{
     width: 100%;
- }
- .nav-menu ul li a{
+    height: 15vh;
+}
+.nav-menu ul li a{
     width: 100%;
     height: 100%;
+}
+#botoxAndFillers{
+    min-height: 20vh !important;
 }

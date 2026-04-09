@@ -1,15 +1,18 @@
 // drop-down.js
 export function initDropDown(){
-    const dropDowns = document.querySelector('.drop-down')
-    dropDowns.addEventListener('click', toggleContent)
-    dropDowns.addEventListener('keydown', toggleContent)
+    const dropDowns = document.querySelectorAll('.drop-down')
+    dropDowns.forEach(el => {
+        el.addEventListener('click', toggleContent)
+        el.addEventListener('keydown', toggleContent)
+    })
 
     function toggleContent(e){
-        console.log(e)
         const section = e.target.closest('.section')
+        console.log(e.target)
         const content = section.querySelector('.content')
         if(e.type == 'click'){
-            content.classList.toggle('hide')
+            // content.classList.toggle('hide')
+            console.log(e.target)
             
         }
         if(e.type == 'keydown'){

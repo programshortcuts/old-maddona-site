@@ -32,3 +32,12 @@ section > .video-wrapper{
 .nav-menu {
     background-color: var(--bg-clr);
 }
+section#botoxAndFillers {
+    min-height: 10vh;
+    background-image: url('../../imgs/botox-filler.webp');
+    background-repeat: no-repeat;
+    background-position-y: 10%;
+    background-position-x: 0%;
+    background-color: white;
+}
+/* section#botoxAndFil */
