@@ -16,7 +16,7 @@ export function initLetterNav({
         const key = e.key.toLowerCase()
         let target
         if (e.metaKey) return
-        const allEls = [...document.querySelectorAll('ul > li > a, .page-title, img, iframe')].filter(el => {
+        const allEls = [...document.querySelectorAll('ul > li > a, .page-title, img, iframe, .section-title')].filter(el => {
             // if (el.id === 'mainTargetDiv') return true
             return isActuallyVisible(el)
         })
