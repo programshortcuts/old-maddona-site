@@ -5,12 +5,8 @@
 .section{
     border-radius: 3px;
 }
-.section-logo-wrapper img{
+.img-wrapper img{
     border-radius: 7px;
-
-}
-section .img-wrapper{
-    border-radius: 8px;
 }
 section iframe{
     border: 1px solid black;
@@ -24,4 +20,5 @@ section iframe{
 }
 section#botoxAndFillers {
     border-right: solid 4px var(--bg-clr);
+    
 }
