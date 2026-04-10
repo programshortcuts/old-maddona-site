@@ -19,3 +19,9 @@ section iframe{
 .google-reviews{
     border: 1px solid red;
 }
+.info-contact {
+    border-radius: 6px;
+}
+section#botoxAndFillers {
+    border-right: solid 4px var(--bg-clr);
+}

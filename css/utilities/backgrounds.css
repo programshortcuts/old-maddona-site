@@ -19,3 +19,7 @@
 .nav-menu {
     background-color: var(--bg-clr);
 }
+
+section#botoxAndFillers {
+    border-right: 1vw solid var(--bg-clr)
+}

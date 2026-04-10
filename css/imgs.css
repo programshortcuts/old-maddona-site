@@ -1,4 +1,11 @@
 /* imgs.css */
+.info-contact {
+    background-image: url('../imgs/rustic\ rockymoutains-1024.JPEG');
+    background-repeat: no-repeat;
+    background-position-y: 10%;
+    background-position-x: 0%;
+    filter: grayscale(50%);
+}
 section#botoxAndFillers {
     background-image: url('../imgs/botox-filler.webp');
     background-repeat: no-repeat;

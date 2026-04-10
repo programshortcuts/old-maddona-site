@@ -1,5 +1,9 @@
 /* responsive.css */
-@media screen and (max-width:620px) {
+@media screen and (min-width:620px) {
+    #botoxAndFillers {
+        /* min-height: 17vh !important; */
+        /* border-right: 20vw solid var(--bg-clr) !important; */
+    }
     section > .section-logo-wrapper{
         /* height: 120px; */
         /* width: 120px; */
