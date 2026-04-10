@@ -17,15 +17,15 @@
 a.tel-num:visited{
     color: var(--font-p-clr);
 }
-.mobile-footer-nav {
+.mobile-header-nav {
     font-size: 1.4rem;
 }
 
-.mobile-footer-nav ul{
+.mobile-header-nav ul{
    list-style: none;
    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-.mobile-footer-nav li a{
+.mobile-header-nav li a{
     text-decoration: none;
     font-size: .9rem;
 }

@@ -1,5 +1,5 @@
 /* sizing.css */
-.mobile-footer-nav ul li a {
+.mobile-header-nav ul li a {
     width: 100%;
     height: 100%;
 }
@@ -19,7 +19,7 @@ section > .content > .video-wrapper{
 .img-wrapper img {
     max-height: 120px;
 }
-.mobile-footer-nav {
+.mobile-header-nav {
     width: 100%;
     height: 10vh;
 }

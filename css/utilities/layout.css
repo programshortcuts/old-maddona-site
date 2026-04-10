@@ -25,18 +25,18 @@
 .page-header > .animation-container > #canvas {
 }
 
-.mobile-footer-nav {
+.mobile-header-nav {
     display: flex;
 }
-.mobile-footer-nav ul {
+.mobile-header-nav ul {
     display: flex;
     justify-content: space-around;
     flex-grow: 1;
 }
-.mobile-footer-nav ul li {
+.mobile-header-nav ul li {
     flex-basis: 25%;
 }
-.mobile-footer-nav ul li a {
+.mobile-header-nav ul li a {
     display: inline-flex;
 }
 
