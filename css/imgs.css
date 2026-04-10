@@ -23,7 +23,7 @@ section#botoxAndFillers:hover{
 section .img-wrapper > img{
     filter: grayscale(100%);
 }
-section:hover .img-wrapper > img{
+section:hover > .content .img-wrapper > img{
     filter: grayscale(0);
 }
 
