@@ -51,8 +51,8 @@ section::after {
     float: left !important;
 }
 #hairRestoration>.img-wrapper {
-    float: left;
+    float: right;
 }
 #vaginalRejuvenation>.img-wrapper {
-    float: right;
+    float: left;
 }

@@ -3,7 +3,7 @@ export function initDropDown(){
     const dropDowns = document.querySelectorAll('.drop-down')
     dropDowns.forEach(el => {
         el.addEventListener('click', toggleContent)
-        el.addEventListener('keydown', toggleContent)
+        // el.addEventListener('keydown', toggleContent)
     })
 
     function toggleContent(e){

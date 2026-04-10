@@ -1,4 +1,13 @@
 /* imgs.css */
+section#botoxAndFillers {
+    background-image: url('../imgs/botox-filler.webp');
+    background-repeat: no-repeat;
+    /* background-position-y: 10%; */
+    /* background-position-x: 0%; */
+    background-position-y: 50%;
+    background-position-x: 5%;
+    /* background-color: white; */
+}
 .info-contact {
     background-image: url('../imgs/rustic\ rockymoutains-1024.JPEG');
     background-repeat: no-repeat;
@@ -6,13 +15,7 @@
     background-position-x: 0%;
     filter: grayscale(50%);
 }
-section#botoxAndFillers {
-    background-image: url('../imgs/botox-filler.webp');
-    background-repeat: no-repeat;
-    background-position-y: 10%;
-    background-position-x: 0%;
-    /* background-color: white; */
-}
+
 section#botoxAndFillers:hover{
     filter: saturate(1.2);
     filter: brightness(1.2);
@@ -26,5 +29,4 @@ section:hover .img-wrapper > img{
 
 .section-title:active ~ .img-wrapper>img {
     filter: grayscale(0);
-
 }
