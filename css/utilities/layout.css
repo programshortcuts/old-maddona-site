@@ -1,4 +1,8 @@
 /* layout.css */
+.social-media-container{
+    display: flex;
+    height: fit-content;
+}
 .page-wrapper{
     overflow-x: hidden;
 }
@@ -21,18 +25,18 @@
 .page-header > .animation-container > #canvas {
 }
 
-.nav-menu {
+.mobile-footer-nav {
     display: flex;
 }
-.nav-menu ul {
+.mobile-footer-nav ul {
     display: flex;
     justify-content: space-around;
     flex-grow: 1;
 }
-.nav-menu ul li {
+.mobile-footer-nav ul li {
     flex-basis: 25%;
 }
-.nav-menu ul li a {
+.mobile-footer-nav ul li a {
     display: inline-flex;
 }
 

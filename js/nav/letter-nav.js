@@ -37,9 +37,10 @@ export function initLetterNav({
         if (e.target.matches('input, textarea, [contenteditable="true"]')) return;
         // Ignore modifier keys
         const key = e.key.toLowerCase()
+        const selectors = 'ul > li > a, .page-title, img, iframe, .section-title,#mdvipImgLink,#navBarBtn'
         let target
         if (e.metaKey) return
-        const allEls = [...document.querySelectorAll('ul > li > a, .page-title, img, iframe, .section-title,#mdvipImgLink')].filter(el => {
+        const allEls = [...document.querySelectorAll(selectors)].filter(el => {
             // if (el.id === 'mainTargetDiv') return true
             return isActuallyVisible(el)
         })

@@ -5,23 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index</title>
     <link rel="stylesheet" href="css/main.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
     <script src="js/lib/purify.min.js"></script>
     <!-- <script src="js/visuals/animation.js" defer></script> -->
-    <script type="module" src="js/main-script.js" defer></script>
+    <!-- <script type="module" src="js/main-script.js" defer></script> -->
+    <script type="module" src="js/app.js" defer></script>
     <!-- Swiper JS -->
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" /> -->
     <!-- <script src="js/visuals/carousel.js" defer></script> -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> -->
     <!-- script-src 'self' https://www.youtube.com https://www.gstatic.com; -->
-        <meta http-equiv="Content-Security-Policy" content="
-            frame-src https://www.youtube.com;
-            default-src 'self';
-            script-src 'self' 'unsafe-inline';
-            style-src 'self';
-            img-src 'self' data:;
-            object-src 'none';
-            base-uri 'none';
-        ">
+    <meta http-equiv="Content-Security-Policy" content="
+    frame-src https: https://www.youtube.com;
+    default-src 'self';
+    script-src 'self' 'unsafe-inline';
+    style-src 'self' https://unpkg.com;
+    font-src 'self' https://unpkg.com https://boxicons.com data:;
+    img-src 'self' data:;
+    object-src 'none';
+    base-uri 'none';
+">
 </head>
 <body>
     <div class="page-wrapper">
@@ -230,7 +234,8 @@
             </div>
         </footer>
         <!-- We will need to change this name-->
-       <nav class="nav-menu">
+        <i tabindex="0" id="navBarBtn" class="bx bx-menu"></i>
+        <nav class="mobile-footer-nav">
             <ul>
                 <li><a href="home.html" rel="noopener noreferrer">
                     Home</a></li>

@@ -12,7 +12,7 @@
 .tel-num{
     color: var(--font-p-clr);
 }
-.page-wrapper >  .nav-menu > ul > li a{
+.page-wrapper >  .mobile-footer-nav > ul > li a{
     color: var(--font-p-clr);
 }
 #mdvipImgLink{

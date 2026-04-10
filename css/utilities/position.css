@@ -1,10 +1,20 @@
 /* position.css */
-.nav-menu{
-    position: fixed;
-    bottom: 0;
-}
 .animation-container{
     position: absolute;
     right: 0;
     top: 0;
 }
+.mobile-footer-nav {
+    position: fixed;
+    bottom: 0;
+}
+
+#navBarBtn {
+    position: absolute;
+    bottom: 8%;
+    z-index: 2;
+    /* left: 0; */
+    right: 91%;
+}
+
+

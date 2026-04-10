@@ -1,4 +1,8 @@
 /* sizing.css */
+.mobile-footer-nav ul li a {
+    width: 100%;
+    height: 100%;
+}
 .page-wrapper{
     height: 100vh;
 }
@@ -6,18 +10,24 @@ section > .content > .video-wrapper{
     width: fit-content;
     height: fit-content;
 }
-.nav-menu{
-    width: 100%;
-    height: 10vh;
-}
-.nav-menu ul li a{
-    width: 100%;
-    height: 100%;
-}
+
+
 #botoxAndFillers{
     min-height: 12vh;
 }
 
 .img-wrapper img {
-    max-height: 140px;
+    max-height: 120px;
+}
+.mobile-footer-nav {
+    width: 100%;
+    height: 10vh;
+}
+#navBarBtn{
+    font-size: 2rem;
+    margin-left: 5%;
+}
+.fa-facebook {
+    font-size: 3rem;
+    color: #1877f2;
 }
