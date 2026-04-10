@@ -1,4 +1,13 @@
 const mainLandingPage = document.querySelector('.main-landing-page')
-const 
+
 const DEFAULT_PAGE =
-    "page/javascript-codeCmdShrt/javascript-codeCmdShrt.html";
+    "pages/medical-spa-services/medical-spa-services.html";
+const pageCache = new Map()
+
+function initInjectContentListeners(){
+    const mobileHeaderNav = document.querySelector('.mobile-header-nav')
+    mobileHeaderNav.addEventListener('keydown', e => {
+        const key = e.key.toLowerCase()
+        
+    })
+}
