@@ -1,6 +1,7 @@
 /* backgrounds.css */
 .mobile-footer-nav{
-    border: 1px solid black
+    border: 1px solid black;
+    border-bottom: none;
 }
 .section{
     border-radius: 3px;
