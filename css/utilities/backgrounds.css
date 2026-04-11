@@ -4,6 +4,8 @@ section#botoxAndFillers {
     background-position-y: 50%;
     /* background-position-x: 5%; */
     background-position-x: -2%;
+    filter: saturate(1);
+        filter: brightness(1);
 }
 
 .info-contact {

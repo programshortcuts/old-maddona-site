@@ -2,6 +2,7 @@
 import { isSafePath } from "./security-utils.js";
 import { maybeInitAnimations } from "../app.js";
 import { initDropDown } from "../ui/drop-down.js";
+import { initImageHandling } from "../visuals/images.js";
 const mainLandingPage = document.querySelector('.main-landing-page')
 
 if (!mainLandingPage) {
@@ -20,15 +21,12 @@ export function initInjectContentListeners(){
         const link = e.target.closest('a')
         if(!link)return
         const href = e.target.getAttribute("href");
-        if (!href || href === "#") return;
-        
+        if (!href || href === "#") return;        
         if (!href || href === "#") return;
         e.preventDefault();
-
         injectPage(href);
-        
-        
     })
+    
 }
 export async function injectPage(href){
     if(!href)return
@@ -77,5 +75,6 @@ export async function injectPage(href){
             'allow', 'allowfullscreen', 'frameborder' // ✅ ADD THESE
         ]
     })
+    initImageHandling()
     // initDropDown()   
 }
