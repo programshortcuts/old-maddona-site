@@ -4,7 +4,9 @@
     height: fit-content;
 }
 .page-wrapper{
-    overflow-x: hidden;
+    overflow: hidden;
+    overflow-y: hidden;
+
 }
 .hide {
     display: none;
