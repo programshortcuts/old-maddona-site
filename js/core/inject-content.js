@@ -77,5 +77,5 @@ export async function injectPage(href){
             'allow', 'allowfullscreen', 'frameborder' // ✅ ADD THESE
         ]
     })
-    initDropDown()   
+    // initDropDown()   
 }

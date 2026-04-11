@@ -17,7 +17,7 @@ export function maybeInitAnimations() {
 }
 
 const pageWrapper = document.querySelector('.page-wrapper')
-
+addEventListener('DOMContentLoaded', initMain())
 function initMain(){
     initInjectContentListeners()
     initLetterNav({
@@ -34,7 +34,7 @@ function initMain(){
         })
     }
 }
-initMain()
+
 function setupGlobalListeners(){
     initDropDown()
 }
