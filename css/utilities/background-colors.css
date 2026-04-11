@@ -6,6 +6,7 @@
 #mdvipImgLink {
     background-color: tomato;
 }
+body,
 .page-wrapper{
     background-color: var(--bg-clr);
 }
