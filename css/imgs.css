@@ -27,6 +27,8 @@ section:hover > .content .img-wrapper > img{
     filter: grayscale(0);
 }
 
-.section-title:active ~ .img-wrapper>img {
-    filter: grayscale(0);
+
+#officeImg{
+    filter: grayscale(50%);
+    border-radius: 10px;
 }
