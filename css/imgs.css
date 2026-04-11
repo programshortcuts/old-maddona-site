@@ -2,8 +2,8 @@
 
 
 section#botoxAndFillers:hover{
-    filter: saturate(1.2);
-    filter: brightness(1.2);
+    /* filter: saturate(1.2); */
+    /* filter: brightness(1.2); */
 }
 section .img-wrapper > img{
     filter: grayscale(100%);

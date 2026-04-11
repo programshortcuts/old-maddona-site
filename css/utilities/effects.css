@@ -4,6 +4,7 @@ a:focus{
     outline: none;
     border: 1px solid black;
 }            
+section.colored#botoxAndFillers,
 section#botoxAndFillers:hover {
     filter: saturate(1.2);
     filter: brightness(1.2);
@@ -13,13 +14,14 @@ section#botoxAndFillers:hover {
 }
 
 
-section.checked .img-wrapper>img,
+/* section.checked .img-wrapper>img,
 .img-wrapper>img:hover {
     filter: grayscale(0);   
 }
 .section-title:active~.img-wrapper>img {
     filter: grayscale(0);
 }
-section.checked {
+*/
+section.colored .img-wrapper > img{
     filter: grayscale(0) !important;
 }
