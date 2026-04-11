@@ -5,8 +5,12 @@
 }
 .page-wrapper{
     overflow: hidden;
-    overflow-y: hidden;
+    overflow-y: scroll;
 
+}
+.main-landing-page {
+    overflow: hidden;
+    /* overflow-y: scroll; */
 }
 .hide {
     display: none;
