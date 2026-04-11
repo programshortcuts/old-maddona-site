@@ -16,7 +16,7 @@
 .animation-container #canvas{
     background-color: rgba(0,0,0,0);
 }
-.mobile-footer-nav {
+.mobile-header-nav {
     background-color: var(--bg-clr);
 }
 

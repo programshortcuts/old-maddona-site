@@ -4,8 +4,9 @@
     right: 0;
     top: 0;
 }
-.mobile-footer-nav {
+.mobile-header-nav {
     position: fixed;
+    z-index: 2;
     bottom: 0;
 }
 

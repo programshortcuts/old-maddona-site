@@ -1,4 +1,8 @@
 /* sizing.css */
+.mobile-header-nav {
+    width: 100%;
+    height: 10vh;
+}
 .mobile-header-nav ul li a {
     width: 100%;
     height: 100%;
@@ -10,18 +14,11 @@ section > .content > .video-wrapper{
     width: fit-content;
     height: fit-content;
 }
-
-
 #botoxAndFillers{
     min-height: 12vh;
 }
-
 .img-wrapper img {
     max-height: 120px;
-}
-.mobile-header-nav {
-    width: 100%;
-    height: 10vh;
 }
 #navBarBtn{
     font-size: 2rem;

@@ -8,21 +8,20 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     
     <script src="js/lib/purify.min.js"></script>
-    <script type="module" src="js/app.js" defer></script>
+    <script async type="module" src="js/app.js" defer></script>
     <!-- Swiper JS -->
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" /> -->
     <!-- <script src="js/visuals/carousel.js" defer></script> -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> -->
     <!-- script-src 'self' https://www.youtube.com https://www.gstatic.com; -->
 <meta http-equiv="Content-Security-Policy" content="
-        frame-src https: https://www.youtube.com;
-        default-src 'self';
         script-src 'self' 'unsafe-inline';
-        style-src 'self' https://unpkg.com;
-        font-src 'self' https://unpkg.com https://boxicons.com https://cdnjs.cloudflare.com data:;
-        img-src 'self' data:;
-        object-src 'none';
-        base-uri 'none';
+style-src 'self' 'unsafe-inline' https://unpkg.com;
+font-src 'self' https://unpkg.com data:;
+img-src 'self' data:;
+frame-src https: https://www.youtube.com;
+object-src 'none';
+base-uri 'none';
     ">
 </head>
 <body>
@@ -37,187 +36,11 @@
                 </div>
             </div>
         </div>
-        
         <div class="main-landing-page">
-            <div class="med-spa-serv-container">
-                <section id="bioHormoneReplacement" class="section">
-                    <h2><a  href="#" class="section-title drop-down"> Bioidentical Hormone Replacement?</a></h2>
-                    <!-- <div class="img-wrapper">
-                        <img src="imgs/biote-cert.jpeg" alt="">
-                    </div> -->
-                    <div class="content hide">
-                        <p>
-                            &emsp; BioTE Medical, a leader in precision and preventive medicine has translated over 80 years of scientific insight into clinically validated medical protocols 
-                            that identify and treat the earliest indicators of aging.
-                        </p>
-                        <div class="img-wrapper">
-                            <img src="imgs/biote-cert.jpeg" alt="">
-                        </div>
-                        <iframe 
-                            src="https://www.youtube.com/embed/ryzaVL3xA7U" 
-                            title="BioTE Medical"
-                            frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                            allowfullscreen>
-                        </iframe>
-                        <!-- <div class="video-wrapper">
-                        </div>          -->
-                        <p>
-                            &emsp;We work with each of our patients on an ongoing basis to analyze symptoms and lab results using a specially designed dosing algorithm to develop a unique treatment plan.
-                        </p>
-                        
-                        <p class="more-info-links">
-                            <a href="index.html" class="more-info">more info</a>
-                            <a href="index.html" class="more-info">pricing</a>
-                            
-                        </p>
-                        <section class="reviews-carousel">
-                            <span class="r"><strong>*** These are fake for now****</strong></span>
-                            <h2>What Our Clients Say</h2>
-                            <div class="swiper-container">
-                                <div class="swiper-wrapper">
-                                    <!-- Slide 1 -->
-                                    <div class="swiper-slide">
-                                        <p>"Amazing service! Highly recommend Madonna Medical Spa."</p>
-                                        <div class="review-author">
-                                            <span>Jane D.</span>
-                                            <span class="stars">★★★★★</span>
-                                        </div>
-                                    </div>
-                                    <!-- Slide 2 -->
-                                    <div class="swiper-slide">
-                                        <p>"Friendly staff and professional treatments. Love it!"</p>
-                                        <div class="review-author">
-                                            <span>John S.</span>
-                                            <span class="stars">★★★★★</span>
-                                        </div>
-                                    </div>
-                                    <!-- Slide 3 -->
-                                    <div class="swiper-slide">
-                                        <p>"Best spa experience ever. The team is fantastic."</p>
-                                        <div class="review-author">
-                                            <span>Mary K.</span>
-                                            <span class="stars">★★★★☆</span>
-                                        </div>
-                                    </div>
-                                </div>
-                        
-                                <!-- Optional navigation -->
-                                <!-- <div class="swiper-button-next"></div>
-                                <div class="swiper-button-prev"></div> -->
-                        
-                                <!-- Pagination dots -->
-                                <div class="swiper-pagination"></div>
-                            </div>
-                        </section>
-                        <p class="more-info-links">
-                            <a href="index.html" class="more-info">more info</a>
-                            <a href="index.html" class="more-info">pricing</a>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam quasi excepturi quis mollitia veniam doloremque
-                            dolor ducimus ea qui, rerum harum repudiandae natus. Modi id impedit quidem itaque numquam non!
-                        </p>
-                    </div>
-                </section>
-                <section id="botoxAndFillers" class="section">
-                    <h2><a href="#" class="section-title drop-down"> botox & fillers</a></h2>
-                    <!-- <div class="img-wrapper">
-                        <img src="imgs/botox-filler.webp" alt="">
-                    </div> -->
-                    <!-- <div class="img-wrapper">
-                        <img src="imgs/biote-cert.jpeg" alt="">
-                    </div> -->
-                    <div class="content">
-                        <p class="">
-                            Best Botox in the WORLD!! ...
-                            
-                        </p>
-                        
-                        <div class="more-info-links">
-                            <!-- <a href="index.html" class="more-info">more info</a> -->
-                        
-                        </div>
-                    </div>
-                    
-    
-                </section>
-                <section id="hairRestoration" class="section">
-                    <h2><a href="#" class="section-title drop-down">hair restoration </a></h2>
-                    <div class="content">
-
-                        <div class="img-wrapper">
-                            <!-- <img src="imgs/hair-restoration-pic.jpg.webp" alt=""> -->
-                        </div>
-                        <p>
-                            &emsp; We do hair restoration for both men and women
-                        </p>
-                        
-                        <div class="more-info-links">
-                            <!-- <a href="index.html" class="more-info">more info</a> -->
-                            
-                        </div>
-                    </div>
-                        
-    
-                </section>
-                <section id="microNeedling" class="section">
-                    <h2><a href="#" class="section-title drop-down ">microneedling/PRP </a></h2>
-                    <div class="content">
-                        <div class="img-wrapper">
-                            <!-- <img src="imgs/microneedling.jpg.webp" alt=""> -->
-                        </div>
-                        <p>
-                            &emsp; We do hair restoration for both men and women
-                        </p>
-                        <div class="more-info-links">
-                            <!-- <a href="index.html" class="more-info">more info</a> -->
-                        
-                        </div>
-                    </div>
-                
-                
-                </section>
-                <section id="facialRestoration" class="section">
-                    <h2><a href="#" class="section-title drop-down">facial restoration </a></h2>
-                
-                    <div class="content">
-                        <div class="img-wrapper">
-                            <!-- <img src="imgs/facial-resoration.jpg.webp" alt=""> -->
-                        </div>
-                        <p>
-                            &emsp; We do hair restoration for both men and women
-                        </p>
-                        
-                        <div class="more-info-links">
-                            <!-- <a href="index.html" class="more-info">more info</a> -->
-                        
-                        </div>
-                    </div>
-                
-                
-                </section>
-                <section id="vaginalRejuvenation">
-                    <h2><a href="#" class="section-title ">vaginal rejuvenation </a></h2>
-                    <div class="img-wrapper">
-                        <!-- <img src="imgs/vag-rejuv.jpeg.webp" alt=""> -->
-                    </div>
-                    <p>
-                        &emsp; We do hair restoration for both men and women
-                    </p>
-                    
-                    <div class="more-info-links">
-                        <!-- <a href="index.html" class="more-info">more info</a> -->
-                        
-                    </div>
-                    
-    
-                </section>
-                
-
-            </div>
         </div>
         <!-- <div class="animation-container">
             <canvas id="canvas"></canvas>
-            <img id="target" src="./imgs/MadMediSpa-sihlouette.png" style="display:none;">
+            <ifmg id="target" src="./imgs/MadMediSpa-sihlouette.png" style="display:none;">
         </div>     -->
         <footer>
             <ul>
@@ -235,13 +58,13 @@
         <i tabindex="0" id="navBarBtn" class="bx bx-menu"></i>
         <nav class="mobile-header-nav">
             <ul>
-                <li><a href="home.html" rel="noopener noreferrer">
+                <li><a href="pages/home/home.html" rel="noopener noreferrer">
                     Home</a></li>
-                <li><a   href="index.html" rel="noopener noreferrer">
+                <li><a   href="pages/medical-spa-services/medical-spa-services.html" rel="noopener noreferrer">
                     Medical Spa Services</a></li>
-                <li><a  href="products.html" rel="noopener noreferrer">
+                <li><a  href="pages/products/products.html" rel="noopener noreferrer">
                     Products</a></li>
-                <li><a href="contact.html" rel="noopener noreferrer">
+                <li><a href="pages/contact/contact.html" rel="noopener noreferrer">
                     Contact</a></li>
             </ul>
         </nav>                 

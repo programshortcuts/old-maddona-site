@@ -1,25 +1,24 @@
-// Wait for everything to load
-let frame = 0
-window.onload = () => {
-  
+// js/visuals/animation.js
+
+export function initMedicalSpaAnimation() {
   const canvas = document.getElementById("canvas");
-  const ctx = canvas.getContext("2d");
   const img = document.getElementById("target");
 
-  // Canvas setup
-  
+  // ❗ Safety: only run if elements exist (important for SPA injection)
+  if (!canvas || !img) return;
+
+  const ctx = canvas.getContext("2d");
 
   let particles = [];
   let imagePoints = [];
   let morphing = false;
-        
-  // -----------------------------
-  // CREATE PARTICLES FROM TEXT
-  // -----------------------------
-  function createTextParticles() {
-    // ctx.clearRect(0, 0, canvas.width, canvas.height);
+  let frame = 0;
+  let rafId = null;
 
-    ctx.fillStyle = "white";       
+  function createTextParticles() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    ctx.fillStyle = "white";
     ctx.font = "bold 48px Arial";
     ctx.textAlign = "center";
 
@@ -35,23 +34,18 @@ window.onload = () => {
 
         if (data.data[index + 3] > 128) {
           particles.push({
-            x: x ,
-            y: y,
+            x,
+            y,
             vx: (Math.random() - 0.5) * 2,
-            vy: (Math.random() - 0.5) * 2
+            vy: (Math.random() - 0.5) * 2,
           });
         }
       }
     }
 
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-    // console.log("Particles created:", particles.length);
   }
 
-  // -----------------------------
-  // CREATE IMAGE TARGET POINTS
-  // -----------------------------
   function createImagePoints() {
     const tempCanvas = document.createElement("canvas");
     const tempCtx = tempCanvas.getContext("2d");
@@ -79,59 +73,56 @@ window.onload = () => {
         const index = (y * canvas.width + x) * 4;
 
         if (data.data[index + 3] > 128) {
-          imagePoints.push({ x: x, y: y });
+          imagePoints.push({ x, y });
         }
       }
     }
-
-    // console.log("Image points:", imagePoints.length);
   }
 
-  // -----------------------------
-  // ANIMATION LOOP
-  // -----------------------------
   function animate() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    frame++
+    frame++;
+
     particles.forEach((p, i) => {
       if (morphing && imagePoints.length > 0) {
         const target = imagePoints[i % imagePoints.length];
 
-        // Smooth morph toward image
         p.x += (target.x - p.x) * 0.04;
         p.y += (target.y - p.y) * 0.04;
       } else {
-        // Smoke phase
         p.x += p.vx;
         p.y += p.vy;
 
         p.vx += (Math.random() - 0.5) * 0.05;
-        p.vy -=                         0.01;
+        p.vy -= 0.01;
       }
 
       ctx.fillStyle = "rgba(8, 7, 7, 0.5)";
       ctx.fillRect(p.x, p.y, 2, 2);
     });
 
-    requestAnimationFrame(animate);
+    rafId = requestAnimationFrame(animate);
   }
 
-  // -----------------------------
-  // INIT FLOW
-  // -----------------------------
-  img.onload = () => {
+  function start() {
     createTextParticles();
     createImagePoints();
     animate();
 
-    // Start morph after 2 seconds
     setTimeout(() => {
       morphing = true;
     }, 2000);
-  };
-
-  // If image is already cached
-  if (img.complete) {
-    img.onload();
   }
-};
+
+  // Handle cached images safely
+  if (img.complete) {
+    start();
+  } else {
+    img.onload = start;
+  }
+
+  // optional cleanup (VERY useful for SPA navigation later)
+  return function destroy() {
+    cancelAnimationFrame(rafId);
+  };
+}

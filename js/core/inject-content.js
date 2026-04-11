@@ -1,13 +1,82 @@
+// inject-content.js
+import { isSafePath } from "./security-utils.js";
+import { maybeInitAnimations } from "../app.js";
+import { initDropDown } from "../ui/drop-down.js";
 const mainLandingPage = document.querySelector('.main-landing-page')
 
+if (!mainLandingPage) {
+    throw new Error("Missing .main-landing-page in index.html");
+}
 const DEFAULT_PAGE =
-    "pages/medical-spa-services/medical-spa-services.html";
+    // "pages/medical-spa-services/medical-spa-services.html";
+    // "pages/home/home.html";
+    "pages/contact/contact.html";
 const pageCache = new Map()
 
-function initInjectContentListeners(){
+export function initInjectContentListeners(){
     const mobileHeaderNav = document.querySelector('.mobile-header-nav')
-    mobileHeaderNav.addEventListener('keydown', e => {
-        const key = e.key.toLowerCase()
+    injectPage(DEFAULT_PAGE)
+    mobileHeaderNav.addEventListener('click', e => {
+        const link = e.target.closest('a')
+        if(!link)return
+        const href = e.target.getAttribute("href");
+        if (!href || href === "#") return;
+        
+        if (!href || href === "#") return;
+        e.preventDefault();
+
+        injectPage(href);
+        
         
     })
+}
+export async function injectPage(href){
+    if(!href)return
+    let html
+    if(!isSafePath(href)){
+        console.warn('Block unsafe path',href)
+        return
+    }
+    try {
+        if(pageCache.has(href)){
+            html = pageCache.get(href)
+        } else {
+            const res = await fetch(href)
+            if(!res.ok){ throw new Error(`failed to fetch ${href}`)}
+            html = await res.text()
+            pageCache.set(href,html)
+
+        }
+        // maybeInitAnimations()
+    } catch (err) {
+        mainLandingPage.innerHTML =
+            `<p style="color:red;">Failed to load page: ${href}</p>`;
+    }
+    const parser = new DOMParser()
+    const doc = parser.parseFromString(html, 'text/html')
+
+    // Grab the actual page content
+    const newContent =
+    doc.querySelector(".main-landing-page") ||
+    doc.querySelector("body > *") 
+    if (!newContent) {
+        throw new Error("No Valid page content found")
+    }
+
+    // ✅ Sanitize before injecting
+    mainLandingPage.innerHTML = DOMPurify.sanitize(newContent.innerHTML, {
+        ALLOWED_TAGS: [
+            'div', 'p', 'span', 'ul', 'ol', 'li',
+            'pre', 'code',
+            'img',
+            'h1', 'h2', 'h3', 'h4', 'h5', 'h6',
+            'a', 'section', 'article', 'header', 'footer',
+            'iframe' // ✅ ADD THIS
+        ],
+        ALLOWED_ATTR: [
+            'href', 'src', 'alt', 'class', 'id', 'tabindex',
+            'allow', 'allowfullscreen', 'frameborder' // ✅ ADD THESE
+        ]
+    })
+    initDropDown()   
 }
