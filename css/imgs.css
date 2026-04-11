@@ -12,6 +12,3 @@ section:hover > .content .img-wrapper > img{
     filter: grayscale(0);
 }
 
-.section-title:active ~ .img-wrapper>img {
-    filter: grayscale(0);
-}
