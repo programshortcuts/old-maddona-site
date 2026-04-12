@@ -53,3 +53,8 @@
     padding-bottom: .5%;
 }
 
+
+/* home styles */
+.home-page-header>.address-num-container {
+    padding-top: 20%;
+}

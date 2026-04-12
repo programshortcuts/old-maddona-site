@@ -40,3 +40,7 @@ section > .content > .video-wrapper{
     width: 50%;
     border: 1px solid black;
 }
+/* home styles */
+.home-page-container{
+    height: 100vh;
+}

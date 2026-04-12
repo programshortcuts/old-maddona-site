@@ -37,3 +37,9 @@
  .address-num-container {
      color: rgb(36, 34, 34);
  }
+
+
+ /* home styles */
+ .home-page-header>.address-num-container {
+     color: rgb(53, 58, 46);
+ }

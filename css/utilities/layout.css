@@ -91,3 +91,8 @@ section::after {
 .contact-container>* {
     flex-basis: 42%;
 }
+
+/* home styles */
+.home-page-header>.address-num-container img {
+    float: right;
+}

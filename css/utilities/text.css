@@ -62,3 +62,9 @@ a.tel-num:visited{
     text-shadow: 1px 1px 1px whitesmoke;
     font-size: 1.2rem;
 }
+
+/* home styles */
+.home-page-header>.address-num-container {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2rem;
+}

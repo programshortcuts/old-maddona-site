@@ -1,15 +1,27 @@
 /* position.css */
-.page-container  {
+.home-page-container {
     position: relative;
     z-index: 1;
 }
-
-.animation-container {
+.home-page-header{
+    z-index: 2;
+    /* position: absolute; */
+}
+.page-container {
+    position: relative;
+}
+.home-page-container .animation-container {
+    position: absolute;
+    z-index: 0;
+    left: 20%;
+    top: 30%;
+    bottom: 0;
+} 
+.contact-page-container .animation-container {
     position: absolute;
     z-index: 0;
     left: 50%;
-    top: 30%;
-}
+} 
 .mobile-header-nav {
     position: fixed;
     z-index: 2;
