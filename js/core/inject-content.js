@@ -11,7 +11,8 @@ if (!mainLandingPage) {
 const DEFAULT_PAGE =
     // "pages/medical-spa-services/medical-spa-services.html";
     // "pages/home/home.html";
-    "pages/contact/contact.html";
+    // "pages/contact/contact.html";
+    "pages/products/products.html";
 const pageCache = new Map()
 
 export function initInjectContentListeners(){
