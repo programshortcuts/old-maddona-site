@@ -1,5 +1,5 @@
 // images.js
-export function initImageHandling(){
+export function initProdImgHandle(){
     const sections = document.querySelectorAll('.project')
     const sectionTitles = document.querySelectorAll('.project-title')
     const sectionImgs = document.querySelectorAll('.project > img-wrapper > img')
