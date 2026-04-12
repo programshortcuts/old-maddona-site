@@ -45,7 +45,7 @@ export async function injectPage(href){
             pageCache.set(href,html)
 
         }
-        maybeInitAnimations()
+        // maybeInitAnimations()
     } catch (err) {
         mainLandingPage.innerHTML =
             `<p style="color:red;">Failed to load page: ${href}</p>`;
