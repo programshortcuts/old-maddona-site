@@ -4,7 +4,6 @@ import { maybeInitAnimations } from "../app.js";
 import { initDropDown } from "../ui/drop-down.js";
 import { initImageHandling } from "../visuals/handleImages.js";
 const mainLandingPage = document.querySelector('.main-landing-page')
-
 if (!mainLandingPage) {
     throw new Error("Missing .main-landing-page in index.html");
 }
@@ -14,7 +13,6 @@ const DEFAULT_PAGE =
     // "pages/contact/contact.html";
     "pages/products/products.html";
 const pageCache = new Map()
-
 export function initInjectContentListeners(){
     const mobileHeaderNav = document.querySelector('.mobile-header-nav')
     injectPage(DEFAULT_PAGE)
