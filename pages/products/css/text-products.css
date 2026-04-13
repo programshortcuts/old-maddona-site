@@ -4,3 +4,11 @@
  .alpha-list>li {
      list-style: none;
  }
+ .item {
+     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+ .item > .title-item{
+     font-style: oblique;
+
+    font-style: normal !important;
+ }

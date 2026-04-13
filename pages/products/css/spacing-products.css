@@ -2,9 +2,14 @@
 
 .products-container {
     /* margin-top: 8%; */
+    margin-bottom: 5%;
+}
+.products-content {
+    margin-top: 5%;
+
 }
 .items-container {
-    margin: 0 5%;
+    /* margin: 0 5%; */
     scroll-padding-left: 40px;
     scroll-padding-right: 40px;
 }
