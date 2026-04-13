@@ -1,0 +1,36 @@
+/* animations/items-scroll.css */
+.items-container {
+    display: flex;
+    gap: 16px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+
+    padding: 10px 16px;
+
+    cursor: grab;
+}
+
+.items-container:active {
+    cursor: grabbing;
+}
+
+.item {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+
+    width: 220px;
+    /* adjust to your design */
+}
+
+/* optional: hide scrollbar (Apple-style clean look) */
+.items-container::-webkit-scrollbar {
+    display: none;
+}
+
+.items-container {
+    scrollbar-width: none;
+}

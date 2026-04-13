@@ -4,6 +4,7 @@ import { maybeInitAnimations } from "../app.js";
 import { initDropDown } from "../ui/drop-down.js";
 import { initImageHandling } from "../visuals/handleImages.js";
 import { initProdImgHandle } from "../visuals/handleProductImgs.js";
+import { initItemsScroll } from "../visuals/items-scroll.js";
 const mainLandingPage = document.querySelector('.main-landing-page')
 if (!mainLandingPage) {
     throw new Error("Missing .main-landing-page in index.html");
@@ -83,5 +84,6 @@ export async function injectPage(href){
     })
     initImageHandling()
     initProdImgHandle()
+    initItemsScroll()
     initDropDown()   
 }
