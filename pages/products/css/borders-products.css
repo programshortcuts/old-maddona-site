@@ -6,8 +6,7 @@
     border-right: none;
 }
 .item {
-    border: 1px solid orange
+    box-shadow: 0 0 1px 1px grey;
 }
 .item img.item-img {
-    border: 1px solid blue;
 }
