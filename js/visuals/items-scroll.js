@@ -2,16 +2,16 @@ let cleanupItemsScroll = null;
 
 export function initItemsScroll() {
     const productsContainers = document.querySelectorAll('.products-container');
-
     if (!productsContainers.length) return;
 
-    // =========================
-    // CLEANUP OLD LISTENERS (INJECT SAFE)
-    // =========================
+    // 🔥 CLEANUP (inject-safe)
     if (cleanupItemsScroll) cleanupItemsScroll();
 
+    const isTouchDevice = () =>
+        window.matchMedia("(pointer: coarse)").matches;
+
     // =========================
-    // CENTER SCROLL (APPLE STYLE)
+    // 🎯 CENTER ITEM (APPLE STYLE)
     // =========================
     const scrollToItem = (el) => {
         const container = el.closest('.items-container');
@@ -30,56 +30,51 @@ export function initItemsScroll() {
     };
 
     // =========================
-    // ALPHA NAV (SCOPED PER PRODUCT SECTION)
+    // 🔤 ALPHA NAV (SCOPED CORRECTLY)
     // =========================
     const alphaLinks = document.querySelectorAll('.letter-alphabet');
 
-    alphaLinks.forEach(link => {
-        link.addEventListener('click', (e) => {
-            e.preventDefault();
+    const alphaClickHandler = (e) => {
+        e.preventDefault();
 
-            const letter = e.target.textContent.trim().toUpperCase();
+        const letter = e.currentTarget.textContent.trim().toUpperCase();
+        const productsContainer = e.currentTarget.closest('.products-container');
+        if (!productsContainer) return;
 
-            // scope to correct product section ONLY
-            const productsContainer = e.target.closest('.products-container');
-            if (!productsContainer) return;
+        const items = productsContainer.querySelectorAll('.item');
 
-            const items = productsContainer.querySelectorAll('.item');
-
-            const match = Array.from(items).find(item => {
-                const title = item.querySelector('.title-item');
-                if (!title) return false;
-
-                return title.textContent.trim().toUpperCase().startsWith(letter);
-            });
-
-            if (!match) return;
-
-            scrollToItem(match);
-            match.focus();
+        const match = Array.from(items).find(item => {
+            const title = item.querySelector('.title-item');
+            return title && title.textContent.trim().toUpperCase().startsWith(letter);
         });
+
+        if (!match) return;
+
+        scrollToItem(match);
+        match.focus();
+    };
+
+    alphaLinks.forEach(link => {
+        link.addEventListener('click', alphaClickHandler);
     });
 
     // =========================
-    // ITEM INTERACTIONS
+    // 🎯 ITEM INTERACTIONS
     // =========================
-    const items = document.querySelectorAll('.item');
+    const allItems = document.querySelectorAll('.item');
 
     const removeAllClickedItems = () => {
-        items.forEach(el => el.classList.remove('clicked-item'));
+        allItems.forEach(el => el.classList.remove('clicked-item'));
     };
 
     const focusHandler = (e) => {
         removeAllClickedItems();
-        scrollToItem(e.target);
+        scrollToItem(e.currentTarget);
     };
 
     const itemClick = (e) => {
         const item = e.currentTarget;
-
         scrollToItem(item);
-
-        // prevent accidental drag-click conflict
         item.classList.toggle('clicked-item');
     };
 
@@ -90,7 +85,7 @@ export function initItemsScroll() {
         }
     };
 
-    items.forEach(item => {
+    allItems.forEach(item => {
         item.addEventListener('click', itemClick);
         item.addEventListener('keydown', itemKeydown);
         item.addEventListener('focus', focusHandler);
@@ -98,13 +93,14 @@ export function initItemsScroll() {
     });
 
     // =========================
-    // DRAG SCROLL (MOUSE)
+    // 🖱 DESKTOP DRAG ONLY
     // =========================
     let isDown = false;
     let startX = 0;
     let scrollLeft = 0;
 
     const mouseDown = (e) => {
+        if (isTouchDevice()) return; // 🔥 disable on mobile
         if (e.target.closest('.item')) return;
 
         const container = e.currentTarget;
@@ -117,51 +113,28 @@ export function initItemsScroll() {
     };
 
     const mouseMove = (e) => {
+        if (isTouchDevice()) return; // 🔥 disable on mobile
         if (!isDown) return;
+
         e.preventDefault();
 
         const container = e.currentTarget;
-
         const x = e.pageX - container.offsetLeft;
         const walk = (x - startX) * 2.2;
 
         container.scrollLeft = scrollLeft - walk;
     };
 
-    const mouseUp = () => {
-        isDown = false;
-    };
-
-    const mouseLeave = () => {
-        isDown = false;
-    };
+    const mouseUp = () => { isDown = false; };
+    const mouseLeave = () => { isDown = false; };
 
     // =========================
-    // DRAG SCROLL (TOUCH)
+    // 📦 BIND EACH CONTAINER
     // =========================
-    let startTouchX = 0;
+    const containers = [];
 
-    const touchStart = (e) => {
-        const container = e.currentTarget;
-
-        startTouchX = e.touches[0].pageX;
-        scrollLeft = container.scrollLeft;
-    };
-
-    const touchMove = (e) => {
-        const container = e.currentTarget;
-
-        const x = e.touches[0].pageX;
-        const walk = (x - startTouchX) * 1.5;
-
-        container.scrollLeft = scrollLeft - walk;
-    };
-
-    // =========================
-    // BIND CONTAINERS (IMPORTANT FOR MULTIPLE PRODUCTS)
-    // =========================
-    productsContainers.forEach(container => {
-        const itemsContainer = container.querySelector('.items-container');
+    productsContainers.forEach(product => {
+        const itemsContainer = product.querySelector('.items-container');
         if (!itemsContainer) return;
 
         itemsContainer.addEventListener('mousedown', mouseDown);
@@ -169,30 +142,29 @@ export function initItemsScroll() {
         itemsContainer.addEventListener('mouseup', mouseUp);
         itemsContainer.addEventListener('mouseleave', mouseLeave);
 
-        itemsContainer.addEventListener('touchstart', touchStart, { passive: true });
-        itemsContainer.addEventListener('touchmove', touchMove, { passive: true });
+        containers.push(itemsContainer);
     });
 
     // =========================
-    // CLEANUP (INJECT SAFE)
+    // 🧹 CLEANUP
     // =========================
     cleanupItemsScroll = () => {
-        items.forEach(item => {
+        alphaLinks.forEach(link => {
+            link.removeEventListener('click', alphaClickHandler);
+        });
+
+        allItems.forEach(item => {
             item.removeEventListener('click', itemClick);
             item.removeEventListener('keydown', itemKeydown);
             item.removeEventListener('focus', focusHandler);
             item.removeEventListener('focusout', removeAllClickedItems);
         });
 
-        alphaLinks.forEach(link => {
-            link.replaceWith(link.cloneNode(true)); // hard reset alpha listeners
-        });
-
-        productsContainers.forEach(container => {
-            const itemsContainer = container.querySelector('.items-container');
-            if (!itemsContainer) return;
-
-            itemsContainer.replaceWith(itemsContainer.cloneNode(true));
+        containers.forEach(container => {
+            container.removeEventListener('mousedown', mouseDown);
+            container.removeEventListener('mousemove', mouseMove);
+            container.removeEventListener('mouseup', mouseUp);
+            container.removeEventListener('mouseleave', mouseLeave);
         });
     };
 }
