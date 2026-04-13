@@ -26,12 +26,15 @@
 .item > .title-item{
     font-size: .9rem;
 }
-.filter-nav {
-    display: flex;
-    justify-content: flex-end;
-}
+
 .products-container-header {
     display: flex;
     align-items: center;
     gap: 5%;
+}
+.filter-nav{
+    display: flex;
+    justify-content: flex-end;
+    justify-content: flex-end;
+    background-color: blue;
 }
