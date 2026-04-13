@@ -10,11 +10,10 @@
     display: flex;
     gap: 16px;
 
-    /* overflow-x: auto; */
-    /* overflow-y: hidden; */
-    /* -webkit-overflow-scrolling: touch; */
-    /* cursor: grab; */
-    /* scroll-snap-type: x proximity; */
+    overflow-x: auto;
+    /* 🔥 REQUIRED for real scrolling */
+    -webkit-overflow-scrolling: touch;
+    /* 🔥 iOS momentum */
     
     
 }

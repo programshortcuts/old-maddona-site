@@ -41,11 +41,16 @@ export function initDropDown() {
             const productsContainer = e.target.closest('.products-container')
             if (!productsContainer) return
             const downs = productsContainer.querySelector('.products-content.downs')
-            console.log(downs)
+            
             if (downs) {
                 downs.classList.toggle('hide')
+                return
             } else {
-                hideAllDowns()
+                // hideAllDowns()
+            }
+            if (e.type == 'click') {    
+                downs.classList.toggle('hide')
+                return
             }
             // if (e.type == 'keydown') {
             //     const key = e.key.toLowerCase()
