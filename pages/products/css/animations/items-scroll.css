@@ -1,4 +1,7 @@
 /* animations/items-scroll.css */
+.clicked-item{
+    border: 10px solid red;
+}
 .items-container {
     display: flex;
     gap: 16px;
