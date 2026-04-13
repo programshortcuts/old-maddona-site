@@ -3,6 +3,11 @@ export function initImageHandling(){
     const sections = document.querySelectorAll('.section')
     const sectionTitles = document.querySelectorAll('.section-title')
     const sectionImgs = document.querySelectorAll('.section > img-wrapper > img')
+    const dropDowns = document.querySelectorAll('.drop-down')
+    dropDowns.forEach(el => {
+        el.removeEventListener('click',handleImgColors);
+        el.addEventListener('click',handleImgColors);
+    })
     sections.forEach(el => {
         el.removeEventListener('click',handleImgColors);
         el.addEventListener('click',handleImgColors);
