@@ -11,7 +11,14 @@
 }
 
 .section:nth-child(odd) {
-    margin-top: -2%;
+    /* margin-top: -2%; */
+}
+.section:nth-child(3) {
+    margin-top: -2% !important ;
+    /* border: 1px solid red */
+}
+.section:nth-child(n + 4):nth-child(-n+6) {
+    margin-top: -9% !important;
 }
 
 .section p {
