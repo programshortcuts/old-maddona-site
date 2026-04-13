@@ -25,7 +25,8 @@ export function initImageHandling(){
     function handleImgColors(e){
         const section = e.target.closest('.section')
         const img = section.querySelector('img')
-        if(e.target.classList.contains('section')){
+        if(e.target.classList.contains('section') ||
+            e.target.classList.contains('drop-down')){
             greyOutSectionImgs()
             return
         }
@@ -49,6 +50,7 @@ export function initImageHandling(){
     }
     function toggleColor(el){
         greyOutSectionImgs()
+        console.log(el)
         el.classList.toggle('colored')
     }
 }
