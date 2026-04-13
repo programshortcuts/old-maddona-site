@@ -1,0 +1,35 @@
+/* layout-products */
+.alpha-list {
+    display: flex;
+}
+.alpha-list>li {
+    flex-basis: 4%;
+}
+.products-container-header {
+    display: flex;
+    gap: 20%;
+}
+.products-container-header>h2>a {
+    display: inline-block;
+}
+.items-container {
+    display: flex;
+    overflow-x: auto;
+    /* allow horizontal scroll */
+    overflow-y: hidden;
+    width: 100%;
+    /* NOT vmax */
+    gap: 1rem;
+
+    /* optional smooth scroll */
+    scroll-behavior: smooth;
+}
+.item {
+    flex: 0 0 20%;
+    /* 👈 THIS is what you want */
+    display: flex;
+    flex-direction: column;
+}
+.item > .title-item{
+    font-size: .9rem;
+}

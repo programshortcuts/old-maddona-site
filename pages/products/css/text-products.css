@@ -1,0 +1,6 @@
+.alpha-list>li >a{
+    text-decoration: none;
+ }
+ .alpha-list>li {
+     list-style: none;
+ }

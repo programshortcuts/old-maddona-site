@@ -1,0 +1,28 @@
+/* sizing-products.css */
+.products-content img {
+    max-width: var(--width-prod);
+    max-height: var(--width-prod);
+}
+.products-container-header {
+    width: fit-content;
+    height: fit-content;
+}
+.products-container-header>h2>a {
+    width: fit-content;
+    height: auto;
+}
+.products-content-header>.img-wrapper {
+    width: fit-content;
+    height: fit-content;
+}
+.products-content-header>.img-wrapper>img {
+    /* width: 400px !important; */
+    /* height: 800px !important; */
+}
+.item img {
+    /* width: 1000px !important; */
+    /* height: 100px; */
+}
+.items-container {
+    width: 100vw;
+}
