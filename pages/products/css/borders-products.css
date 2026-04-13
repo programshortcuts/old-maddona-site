@@ -1,6 +1,6 @@
 /* spacing-products.css */
 .products-container{
-    border-top: 1px solid black;
+    border-top: 1px dashed black;
 }
 .products-content {
     border-right: none;

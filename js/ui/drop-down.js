@@ -36,6 +36,7 @@ export function initDropDown() {
         if (sectionTitle) {
             const section = sectionTitle.closest('.section')
             if (!section) return
+            if(!section.classList.contains('drop-down')) return
 
             const content = section.querySelector('.content')
             if (!content) return

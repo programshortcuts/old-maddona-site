@@ -4,6 +4,7 @@
     /* margin-top: 8%; */
 }
 .items-container {
+    margin: 0 5%;
     scroll-padding-left: 40px;
     scroll-padding-right: 40px;
 }
