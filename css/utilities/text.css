@@ -64,7 +64,11 @@ a.tel-num:visited{
     text-shadow: 1px 1px 1px whitesmoke;
     font-size: 1.2rem;
 }
-
+/* med-spa-serv styles */
+.more-info-links {
+    /* display: flex; */
+    font-size: 2rem;
+}
 /* home styles */
 .home-page-header>.address-num-container {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;

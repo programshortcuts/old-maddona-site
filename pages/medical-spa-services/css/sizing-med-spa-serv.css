@@ -1,0 +1,14 @@
+section>.content>.video-wrapper {
+    width: fit-content;
+    height: fit-content;
+}
+
+.img-wrapper img {
+    max-height: 120px;
+}
+
+.section {
+    max-height: 70vh;
+    overflow: hidden;
+    overflow-y: scroll;
+}
