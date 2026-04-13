@@ -8,8 +8,8 @@
     padding-bottom: .5rem;
     padding-left: 0;
 }
-.section > .content {
-    
+.section > .downs {
+    padding-bottom: 1rem !important;
 }
 .section:nth-child(odd) {
     /* margin-top: -2%; */
