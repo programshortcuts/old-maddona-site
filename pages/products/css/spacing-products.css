@@ -1,11 +1,12 @@
 /* spacing-products.css */
-
 .products-container {
-    /* margin-top: 8%; */
     margin-bottom: 5%;
 }
+.products-container-header{
+    padding-left: 5%;
+}
 .products-content {
-    margin-top: 5%;
+    /* margin-top: 5%; */
 
 }
 .items-container {

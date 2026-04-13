@@ -5,13 +5,7 @@
 .alpha-list>li {
     flex-basis: 4%;
 }
-.products-container-header {
-    display: flex;
-    gap: 5%;
-}
-.products-container-header>h2>a {
-    display: inline-block;
-}
+
 .items-container {
     display: flex;
     overflow-x: auto;
@@ -35,4 +29,9 @@
 .filter-nav {
     display: flex;
     justify-content: flex-end;
+}
+.products-container-header {
+    display: flex;
+    align-items: center;
+    gap: 5%;
 }
