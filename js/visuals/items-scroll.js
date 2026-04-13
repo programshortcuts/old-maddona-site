@@ -1,15 +1,11 @@
 let cleanupItemsScroll = null;
-
 export function initItemsScroll() {
     const productsContainers = document.querySelectorAll('.products-container');
     if (!productsContainers.length) return;
-
     // 🔥 CLEANUP (inject-safe)
     if (cleanupItemsScroll) cleanupItemsScroll();
-
     const isTouchDevice = () =>
         window.matchMedia("(pointer: coarse)").matches;
-
     // =========================
     // 🎯 CENTER ITEM (APPLE STYLE)
     // =========================
@@ -28,12 +24,10 @@ export function initItemsScroll() {
             behavior: "smooth"
         });
     };
-
     // =========================
     // 🔤 ALPHA NAV (SCOPED CORRECTLY)
     // =========================
     const alphaLinks = document.querySelectorAll('.letter-alphabet');
-
     const alphaClickHandler = (e) => {
         e.preventDefault();
 
@@ -79,10 +73,12 @@ export function initItemsScroll() {
     };
 
     const itemKeydown = (e) => {
-        if (e.key.toLowerCase() === 'enter') {
+        const key = e.key.toLowerCase()
+        if (key.toLowerCase() === 'enter') {
             e.currentTarget.classList.toggle('clicked-item');
             scrollToItem(e.currentTarget);
         }
+        console.log(key)
     };
 
     allItems.forEach(item => {
