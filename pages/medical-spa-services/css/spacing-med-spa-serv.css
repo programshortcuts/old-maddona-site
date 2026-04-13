@@ -6,10 +6,11 @@
     margin-top: 1%;
     padding-top: 1.25rem;
     padding-bottom: .5rem;
-    /* padding: 3.5%; */
     padding-left: 0;
 }
-
+.section > .content {
+    
+}
 .section:nth-child(odd) {
     /* margin-top: -2%; */
 }
@@ -34,4 +35,12 @@
 }
 .more-info-links>button {
     /* margin-top: 5%; */
+}
+.more-info-links {
+    padding-right: 2%;
+}
+
+.more-info-links>button {
+    padding-top: .5%;
+    padding-bottom: .5%;
 }
