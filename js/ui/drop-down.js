@@ -18,7 +18,7 @@ export function initDropDown() {
         e.stopPropagation()
 
         const productTitle = e.target.closest('.product-title')
-        const sectionTitle = e.target.closest('.section-title')
+        const sectionTitleDropDown = e.target.closest('.section-title.drop-down')
 
         // 🟣 PRODUCT DROPDOWN
         if (productTitle) {
@@ -33,8 +33,8 @@ export function initDropDown() {
         }
 
         // 🔵 SECTION DROPDOWN
-        if (sectionTitle) {
-            const section = sectionTitle.closest('.section')
+        if (sectionTitleDropDown) {
+            const section = sectionTitleDropDown.closest('.section')
             if (!section) return
             // if(!section.classList.contains('drop-down')) return
 

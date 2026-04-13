@@ -6,7 +6,9 @@ section>.content>.video-wrapper {
 .img-wrapper img {
     max-height: 120px;
 }
-
+#bioHormoneReplacement > button img {
+    height: 45px;
+}
 .section {
     max-height: 100vh;
     overflow: hidden;
