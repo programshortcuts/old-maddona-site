@@ -13,14 +13,17 @@ export function initItemsScroll() {
     let startX = 0;
     let scrollLeft = 0;
 
-    const offset = 40;
+    const offset = 10;
 
     // =========================
     // 🎯 CENTER ITEM FUNCTION (CORE APPLE BEHAVIOR)
     // =========================
     const scrollToItem = (el) => {
+        const containerWidth = itemsContainer.clientWidth;
+        const itemWidth = el.offsetWidth;
+
         const targetScroll =
-            el.offsetLeft - offset - itemsContainer.offsetLeft;
+            el.offsetLeft - (containerWidth / 2) + (itemWidth / 2);
 
         itemsContainer.scrollTo({
             left: targetScroll,
@@ -31,7 +34,12 @@ export function initItemsScroll() {
     // =========================
     // 🖱 MOUSE DRAG
     // =========================
+    const isDraggingDisabled = (e) => {
+        return e.target.closest('.item');
+    };
     const mouseDown = (e) => {
+        if (isDraggingDisabled(e)) return;
+
         isDown = true;
         itemsContainer.classList.add('active');
 
@@ -79,8 +87,10 @@ export function initItemsScroll() {
     // =========================
     const itemClick = (e) => {
         scrollToItem(e.currentTarget);
-        removeAllClickedItems()
-        e.target.classList.toggle('clicked-item')
+
+        console.log(e.target)
+        const item = e.target.closest('.item')
+        item.classList.toggle('clicked-item')
     };
     const itemKeydown = (e) => {
         const key = e.key.toLowerCase()
@@ -99,7 +109,6 @@ export function initItemsScroll() {
         items.forEach(el => el.classList.remove('clicked-item'))
     }
     function focusHandler(e) {
-        console.log('focus')
         removeAllClickedItems()
         scrollToItem(e.target);
     };
