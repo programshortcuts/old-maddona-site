@@ -13,11 +13,17 @@
 }
 
 @media screen and (min-width:500px) {
+    .med-spa-serv-container{
+        margin-top: 10%;
+    }
     .page-header {
         border-bottom: none !important;
         z-index: 10;
-        position: relative;
+        position: fixed;
+        min-height: 30vh !important;
+        /* background-color: blue; */
     }
+
     .mobile-header-nav {
         position: sticky;
         

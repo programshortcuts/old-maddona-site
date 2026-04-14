@@ -47,7 +47,7 @@ export function initDropDown() {
             // } else {
             //     hideAllDowns()
             // }
-            console.log(downs)
+            // console.log(downs)
             downs.classList.toggle('hide')
             lastClickedDrop = e.target
             return
