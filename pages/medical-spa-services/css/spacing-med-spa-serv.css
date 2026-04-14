@@ -1,20 +1,25 @@
 .med-spa-serv-container>.section>h2>a.section-title {
     /* padding-left: 4%; */
 }
+
 .section {
-    padding-top: 1.25rem;
-    padding-bottom: .5rem;
+    /* padding-top: 1.25rem; */
+    /* padding-bottom: .5rem; */
     padding-left: 0;
 }
-.section > .downs {
+
+.section>.downs {
     padding-bottom: 1rem !important;
 }
+
 .section:nth-child(odd) {
     /* margin-top: -2%; */
 }
+
 .section:nth-child(3) {
-    margin-top: -2% !important ;
+    margin-top: -2% !important;
 }
+
 .section:nth-child(n + 4):nth-child(-n+6) {
     margin-top: -9% !important;
 }
@@ -25,15 +30,17 @@
     padding-bottom: 1%;
     line-height: 1.8;
     /* margin-left: 4%; */
-    margin-right: 2%;
+    /* margin-right: 2%; */
 }
 
 .section iframe {
     margin-right: 2%;
 }
+
 .more-info-links>button {
     /* margin-top: 5%; */
 }
+
 .more-info-links {
     padding-right: 2%;
 }

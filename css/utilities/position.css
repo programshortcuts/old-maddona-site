@@ -3,26 +3,31 @@
     position: relative;
     z-index: 1;
 }
-.home-page-header{
+
+.home-page-header {
     z-index: 2;
     /* position: absolute; */
 }
+
 .page-container {
     position: relative;
 }
+
 .home-page-container .animation-container {
     position: absolute;
     z-index: 0;
     left: 40%;
     top: 40%;
     bottom: 0;
-} 
+}
+
 .contact-page-container .animation-container {
     position: absolute;
     z-index: 0;
     left: 50%;
     top: 50%;
-} 
+}
+
 .mobile-header-nav {
     position: fixed;
     z-index: 2;
@@ -34,5 +39,5 @@
     bottom: 8%;
     z-index: 2;
     right: 91%;
-    
+
 }

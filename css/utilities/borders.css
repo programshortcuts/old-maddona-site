@@ -1,38 +1,48 @@
 /* borders.css */
-.page-header{
+.page-header {
     border-bottom: 1px solid black;
 }
-.mobile-header-nav{
+
+.mobile-header-nav {
     border: 1px solid black;
     border-bottom: none;
     border-radius: 8px;
 }
-.mobile-header-nav ul li{
+
+.mobile-header-nav ul li {
     border-left: 1px solid black;
     border-right: 1px solid black;
 }
-.mobile-header-nav ul li#contactMenuLi > .social-media-container > * {
+
+.mobile-header-nav ul li#contactMenuLi>.social-media-container>* {
     border-top: 1px solid black;
 }
+
 #mdvipImgLink {
     border-radius: 8px;
 }
-.section{
+
+.section {
     border-radius: 3px;
 }
-.img-wrapper img{
+
+.img-wrapper img {
     border-radius: 7px;
 }
-section iframe{
+
+section iframe {
     border: 1px solid black;
     border-radius: 8px;
 }
-.google-reviews{
+
+.google-reviews {
     border: 1px solid red;
 }
+
 .info-contact {
     border-radius: 6px;
 }
+
 section#botoxAndFillers {
     /* border-right: solid 4px var(--bg-clr);    */
     border-right: 1vw solid var(--bg-clr)
@@ -45,6 +55,7 @@ section#botoxAndFillers {
     /* border: 1px solid black; */
     /* border-radius: 5px; */
 }
+
 .animation-container {
     /* border: 1px solid blue */
 }

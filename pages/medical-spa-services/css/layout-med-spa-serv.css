@@ -1,7 +1,4 @@
-
-.section>.content{
-    /* display: flex; */
-}
+/* layout-med-spa-serv.css */
 section>.content>.img-wrapper {
     float: right;
 }
@@ -36,7 +33,6 @@ section::after {
     float: left;
 }
 
-
 .section.colored .more-info-links {
     display: flex;
     gap: 1%;
@@ -46,6 +42,16 @@ section::after {
 .section .more-info-links {
     display: none;
 }
+
 .more-info-links>button {
     flex-basis: 20%;
+}
+.section > button.section-title {
+    display: flex;
+
+}
+.section > button.section-title > .title-text{
+    display:inline-flex;
+    flex-wrap: nowrap;
+    /* border: 10px solid magenta !important; */
 }
