@@ -11,7 +11,7 @@ section>.content>.video-wrapper {
     overflow-y: scroll;
 }
 .img-wrapper img {
-    /* max-height: 120px; */
+    max-height: 120px;
 }
 
 .section-title img {

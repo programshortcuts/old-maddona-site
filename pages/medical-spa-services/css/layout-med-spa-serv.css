@@ -48,8 +48,6 @@ section::after {
 }
 .section > button.section-title {
     display: flex;
-    
-
 }
 .title-text {
     white-space: nowrap;
