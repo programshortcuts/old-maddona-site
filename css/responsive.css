@@ -13,20 +13,12 @@
 }
 
 @media screen and (min-width:500px) {
-    .med-spa-serv-container{
-        margin-top: 10%;
-    }
     .page-header {
         border-bottom: none !important;
         z-index: 10;
-        position: fixed;
-        min-height: 30vh !important;
-        /* background-color: blue; */
     }
-
     .mobile-header-nav {
         position: sticky;
-        
         top: 0%;
         /* z-index: 0; */
         /* margin-top: 5%; */
@@ -42,9 +34,5 @@
     }
     .mobile-header-nav ul li {
         border: none !important;
-        
-    }
-    .mobile-header-nav ul li a{
-        padding-top: 5%;
     }
 }

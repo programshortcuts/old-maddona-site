@@ -1,41 +1,35 @@
 /* sizing.css */
-.page-header-logos {
-    height: fit-content;
+.page-header{
+    width: 100vw;
 }
-
+.page-header-logos {
+    height: fit-content;   
+}
 .page-header-logos img {
     max-height: 100px;
     height: 100px;
-
 }
-
 .mobile-header-nav {
     width: 100%;
     height: 10vh;
 }
-
 .mobile-header-nav ul li {
     height: 50%;
 }
-
 .mobile-header-nav ul li a {
     width: 100%;
     height: 100%;
 }
-
 .page-wrapper {
     height: 100vh;
 }
-
 #mdvipImgLink {
     height: 10vh;
     width: 25vh;
 }
-
 #botoxAndFillers {
     min-height: 12vh;
 }
-
 #navBarBtn {
     font-size: 2rem;
 }

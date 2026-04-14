@@ -6,11 +6,7 @@
 .page-wrapper{
     position: relative;
 }
-.home-page-header {
-    z-index: 2;
-    /* position: absolute  ; */
-    /* position: absolute; */
-}
+
 
 .page-container {
     position: relative;
@@ -31,11 +27,7 @@
     top: 50%;
 }
 
-.mobile-header-nav {
-    position: fixed;
-    z-index: 2;
-    bottom: 0;
-}
+
 
 #navBarBtn {
     position: absolute;
@@ -43,4 +35,15 @@
     z-index: 2;
     right: 91%;
 
+}
+
+.home-page-header {
+    z-index: 1;
+    /* position: absolute  ; */
+    /* position: absolute; */
+}
+.mobile-header-nav {
+    position: fixed;
+    z-index: 2;
+    bottom: 0;
 }
