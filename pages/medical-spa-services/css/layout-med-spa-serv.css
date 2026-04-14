@@ -48,10 +48,14 @@ section::after {
 }
 .section > button.section-title {
     display: flex;
+    
 
 }
+.title-text {
+    white-space: nowrap;
+}
 .section > button.section-title > .title-text{
-    display:inline-flex;
-    flex-wrap: nowrap;
+    /* display:inline-flex; */
+    /* flex-wrap: nowrap; */
     /* border: 10px solid magenta !important; */
 }
