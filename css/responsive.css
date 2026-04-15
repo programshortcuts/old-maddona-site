@@ -17,6 +17,7 @@
         border-bottom: none !important;
         z-index: 3;
         /* border: 2px solid magenta !important; */
+        justify-content: space-between;
         position: sticky;
         top:0;
         
@@ -24,7 +25,7 @@
     .mobile-header-nav {
         position: sticky;
         z-index: 4;
-        top: 0%;
+        top: 10%;
         background-color: blue;
         background-color: rgba(0,0,0,0);
         /* z-index: 0; */
