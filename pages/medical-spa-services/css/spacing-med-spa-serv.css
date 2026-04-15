@@ -1,4 +1,8 @@
 /* spacing-med-spa-serv.css */
+.med-spa-serv-container{
+    padding-top: 10%;
+    /* background-color: blue !important; */
+}
 .section {
     /* padding-top: 1.25rem; */
     /* padding-bottom: .5rem; */
