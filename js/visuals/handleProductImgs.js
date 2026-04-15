@@ -42,8 +42,6 @@ export function initProdImgHandle(){
             // toggleColor(section)
             return
         }
-        
-
     }
     function toggleColor(el){
         greyOutSectionImgs()

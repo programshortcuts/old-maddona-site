@@ -1,6 +1,6 @@
 // inject-content.js
 import { isSafePath } from "./security-utils.js";
-import { maybeInitAnimations } from "../app.js";
+// import { maybeInitAnimations } from "../app.js";
 import { initDropDown } from "../ui/drop-down.js";
 import { initImageHandling } from "../visuals/handleImages.js";
 import { initProdImgHandle } from "../visuals/handleProductImgs.js";
@@ -18,7 +18,7 @@ const pageCache = new Map()
 document.addEventListener("submit", (e) => {
     if (e.target.id === "contact-form") {
         e.preventDefault();
-        e.target.innerHTML = "<p>Thank you! (Test mode)</p>";
+       mainLandingPage.textContent = `Failed to load page: ${href}`;
     }
 });
 export function initInjectContentListeners(){
@@ -28,7 +28,7 @@ export function initInjectContentListeners(){
     mobileHeaderNav.addEventListener('click', e => {
         const link = e.target.closest('a')
         if(!link)return
-        const href = e.target.getAttribute("href");
+        const href = link.getAttribute("href");
         if (!href || href === "#") return;        
         if (!href || href === "#") return;
         e.preventDefault();
@@ -55,8 +55,7 @@ export async function injectPage(href){
         }
         // maybeInitAnimations()
     } catch (err) {
-        mainLandingPage.innerHTML =
-            `<p style="color:red;">Failed to load page: ${href}</p>`;
+       mainLandingPage.textContent = `Failed to load page: ${href}`;
     }
     const parser = new DOMParser()
     const doc = parser.parseFromString(html, 'text/html')
@@ -71,24 +70,22 @@ export async function injectPage(href){
     // ✅ Sanitize before injecting
     mainLandingPage.innerHTML = DOMPurify.sanitize(newContent.innerHTML, {
         ALLOWED_TAGS: [
-            'action', 'method', 'type', 'name', 'required', 'for', 'value',
             'form', 'input', 'textarea', 'label',
             'div', 'p', 'span', 'ul', 'ol', 'li',
             'pre', 'code',
             'img',
             'h1', 'h2', 'h3', 'h4', 'h5', 'h6',
             'a', 'section', 'article', 'header', 'footer',
-            'iframe', // ✅ ADD THIS
-            'button', // ✅ ADD THIS'
-            'img',
-            'canvas',
-            'svg','path','circle','g'
+            'iframe', 'button', 'canvas',
+            'svg', 'path', 'circle', 'g'
         ],
         ALLOWED_ATTR: [
             'src', 'href', 'class', 'id', 'alt', 'tabindex',
-            'allow', 'allowfullscreen', 'frameborder', // ✅ ADD THESE
-            'width', 'height', 'viewBox', 'fill', 'd', 'cx', 'cy', 'r'
-        ]
+            'allow', 'allowfullscreen', 'frameborder',
+            'width', 'height', 'viewBox', 'fill', 'd', 'cx', 'cy', 'r',
+            'type', 'name', 'value', 'for', 'required', 'action', 'method'
+        ],
+        FORBID_ATTR: ['style']
 
     })
     initImageHandling()

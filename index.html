@@ -17,15 +17,16 @@
 
     <!-- <meta name="format-detection" content="telephone=no"> -->
 <meta http-equiv="Content-Security-Policy" content="
-
-        script-src 'self' 'unsafe-inline';
-style-src 'self' 'unsafe-inline' https://unpkg.com;
+default-src 'self';
+script-src 'self' ;
+style-src 'self' https://unpkg.com;
 font-src 'self' https://unpkg.com data:;
 img-src 'self' data:;
-frame-src https: https://www.youtube.com;
+frame-src https://www.youtube.com;
 object-src 'none';
 base-uri 'none';
-    ">
+form-action 'self';
+">
 </head>
 <body>
     <div class="page-wrapper">

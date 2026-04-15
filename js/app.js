@@ -3,22 +3,22 @@ import { initInjectContentListeners } from "./core/inject-content.js";
 import { initLetterNav } from "./nav/letter-nav.js";
 import { initDropDown } from "./ui/drop-down.js";
 
-import { initMedicalSpaAnimation } from "./visuals/animation.js";
+// import { initMedicalSpaAnimation } from "./visuals/animation.js";
 
 let animationCleanup = null;
 
 export function maybeInitAnimations() {
-    const isMedicalPage = document.querySelector("#canvas");
+    // const isMedicalPage = document.querySelector("#canvas");
 
-    if (isMedicalPage) {
-        if (animationCleanup) animationCleanup(); // prevent duplicates
-        animationCleanup = initMedicalSpaAnimation();
-    }
+    // if (isMedicalPage) {
+    //     if (animationCleanup) animationCleanup(); // prevent duplicates
+    //     // animationCleanup = initMedicalSpaAnimation();
+    // }
 }
 
-const pageWrapper = document.querySelector('.page-wrapper')
 addEventListener('DOMContentLoaded', initMain)
 function initMain(){
+    const pageWrapper = document.querySelector('.page-wrapper')
     initInjectContentListeners()
     initLetterNav({
         pageWrapper
