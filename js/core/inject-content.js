@@ -10,14 +10,21 @@ if (!mainLandingPage) {
     throw new Error("Missing .main-landing-page in index.html");
 }
 const DEFAULT_PAGE =
-"pages/medical-spa-services/medical-spa-services.html";
+// "pages/medical-spa-services/medical-spa-services.html";
 // "pages/products/products.html";
     // "pages/home/home.html";
-    // "pages/contact/contact.html";
+    "pages/contact/contact.html";
 const pageCache = new Map()
+document.addEventListener("submit", (e) => {
+    if (e.target.id === "contact-form") {
+        e.preventDefault();
+        e.target.innerHTML = "<p>Thank you! (Test mode)</p>";
+    }
+});
 export function initInjectContentListeners(){
     const mobileHeaderNav = document.querySelector('.mobile-header-nav')
     injectPage(DEFAULT_PAGE)
+    
     mobileHeaderNav.addEventListener('click', e => {
         const link = e.target.closest('a')
         if(!link)return
@@ -64,6 +71,7 @@ export async function injectPage(href){
     // ✅ Sanitize before injecting
     mainLandingPage.innerHTML = DOMPurify.sanitize(newContent.innerHTML, {
         ALLOWED_TAGS: [
+            'form', 'input', 'textarea', 'label',
             'div', 'p', 'span', 'ul', 'ol', 'li',
             'pre', 'code',
             'img',

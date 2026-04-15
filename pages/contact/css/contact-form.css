@@ -1,0 +1,18 @@
+#contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-group > input#first-name,
+.form-group > input#last-name{
+    width: 50% !important;
+    border: 1px solid black;
+}
+
+.form-group {
+    /* background-color: white !important; */
+}
+input{
+    /* background-color: blue; */
+}

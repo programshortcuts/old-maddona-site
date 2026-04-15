@@ -40,6 +40,7 @@
 
 /* contact-styles */
 @import url('../pages/contact/css/contact-styles.css');
+@import url('../pages/contact/css/contact-form.css');
 *{
     margin: 0;
     padding: 0;

@@ -1,4 +1,4 @@
-// images.js
+// handleImages.js
 export function initImageHandling(){
     const sections = document.querySelectorAll('.section')
     const sectionTitles = document.querySelectorAll('.section-title')
