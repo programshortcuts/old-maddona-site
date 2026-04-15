@@ -2,19 +2,7 @@
 .page-header {
     border-bottom: 1px solid black;
 }
-.mobile-header-nav {
-    border: 1px solid black;
-    border-bottom: none;
-    border-radius: 8px;
-}
-.mobile-header-nav ul li {
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-    /* border: 1px solid black; */
-}
-.mobile-header-nav ul li#contactMenuLi>.social-media-container>* {
-    border-top: 1px solid black;
-}
+
 #mdvipImgLink {
     border-radius: 8px;
 }
@@ -45,4 +33,20 @@ section#botoxAndFillers {
 }
 .animation-container {
     /* border: 1px solid blue */
+}
+
+.mobile-header-nav {
+    /* border: 1px solid black; */
+    border-bottom: none;
+    border-radius: 8px;
+}
+
+.mobile-header-nav ul li {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    /* border: 1px solid black; */
+}
+
+.mobile-header-nav ul li#contactMenuLi>.social-media-container>* {
+    border-top: 1px solid black;
 }

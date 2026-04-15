@@ -14,7 +14,6 @@
     overflow: hidden;
     overflow-y: scroll;
 }
-
 .hide {
     display: none;
 }
@@ -24,7 +23,6 @@
     text-wrap: none;
     white-space: none;
 }
-
 .tel-num {
     display: inline-block;
 }
@@ -51,7 +49,15 @@
 }
 .mobile-header-nav ul {
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     /* align-items: flex-end; */
     flex-grow: 1;
+}
+.mobile-header-nav ul > li{
+    flex-basis: 10%;
+    flex-grow: 1;
+}
+.mobile-header-nav ul > li > a{
+    display: inline-flex;
+    align-items: center;
 }
