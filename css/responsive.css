@@ -22,7 +22,15 @@
         justify-content: space-between;
         position: sticky;
         top:0;
-        
+    }
+    .page-container {
+        /* position: relative; */
+    }
+    .page-container-title {
+        position: block;
+        /* left: 2%; */
+        /* font-size: 1.2rem; */
+        /* z-index: 999 */
     }
     .mobile-header-nav ul{
     }

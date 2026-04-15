@@ -47,3 +47,10 @@
     z-index: 2;
     bottom: 0;
 }
+.page-container-title{
+    position: absolute;
+    bottom: -3%;
+    left: 2%;
+    font-size: 1.2rem;
+    z-index: 999
+}
