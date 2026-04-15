@@ -17,6 +17,7 @@
         border-bottom: none !important;
         z-index: 1;
         /* border: 2px solid magenta !important; */
+        background-color: inherit;
         justify-content: space-between;
         position: sticky;
         top:0;
@@ -27,7 +28,7 @@
         position: sticky;
         z-index: 4;
         top: 10%;
-        background-color: rgba(0,0,0,0) !important;
+        background-color: rgba(0, 0, 0, 0) !important;
         /* z-index: 0; */
         /* margin-top: 5%; */
         /* border: none; */
@@ -35,14 +36,20 @@
     }
     .mobile-header-nav ul {
         background-color: inherit;
-        
+        background-color: rgba(0, 0, 0, 0) !important;
+    }
+    .mobile-header-nav ul li {
+        border-top: none;
+        background-color: rgba(0, 0, 0, 0) !important;
     }
     .mobile-header-nav ul li {
         width: 100%;
         border: none !important;
+        background-color: rgba(0, 0, 0, 0) !important;
     }
     .mobile-header-nav ul li a{
         width: 100%;
+        background-color: rgba(0, 0, 0, 0) !important;
     }
     
     
