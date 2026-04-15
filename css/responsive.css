@@ -16,7 +16,7 @@
     .page-header {
         border-bottom: none !important;
         z-index: 3;
-        border: 2px solid magenta !important;
+        /* border: 2px solid magenta !important; */
         position: sticky;
         top:0;
         
