@@ -1,20 +1,18 @@
-.mission-state > .home-page-header{
+.misson-state >.home-page-container{
+    position: relative;
     float: left;
 }
- .mission-state > .home-page-header::after {
-     content: "";
-     display: block;
-     clear: both;
- }
-.mission-state > .animation-container {
-    position: absolute;
-    float: right;
-    
-    border: 1px solid black;
-    z-index: 101;
-}
-.home-page-container .animation-container::after{
+.misson-state >.home-page-container::after{
     content: "";
     display: block;
     clear: both;
+}
+.home-page-container .animation-container {
+    float: right;
+    /* position: absolute; */
+    /* right: 50%; */
+    /* top: 0; */
+    /* border: 1px solid black; */
+    /* width: 50%; */
+    /* z-index: 101; */
 }

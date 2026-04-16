@@ -44,12 +44,14 @@
 @import url('../pages/contact/css/layout-contact.css');
 @import url('../pages/contact/css/position-contact.css');
 
-@import url('responsive.css');
+
 /* home-styles */
-@import url('../pages/products/css/products-styles.css');
+
 @import url('../pages/home/css/spacing-home.css');
-@import url('../pages/home/css/sizing-home.css');
 @import url('../pages/home/css/position-home.css');
+@import url('../pages/home/css/sizing-home.css');
+
+@import url('responsive.css');
 *{
     margin: 0;
     padding: 0;
