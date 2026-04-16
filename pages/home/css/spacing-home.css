@@ -11,3 +11,6 @@
     line-height: 1.75;
     /* padding: 2rem; */
 }
+.mission-state>.animation-container {
+    margin-right: -10%;
+}

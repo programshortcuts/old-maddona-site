@@ -6,10 +6,9 @@
     /* position: relative; */
     float: left;
 }
-.mission-state>.animation-container {
+.mission-state > .animation-container {
     float: right;
     /* position: absolute; */
-    /* right: 50%; */
     /* top: 0; */
     /* border: 1px solid black; */
     /* width: 50%; */

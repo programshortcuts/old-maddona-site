@@ -1,8 +1,15 @@
 /* sizing-home.css*/
-.mission-state > .home-page-header{
+
+.mission-state>.home-page-header {
     width: 50%;
 }
-.mission-state>.animation-container {
 
-    width: 30%;
+.mission-state>.animation-container {
+    width: 50%;
+    padding:0 !important;
 }
+.mission-state>.animation-container >img{
+    padding: 0!important;
+    width: 150%;
+ }
+ 
