@@ -23,6 +23,7 @@
 /* home-styles */
 @import url('../pages/products/css/products-styles.css');
 @import url('../pages/home/css/spacing-home.css');
+@import url('../pages/home/css/position-home.css');
 /* med-spa-serv-styles */
 /* @import url('../pages/medical-spa-services/css/bkgrnd-colors-med-spa-serv.css'); */
 
