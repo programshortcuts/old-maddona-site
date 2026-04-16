@@ -46,7 +46,15 @@
 
 @media screen and (max-width:532px) {
     .mobile-header-nav ul {
-            list-style: square !important;
+        margin-top: 2%;
+            list-style: circle !important;
+    }
+    .mobile-header-nav ul > li{
+        margin-top: 2%;
+        list-style: circle !important;
+    }
+    .mobile-header-nav ul > li > a{
+        border-radius: 10px;
     }
 #contactMenuNavLink {
     background-color: rgba(0, 0, 0, 0) !important;
