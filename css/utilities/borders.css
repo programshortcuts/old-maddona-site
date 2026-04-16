@@ -25,14 +25,11 @@ section#botoxAndFillers {
     /* border-right: solid 4px var(--bg-clr);    */
     border-right: 1vw solid var(--bg-clr)
 }
-/* home.html */
 .more-info-links>button {
     /* border: 1px solid black; */
     /* border-radius: 5px; */
 }
-.animation-container {
-    /* border: 1px solid blue */
-}
+
 
 .mobile-header-nav ul li#contactMenuLi>.social-media-container>* {
     /* border-top: 1px solid black; */

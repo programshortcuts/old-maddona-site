@@ -1,19 +1,20 @@
-.home-page-container .animation-container::after
-.home-page-header::after{
+.mission-state > .home-page-header{
+    float: left;
+}
+ .mission-state > .home-page-header::after {
+     content: "";
+     display: block;
+     clear: both;
+ }
+.mission-state > .animation-container {
+    position: absolute;
+    float: right;
+    
+    border: 1px solid black;
+    z-index: 101;
+}
+.home-page-container .animation-container::after{
     content: "";
     display: block;
     clear: both;
-}
-.home-page-header{
-    float: left;
-}
-
-.home-page-container .animation-container {
-    /* position: absolute; */
-    float: right;
-    /* right: 50%; */
-    /* top: 0; */
-    border: 1px solid black;
-    width: 50%;
-    z-index: 101;
 }
