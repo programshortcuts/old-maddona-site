@@ -1,18 +1,17 @@
 /* background.css */
-/* section#botoxAndFillers {
-    background-image: url('../../pages/medical-spa-services/media/botox-filler.webp');
+section#longevityMedicine {
+    background-image: url('../../pages/medical-spa-services/media/longetivy-med.jpeg');
     background-repeat: no-repeat;
     background-position-y: 50%;
     background-position-x: 0%;
     filter: saturate(1);
     filter: brightness(1);
-} */
+}
 section#botoxAndFillers {
     background-image: url('../../pages/medical-spa-services/media/botox-filler.webp');
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     background-position-y: 50%;
     background-position-x: 0%;
-    /* background-size: 189%; */
     filter: grayscale(100%);
 }
 

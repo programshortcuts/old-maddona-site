@@ -47,9 +47,9 @@
 
 @media screen and (max-width:532px) {
     #contactMenuNavLink {
-            background-color: rgba(0, 0, 0, 0) !important;
-            fill-opacity: 1 !important;
-        }
+        background-color: rgba(0, 0, 0, 0) !important;
+        fill-opacity: 1 !important;
+    }
     #contactMenuNavLink>.social-media-container {
         background-color: rgba(0, 0, 0, 0) !important;
             fill-opacity: 1 !important;
