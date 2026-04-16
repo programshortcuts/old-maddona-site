@@ -1,6 +1,5 @@
 /* responsive.css */
 @media screen and (min-width:533px) {
-
     .mobile-header-nav>ul {
         justify-content: flex-end !important;
     }
@@ -19,10 +18,9 @@
     }
 
     #contactMenuNavLink {
+        
         width: 100%;
         align-items: flex-start !important;
-        background-color: rgba(0, 0, 0, 0) !important;
-        fill-opacity: 1 !important;
     }
 
     #contactMenuNavLink>.social-media-container {
@@ -41,16 +39,21 @@
     }
 
     #contactMenuNavLink>.social-media-container {
-        background-color: rgba(0, 0, 0, 0) !important;
-        fill-opacity: 1 !important;
+        
         align-self: flex-end;
         width: 80%;
     }
 }
 
 @media screen and (max-width:532px) {
+    #contactMenuNavLink {
+            background-color: rgba(0, 0, 0, 0) !important;
+            fill-opacity: 1 !important;
+        }
     #contactMenuNavLink>.social-media-container {
-        /* padding-left: 20% !important; */
+        background-color: rgba(0, 0, 0, 0) !important;
+            fill-opacity: 1 !important;
+        padding-left: 20% !important;
     }
     #contactMenuNavLink>.social-media-container {
         width: 100%;
