@@ -8,7 +8,6 @@ body,
 .page-header
 {
     background-color: var(--bg-clr);
-    background-color: limegreen;
 }
 #mdvipImgLink {
     background-color: tomato;
