@@ -8,26 +8,21 @@
     background-color: tomato;
 }
 body,
-.page-wrapper
+.page-wrapper,
+.page-header
 {
     background-color: var(--bg-clr);
     
-}
-.page-header{
-    /* background-co/lor: rgba(0, 0, 0, 0); */
-    /* filtesr: opacity(1); */
-}
-.page-header h1 {
-    background-color: var(--bg-clr);
 }
 .animation-container            { background-color: rgba(0,0,0,0);}
 .animation-container #canvas    { background-color: rgba(0,0,0,0);}
 
 .mobile-header-nav,
 .mobile-header-nav > ul,
+.mobile-header-nav > ul > li,
 .mobile-header-nav>ul>li#contactMenuLi
 {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0) !important;
     filter: opacity(1);
 }
 .mobile-header-nav>ul>li,

@@ -1,17 +1,13 @@
 /* responsive.css */
 @media screen and (min-width:533px) {
-.mobile-header-nav ul {
-        padding-top: 2%;}
-.mobile-header-nav>ul>li {
-    justify-content: flex-end;
-    align-items: flex-end;
-}
-.mobile-header-nav > ul > li > a {
-    width: 80% !important;
-}
+    .mobile-header-nav ul {
+        padding-top: 0%;
+    }
+
+
 
 #contactMenuNavLink>a {
-    width: 70% !important;
+    width: 80% !important;
 }
 
 #contactMenuNavLink {
