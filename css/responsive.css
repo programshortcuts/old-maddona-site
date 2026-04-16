@@ -45,6 +45,17 @@
 }
 
 @media screen and (max-width:532px) {
+    .page-header .page-title { 
+        font-size: 1.5rem !important; 
+    }
+        .page-header>.page-title-container {
+            display: flex;
+            flex-basis: 67%;
+            padding-left: 5%;
+            padding-top: 0 !important;
+            flex-wrap: wrap;
+        }
+    
     .mobile-header-nav ul {
         margin-top: 2%;
             list-style: circle !important;

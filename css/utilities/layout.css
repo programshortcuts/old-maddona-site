@@ -6,6 +6,14 @@
 .page-header {
     display: flex;
     justify-content: space-between;
+    
+}
+.page-header > .page-title-container{
+    display: flex;
+    flex-basis: 67%;
+    padding-left: 5%;
+    padding-top: 0 !important;
+    flex-wrap: wrap;
 }
 .main-landing-page {
     overflow: hidden;
