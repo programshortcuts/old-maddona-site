@@ -28,10 +28,19 @@
     flex-direction: column;
     justify-content: flex-end;
 }
-.mobile-header-nav>ul>li#contactMenuLi{
+
+.social-media-container {
     /* justify-self: flex-start; */
+    display: flex;
+    flex-direction: column;
 }
+
 .mobile-header-nav>ul>li > a{
-    display: inline-block;
+    display: flex;
+    /* or inline-flex */
+    align-items: center;
+    justify-content: center;
+    
+        
     
 }
