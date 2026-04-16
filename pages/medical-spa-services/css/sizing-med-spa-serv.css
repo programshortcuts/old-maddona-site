@@ -4,11 +4,7 @@ section>.content>.video-wrapper {
     width: fit-content;
     height: fit-content;
 }
-.section {
-    max-height: 100vh;
-    overflow: hidden;
-    overflow-y: scroll;
-}
+
 .img-wrapper img {
     max-height: 120px;
 }
@@ -16,4 +12,13 @@ section>.content>.video-wrapper {
 .section-title img {
     width: 80px;
     height: auto;
+}
+.section {
+    max-height: 100vh;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.section button.section-title{
+    background-color: inherit;
+    border: none;
 }

@@ -1,13 +1,12 @@
 /* spacing-med-spa-serv.css */
-.med-spa-serv-container > .page-container{
-    padding-top: 40%;
-    margin-top: 50%;
-    background-color: blue !important;
+.page-container.med-spa-serv-container {
+    /* padding-top: 8%; */
+    margin: 0 2.5%;
 }
 .section {
-    /* border: 25px solid orange; */
-    /* padding-top: 1.25rem; */
-    /* padding-bottom: .5rem; */
-    padding-left: 0;
-    background-color: blue;
+    margin: 1% 0%;
+}
+.section > .content{
+    margin: 5% 2%;
+    /* margin: 5% 2%; */
 }

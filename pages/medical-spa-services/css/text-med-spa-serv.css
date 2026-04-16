@@ -8,19 +8,20 @@
     font-weight: 600;
 }
 
-.med-spa-serv-container>.section .section-title {
-    background-color: inherit;
-    background-color: blue !important;
-    border: none;
-    letter-spacing: 20%;
-    font-size: 1.19rem;
-    text-decoration: none;
-}
+
 
 .more-info-links button {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-article>p,
-section>p {
+article>p {
      font-family: Arial, Helvetica, sans-serif;
+ }
+ section button.section-title{
+    font-size: 1.3rem !important;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: inherit;
+    border: none;
+    letter-spacing: 20%;
+        
+    text-decoration: none;
  }

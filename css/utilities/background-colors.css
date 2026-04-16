@@ -9,7 +9,7 @@
 }
 body,
 .page-wrapper{
-    /* background-color: var(--bg-clr); */
+    background-color: var(--bg-clr);
 }
  section,
  article {
@@ -21,8 +21,14 @@ body,
 .animation-container #canvas{
     background-color: rgba(0,0,0,0);
 }
-.mobile-header-nav {
+.mobile-header-nav > ul{
+    background-color: inherit 
+}
+.mobile-header-nav > ul{
     background-color: var(--bg-clr);
+}
+.mobile-header-nav > ul > li#contactMenuLi{
+    background-color: inherit !important
 }
 .more-info-links > button{
     /* background-color: whitesmoke; */
