@@ -1,0 +1,20 @@
+/* layout-contact.css */
+.contact-
+.address-num-container {
+    border-right: 1px solid black;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 4% 1%;
+    border: 1px solid black;
+}
+.contact-container > .contact-item{
+    flex-basis: 50%;
+}
+.social-media-email-container {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5%;
+}

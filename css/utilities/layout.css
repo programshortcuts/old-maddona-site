@@ -40,10 +40,3 @@
     align-items: center;
     justify-content: center;
 }
-
-
-.social-media-email-container{
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 5%;
-}
