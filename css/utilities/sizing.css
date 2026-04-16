@@ -9,7 +9,6 @@
 }
 .main-landing-page{
     /* min-height: 200vh; */
-    height: 100vh;
     
 }
 .page-header-logos {
@@ -34,6 +33,10 @@
 .fa-facebook {
 
     font-size: 3rem;
+}
+/* home styles */
+.home-page-container {
+    height: 100vh;
 }
 .mobile-header-nav {
     width: 100%;
