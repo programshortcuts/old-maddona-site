@@ -1,0 +1,9 @@
+/* position-contact.css */
+
+.animation-container {
+    position: absolute;
+    right: 50%;
+    border: 1px solid black;
+    width: 50%;
+    z-index: 101;
+}
