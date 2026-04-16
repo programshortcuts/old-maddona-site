@@ -1,9 +1,7 @@
 /* responsive.css */
 @media screen and (min-width:533px) {
-.mobile-header-nav>ul {
-    justify-content: flex-end !important;
-    list-style: square !important;
-}
+.mobile-header-nav ul {
+        padding-top: 2%;}
 .mobile-header-nav>ul>li {
     justify-content: flex-end;
     align-items: flex-end;
@@ -57,11 +55,11 @@
         }
     
     .mobile-header-nav ul {
-        margin-top: 2%;
+        padding-top: 2%;
             list-style: circle !important;
     }
     .mobile-header-nav ul > li{
-        margin-top: 2%;
+        /* margin-top: 2%; */
         list-style: circle !important;
     }
     .mobile-header-nav ul > li > a{
