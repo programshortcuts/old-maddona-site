@@ -2,13 +2,10 @@
 .page-wrapper {
     display: flex;
     flex-direction: column;
-    /* overflow: hidden; */
-    /* overflow-y: scroll; */
 }
 .page-header {
     display: flex;
     justify-content: space-between;
-    /* justify-content: space-around; */
 }
 .main-landing-page {
     overflow: hidden;
@@ -22,8 +19,8 @@
 }
 .mobile-header-nav>ul {
     display: flex;
-    /* align-items: flex-start; */
-    align-items: center;
+    align-items: flex-start;
+    /* align-items: center; */
 }
 .mobile-header-nav>ul>li {
     flex-basis: 25%;

@@ -1,5 +1,14 @@
 /* responsive.css */
+@media screen and (max-width:532px) {
+    .page-header {
+        font-size: 50%;
+    }
+}
 @media screen and (max-width:500px) {
+    .page-header{
+        background-color: var(--bg-clr) !important;
+        z-index: 2;
+    }
     .mobile-header-nav {
         background-color: var(--bg-clr);
         position: fixed;
@@ -11,15 +20,15 @@
         height: 80px;
         z-index: 10;
     }
-        .mobile-header-nav > ul {
-            align-items: flex-start;
-            padding-top: 2%;
-        }
-        .mobile-header-nav > ul > li > a{
-            border-top: 1px solid black;
-            border-right: 1px solid black;
-            border-inline-end-width: 2px black;
-            border-radius: 2px;
-            width: 100%;
-        }
+    .mobile-header-nav > ul {
+        align-items: flex-start;
+        padding-top: 2%;
+    }
+    .mobile-header-nav > ul > li > a{
+        border-top: 1px solid black;
+        border-right: 1px solid black;
+        border-inline-end-width: 2px black;
+        border-radius: 2px;
+        width: 100%;
+    }
 }
