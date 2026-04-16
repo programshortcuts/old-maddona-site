@@ -1,5 +1,10 @@
-
-.home-page-container > .home-page-header{
-    width: 20%;
-    
+/* sizing-home.css */
+.home-page-container {
+}
+.mission-state .home-page-header{
+    width: 45%;
+}
+.home-page-container .animation-container {
+    width: 10%;
+    border: 1px solid blue;
 }

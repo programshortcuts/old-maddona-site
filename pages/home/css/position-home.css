@@ -1,16 +1,21 @@
-.contact-page-container{
-    position: relative;
+/* positin-home.css */
+.home-page-container{
 }
-.home-page-container > .home-page-header{
+.mission-state > .home-page-header{
     float: left;
 }
+.home-page-container .animation-container::after,
+.mission-state>.home-page-header::after{
+    content: "";
+    display: block;
+    clear: both;
+}
 .home-page-container .animation-container {
-    /* position: flo; */
-    float: right !important;
     width: 45%;
+    /* position:fixed; */
+    float: right ;
+    top: 50%;
     /* top: 0; */
-    
-    /* border: 1px solid black; */
-    /* width: 50%; */
-    /* z-index: 101; */
+    right: 0;
+   
 }

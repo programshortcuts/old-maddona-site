@@ -1,6 +1,7 @@
 /* spacing-home.css */
-/* 
-} */
+.home-page-container{
+    margin: 0 10%;
+}
 .address-num-container {
     /* margin-top: 1%; */
 }

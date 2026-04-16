@@ -1,7 +1,7 @@
 /* position.css */
 
 .page-wrapper{
-    /* position: relative; */
+    position: relative;
 }
 .page-header{
     position: sticky;
