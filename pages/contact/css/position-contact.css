@@ -2,7 +2,8 @@
 
 .contact-page-container .animation-container {
     position: absolute;
-    right: 50%;
+    right: 20%;
+    top: 40%;
     border: 1px solid black;
     width: 50%;
     z-index: 101;

@@ -13,8 +13,19 @@
 .contact-container > .contact-item{
     flex-basis: 50%;
 }
-.social-media-email-container {
+.social-media-email-container{
+    width: 100%;
     display: flex;
-    justify-content: flex-end;
-    padding-right: 5%;
+    flex-direction: column;
+}
+.social-media-container {
+    display: flex;
+    /* justify-content: flex-end; */
+    /* padding-right: 5%; */
+    width: 100%;
+}
+.social-media-container > .social-media-item {
+    flex-basis: 40%;
+    width: 50%;
+    border: 1px solid magenta;
 }
