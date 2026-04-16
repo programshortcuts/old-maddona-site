@@ -42,7 +42,6 @@ section#botoxAndFillers {
 }
 .mobile-header-nav ul li {
     /* border-top: 1px solid black; */
-    border-right: 1px solid black;
 }
 
 .mobile-header-nav ul li#contactMenuLi>.social-media-container>* {

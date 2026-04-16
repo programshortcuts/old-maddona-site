@@ -16,6 +16,10 @@
             padding-top: 2%;
         }
         .mobile-header-nav > ul > li > a{
+            border-top: 1px solid black;
+            border-right: 1px solid black;
+            border-inline-end-width: 2px black;
+            border-radius: 2px;
             width: 100%;
         }
 }
