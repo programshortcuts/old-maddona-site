@@ -33,3 +33,7 @@ body,
     background-color: var(--bg-clr);
     
 }
+
+.cat-title{
+    background-color: inherit;
+}

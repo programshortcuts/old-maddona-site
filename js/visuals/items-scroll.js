@@ -28,7 +28,7 @@ export function initItemsScroll() {
                 itemTop - (containerHeight / 2) + (itemHeight / 2);
 
             container.scrollTo({
-                top: targetScroll,
+                top: targetScroll - 100,
                 behavior: "smooth",
             });
 

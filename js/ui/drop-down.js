@@ -3,7 +3,7 @@ let lastClickedDrop
 export function initDropDown() {
     const dropDowns = document.querySelectorAll('.drop-down')
     const downs = document.querySelectorAll('.downs')
-    const sectionTitles = document.querySelectorAll('.section-title')
+    // const sectionTitles = document.querySelectorAll('.section-title')
     dropDowns.forEach(el => {
         // SUPER IMPORTANT 
         el.removeEventListener('click', toggleContent) // ✅ prevent stacking
@@ -18,9 +18,24 @@ export function initDropDown() {
         e.preventDefault()
         e.stopPropagation()
 
+        const catTitle = e.target.closest('.cat-title')
         const productTitle = e.target.closest('.product-title')
         const sectionTitleDropDown = e.target.closest('.section-title.drop-down')
 
+        // 🟣 CAT DROPDOWN
+        if (catTitle) {
+            const container = productTitle.closest('.cat')
+            console.log(container)
+            if (!container) return
+
+            const downs = container.querySelector('.products-container.downs')
+
+            console.log(downs)
+            if (!downs) return
+            downs.classList.toggle('hide')
+
+            return
+        }
         // 🟣 PRODUCT DROPDOWN
         if (productTitle) {
             const productsContainer = productTitle.closest('.products-container')

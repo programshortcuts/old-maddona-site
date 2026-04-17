@@ -1,38 +1,15 @@
 /* animations/items-scroll.css */
-.item:focus{
-    outline: none;
-    scroll-margin: 0px;
-    padding: 2%;
-    border: 1px solid blue;
-}
+
 .clicked-item{
     /* border: 10px solid red; */
     /* padding:2% */
 }
-.items-container {
-    display: flex;
-    gap: 16px;
-    scroll-behavior: smooth;
-    overflow-x: auto;
-    /* 🔥 REQUIRED for real scrolling */
-    -webkit-overflow-scrolling: touch;
-    /* 🔥 iOS momentum */
-    scroll-padding-inline: 0px;
-}
-.items-container::-webkit-scrollbar {
-    display: none;
-}
+
+
 .items-container:active {
     cursor: grabbing;
 }
 
-.item {
-    scroll-snap-align: start;
-    flex: 0 0 auto;
-    scroll-snap-align: start;
-    width: 220px;
-    /* adjust to your design */
-}
 /* optional: hide scrollbar (Apple-style clean look) */
 .items-container::-webkit-scrollbar {
     display: none;
@@ -61,12 +38,23 @@
 
 .item:focus {
     outline: none;
+    padding: 1%;
     scroll-margin: 50%;
     scroll-margin-block: 50px;
     /* 👈 gives breathing room */
+    transition: all .3s;
+    border-radius: 4px;
+    box-shadow: 0 0 1px 1px lightblue;
+    border: 1px solid blue
 }
 .item {
+    scroll-snap-align: start;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    width: 220px;
+    transition: all .3s;
+    /* adjust to your design */
     /* vertical space */
     scroll-margin-inline: 40px;
-    /* horizontal space */
+    /* horizontal space */ 
 }

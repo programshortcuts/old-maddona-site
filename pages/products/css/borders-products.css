@@ -1,5 +1,8 @@
 /* spacing-products.css */
-
+.products-title {
+    border: none;
+    
+}
 .products-content {
     border-right: none;
 }
