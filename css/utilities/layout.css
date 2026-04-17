@@ -19,9 +19,7 @@
     overflow: hidden;
     overflow-y: scroll;
 }
-.hide {
-    display: none;
-}
+
 .social-media-container {
     display: flex;
     flex-direction: column;

@@ -63,3 +63,6 @@
 .error-message {
     color: red;
 }
+.hide {
+    display: none;
+}

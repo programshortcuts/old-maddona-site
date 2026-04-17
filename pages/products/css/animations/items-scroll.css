@@ -20,13 +20,9 @@
     scroll-padding-inline: 0px;
     
 }
-.items-container {
-}
-
 .items-container::-webkit-scrollbar {
     display: none;
 }
-
 .items-container:active {
     cursor: grabbing;
 }
@@ -35,16 +31,13 @@
     scroll-snap-align: start;
     flex: 0 0 auto;
     scroll-snap-align: start;
-
     width: 220px;
     /* adjust to your design */
 }
-
 /* optional: hide scrollbar (Apple-style clean look) */
 .items-container::-webkit-scrollbar {
     display: none;
 }
-
 .items-container {
     scrollbar-width: none;
 }

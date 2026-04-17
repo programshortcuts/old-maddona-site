@@ -1,4 +1,4 @@
-/* layout-products */
+/* layout-products.css */
 .alpha-list {
     display: flex;
 }
@@ -35,12 +35,42 @@
     align-items: center;
     gap: 5%;
 }
-.filter-nav{
+.products-content{
     display: flex;
-    align-items: flex-end;
-    background-color: blue !important;
-}
-.products-content >.filter-nav> button{
-    background-color: blue !important;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* align-items: center; */
 
+    width: 100%;
+    padding: 0.5rem 1rem;
+    /* background: white; */
+    /* border-bottom: 1px solid #ddd; */
+    /* background-color: blue !important; */
+}
+
+.filter-nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    padding: 0.75rem 1rem;
+
+    background: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.filter-nav button.filter-item {
+    flex: 1;
+    max-width: 120px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0.5rem 0.75rem;
 }

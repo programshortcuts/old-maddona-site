@@ -79,7 +79,7 @@ export function initItemsScroll() {
             e.currentTarget.classList.toggle('clicked-item');
             scrollToItem(e.currentTarget);
         }
-        console.log(key)
+        // console.log(key)
     };
 
     allItems.forEach(item => {

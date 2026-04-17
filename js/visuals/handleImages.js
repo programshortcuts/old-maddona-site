@@ -26,7 +26,7 @@ export function initImageHandling(){
         })    
     }
     function handleImgColors(e){
-        console.log('handle img', e.target)
+        // console.log('handle img', e.target)
         const section = e.target.closest('.section')
         if(!section) return
         const img = section.querySelector('content > img')

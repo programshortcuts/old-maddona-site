@@ -9,11 +9,11 @@ export function initDropDown() {
         el.removeEventListener('click', toggleContent) // ✅ prevent stacking
         el.addEventListener('click', toggleContent)
     })
-    sectionTitles.forEach(el => {
-        // SUPER IMPORTANT 
-        el.removeEventListener('click', toggleContent) // ✅ prevent stacking
-        el.addEventListener('click', toggleContent)
-    })
+    // sectionTitles.forEach(el => {
+    //     // SUPER IMPORTANT 
+    //     el.removeEventListener('click', toggleContent) // ✅ prevent stacking
+    //     el.addEventListener('click', toggleContent)
+    // })
     function toggleContent(e) {
         e.preventDefault()
         e.stopPropagation()
@@ -27,9 +27,10 @@ export function initDropDown() {
             if (!productsContainer) return
 
             const downs = productsContainer.querySelector('.products-content.downs')
+            console.log(downs)
             if (!downs) return
-
             downs.classList.toggle('hide')
+
             return
         }
 
