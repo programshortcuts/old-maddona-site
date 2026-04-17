@@ -1,6 +1,7 @@
 /* layout.css */
 .page-wrapper {
     display: flex;
+    overflow-x: hidden;
     flex-direction: column;
 }
 .page-header {

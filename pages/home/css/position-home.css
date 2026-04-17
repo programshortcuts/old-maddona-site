@@ -1,10 +1,11 @@
 /* position-home.css */
-.mission-state {
+bio,
+article.mission-state {
     position: relative;
 }
-.mission-state >.home-page-header{
+.bio >.home-page-header{
     /* position: relative; */
-    float: left;
+    float: right;
 }
 .mission-state > .animation-container {
     float: right;
@@ -15,7 +16,7 @@
     /* z-index: 101; */
 }
 .home-page-container .animation-container::after,
-.mission-state >.home-page-header::after{
+.home-page-header::after{
     content: "";
     display: block;
     clear: both;
