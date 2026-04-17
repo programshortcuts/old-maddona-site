@@ -32,6 +32,7 @@
 
 /* contact-styles */
 /* @import url('../pages/contact/css/contact-styles.css'); */
+@import url('../pages/contact/css/borders-contact.css');
 @import url('../pages/contact/css/contact-form.css');
 @import url('../pages/contact/css/layout-contact.css');
 @import url('../pages/contact/css/position-contact.css');

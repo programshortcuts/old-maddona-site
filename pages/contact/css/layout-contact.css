@@ -1,7 +1,7 @@
 /* layout-contact.css */
 .contact-
 .address-num-container {
-    border-right: 1px solid black;
+    display: flex;
 }
 
 .contact-container {
@@ -13,7 +13,7 @@
 }
 .form-contact-container {
 }
-.social-media-container {
+.social-media-email-container .social-media-container {
     display: flex;
     flex-direction: row;
     /* SIDE BY SIDE */
@@ -22,13 +22,13 @@
 }
 
 /* each item takes equal space */
-.social-media-item-lg {
+.social-media-email-container .social-media-item-lg {
     flex: 1;
     display: flex;
 }
 
 /* make anchor fill full box */
-.social-media-item-lg a {
+.social-media-email-container .social-media-item-lg a {
     display: flex;
     /* control icon box size here */
     justify-content: center;
@@ -37,7 +37,7 @@
 }
 
 /* SVG fills anchor */
-.social-media-item-lg svg {
+.social-media-email-container .social-media-item-lg svg {
     /* optional cap so it doesn't explode */
     display: block;
 }

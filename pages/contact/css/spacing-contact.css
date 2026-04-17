@@ -1,4 +1,8 @@
 /* spacing-contact.css */
+.contact-page-container article {
+    padding: 5%;
+    padding-top: 5%;
+}
 .contact-container{
-    margin-top: 25%;
+    margin-top: 15%;
 }
