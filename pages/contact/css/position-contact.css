@@ -3,6 +3,7 @@
 .contact-page-container .animation-container {
     position: fixed;
     right: 0%;
+    bottom: 0;
     /* top: 40%; */
     /* width: 50%; */
     z-index: 1

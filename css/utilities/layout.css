@@ -21,10 +21,7 @@
     overflow-y: scroll;
 }
 
-.social-media-container {
-    display: flex;
-    flex-direction: column;
-}
+
 .mobile-header-nav {
     display: inline;
 }
@@ -44,4 +41,9 @@
     /* or inline-flex */
     align-items: center;
     justify-content: center;
+}
+
+.social-media-container {
+    display: flex;
+    flex-direction: column;
 }
