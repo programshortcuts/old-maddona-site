@@ -42,8 +42,9 @@
 }
 
 .items-container.sort {
+    width: 90vw;
     flex-wrap: wrap;
-    overflow-x: hidden;
+    overflow-x: scroll;
     overflow-y: auto;
     max-height: 500px;
     /* adjust */
@@ -55,12 +56,12 @@
 
 .items-container.sort .item {
     scroll-snap-align: start;
-        width: 150px;
+    width: 180px;
 }
 
 .item:focus {
     outline: none;
-    scroll-margin: 20px;
+    scroll-margin: 50%;
     /* 👈 gives breathing room */
 }
 .item {
