@@ -1,5 +1,7 @@
 /* sizing-med-spa-serv.css */
-
+#botoxAndFillers {
+    min-height: 12vh;
+}
 section>.content>.video-wrapper {
     width: fit-content;
     height: fit-content;

@@ -16,10 +16,7 @@
     padding-top: 0 !important;
     flex-wrap: wrap;
 }
-.main-landing-page {
-    overflow: hidden;
-    overflow-y: scroll;
-}
+
 
 
 .mobile-header-nav {
@@ -46,4 +43,9 @@
 .social-media-container {
     display: flex;
     flex-direction: column;
+}
+
+.main-landing-page {
+    overflow: hidden;
+    overflow-y: scroll;
 }

@@ -43,13 +43,7 @@
 @import url('../pages/contact/css/responsive-contact.css');
 
 
-/* home-styles */
-@import url('../pages/home/css/borders-home.css');
-@import url('../pages/home/css/layout-home.css');
-@import url('../pages/home/css/position-home.css');
-@import url('../pages/home/css/spacing-home.css');
-@import url('../pages/home/css/sizing-home.css');
-@import url('../pages/home/css/txt-home.css');
+
 
 
 /* products-styles */
@@ -62,6 +56,15 @@
 /* @import url('../pages/products/css/spacing-products.css'); */
 /* @import url('../pages/products/css/txt-products.css'); */
 @import url('../pages/products/css/responsive-products.css');
+
+
+/* home-styles */
+@import url('../pages/home/css/borders-home.css');
+@import url('../pages/home/css/layout-home.css');
+@import url('../pages/home/css/position-home.css');
+@import url('../pages/home/css/spacing-home.css');
+@import url('../pages/home/css/sizing-home.css');
+@import url('../pages/home/css/txt-home.css');
 
 @import url('responsive.css');
 @import url('../pages/home/css/responsive-home.css');

@@ -14,9 +14,11 @@ body,
     background-color: var(--bg-clr);
     
 }
+
 .animation-container            { background-color: rgba(0,0,0,0);}
 .animation-container #canvas    { background-color: rgba(0,0,0,0);}
 
+.page-header,
 .mobile-header-nav,
 .mobile-header-nav > ul,
 .mobile-header-nav > ul > li,

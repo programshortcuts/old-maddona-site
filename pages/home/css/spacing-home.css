@@ -1,13 +1,13 @@
 /* spacing-home.css */
-.home-page-container{
-    /* padding-top: 25%; */
+.page-container.home-page-container{
+    padding-top: 15% !important;
 }
 .address-num-container {
     /* margin-top: 1%; */
 }
 .home-page-header {
     padding-top:  1%;
-    padding-left: 3%;
+    /* padding-left: 3%; */
     margin-top: 2%;
     margin-right: 2%;
 }
@@ -23,4 +23,7 @@
 .home-page-container .home-page-item>.section>.content>.img-wrapper {
     margin-right: 15px;
     /* margin-bottom: 10px; */
+}
+.main-landing-page {
+    padding-bottom: 30%;
 }
