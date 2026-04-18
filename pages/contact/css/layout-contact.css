@@ -1,16 +1,5 @@
 /* layout-contact.css */
-.contact-
-.address-num-container {
-    display: flex;
-}
 
-.contact-container {
-    display: flex;
-    flex-direction: row-reverse;
-    padding: 4% 1%;
-    border: 1px solid black;
-    flex-basis: 20%;
-}
 .form-contact-container {
 }
 .social-media-email-container .social-media-container {
@@ -40,4 +29,21 @@
 .social-media-email-container .social-media-item-lg svg {
     /* optional cap so it doesn't explode */
     display: block;
+}
+
+
+
+.contact-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 4% 1%;
+    border: 1px solid black;
+    flex-basis: 20%;
+}
+.contact-container .address-num-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
