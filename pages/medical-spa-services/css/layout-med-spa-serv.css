@@ -1,29 +1,20 @@
 /* layout-med-spa-serv.css */
 
-.med-spa-serv-container > .page-container{
-    
-}
-
 .med-spa-serv-container .section>.content>iframe {
     float: left;
 }
 .med-spa-serv-container .section>.content>.img-wrapper {
     float: right;
 }
-
 .med-spa-serv-container .section.colored .more-info-links {
     display: flex;
     gap: 1%;
     justify-content: flex-end;
 }
-
 .med-spa-serv-container .section .more-info-links {
     display: none;
 }
-
-
 .section#bioHormoneReplacement >button.section-title {
-    position: relative;
     display: flex;
     /* flex-wrap: wrap; */
     flex-direction: column;
@@ -37,12 +28,8 @@
     width: 100%;
 }
 .section#bioHormoneReplacement>button.section-title > img{
-    position: absolute;
     width: 200px;
     height: 100px;
-    z-index:10;
-    right: 0;
-    bottom: 10%;
 }
 
 .med-spa-serv-container section::after {

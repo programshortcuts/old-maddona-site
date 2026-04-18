@@ -7,7 +7,7 @@
     filter: saturate(1);
     filter: brightness(1);
 } */
-section#botoxAndFillers {
+.section#botoxAndFillers {
     background-image: url('../../pages/medical-spa-services/media/botox-filler.webp');
     background-repeat: no-repeat;
     background-position-y: 50%;

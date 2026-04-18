@@ -1,5 +1,5 @@
 /* imgs.css */
-section .img-wrapper > img{
+.section .img-wrapper > img{
     filter: grayscale(100%);
 }
 #officeImg{
