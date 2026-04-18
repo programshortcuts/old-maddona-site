@@ -1,11 +1,21 @@
 /* responsive.css */
+@media screen and (min-width:723px) {
+    .main-landing-page {
+        margin-top: -5%;
+    }
+    .home-page-header {
+        float: left;
+        width: 45%;
+    }   
+}
 @media screen and (min-width:533px) {
+    .main-landing-page {
+        padding-top: 0%;
+    }
     .page-title-container>h1 {
             margin-top: 3%;
         }
-    .main-landing-page {
-            padding-top: 20%;
-        }
+    
     .mobile-header-nav ul {
         padding-top: 0%;
     }
@@ -87,7 +97,9 @@
 }
 
 @media screen and (max-width:500px) {
-
+    .home-page-header {
+        padding-top: 5%;
+    }
     .mobile-header-nav,
     .mobile-header-nav>ul,
     .mobile-header-nav>ul>li,
