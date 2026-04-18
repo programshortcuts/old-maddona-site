@@ -93,7 +93,10 @@
 }
 
 @media screen and (max-width:500px) {
-
+    .page-header {
+            background-color: var(--bg-clr) !important;
+            z-index: 2;
+        }
     .mobile-header-nav,
     .mobile-header-nav>ul,
     .mobile-header-nav>ul>li,
@@ -103,10 +106,7 @@
     #contactMenuNavLink>.social-media-container {
         padding-left: 0 !important; 
     }
-    .page-header {
-        background-color: var(--bg-clr) !important;
-        z-index: 2;
-    }
+    
 
     .mobile-header-nav {
         background-color: var(--bg-clr);
