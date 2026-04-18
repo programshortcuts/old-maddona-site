@@ -1,4 +1,7 @@
 /* spacing-products.css */
+.products-page-container {
+    padding-top: 20% ;
+}
 .products-container {
     margin-bottom: 5%;
 }

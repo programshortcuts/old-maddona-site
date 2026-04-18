@@ -29,10 +29,11 @@
 
  .home-page-header>.address-num-container {
      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     font-weight: 1000;
      font-size: 1.2rem;
  }
 .home-page-container p{
-     font-weight: 800;
+     font-weight: 500;
      font-family: Arial, Helvetica, sans-serif;
      font-size: .8rem;
  }

@@ -11,12 +11,12 @@
 .img-wrapper img {
     border-radius: 7px;
 }
-section iframe {
-    border: 1px solid black;
+.section iframe {
+    /* border: 1px solid black; */
     border-radius: 8px;
 }
 .google-reviews {
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 .info-contact {
     border-radius: 6px;

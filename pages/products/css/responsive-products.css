@@ -2,25 +2,8 @@
 
 @media screen and (max-width:533px) {
 
-    .products-page-container{
-        padding: 5% !important;
-    }
-    .products-page-container>article.mission-state>p {
-        padding: 1%;
-        padding-top: 5%;
-        margin-top: 2%;
-    }
+    
 }
 @media screen and (min-width:535px) {
-    .products-page-container {
-        margin: 0 4%;
-    }
-    .products-container{
-        margin-left:1%;
-    }
-    .products-page-container>article.mission-state>p {
-            padding: 1%;
-            padding-top: 5%;
-            margin-top: 2%;
-    }
+
 }
