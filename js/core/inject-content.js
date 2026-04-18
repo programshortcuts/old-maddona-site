@@ -13,8 +13,8 @@ if (!mainLandingPage) {
 }
 const DEFAULT_PAGE =
 // "pages/home/home.html";
-// "pages/medical-spa-services/medical-spa-services.html";
-"pages/products/products.html";
+"pages/medical-spa-services/medical-spa-services.html";
+// "pages/products/products.html";
     // "pages/contact/contact.html";
 const pageCache = new Map()
 document.addEventListener("submit", (e) => {
