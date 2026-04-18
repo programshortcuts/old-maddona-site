@@ -1,7 +1,8 @@
 // inject-content.js
 import { isSafePath } from "./security-utils.js";
 // import { maybeInitAnimations } from "../app.js";
-import { initDropDown } from "../ui/drop-down.js";
+// import { initDropDown } from "../ui/drop-down.js";
+import { initSectionsDropDown } from "../ui/sections-drop-downs.js";
 import { initFilterSortItems } from "../ui/filter-sort-items.js";
 import { initImageHandling } from "../visuals/handleImages.js";
 import { initProdImgHandle } from "../visuals/handleProductImgs.js";
@@ -94,6 +95,6 @@ export async function injectPage(href){
     initImageHandling()
     initProdImgHandle()
     initItemsScroll()
-    initDropDown()   
+    initSectionsDropDown()   
     initFilterSortItems()
 }

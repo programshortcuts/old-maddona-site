@@ -1,17 +1,20 @@
 /* position.css */
 
 .page-wrapper{
-    /* position: relative; */
+    position: relative;
 }
 .page-header{
-    position: sticky;
-    top: -1%;
+    /* position: sticky; old but doens't work??*/
+    position: fixed;
+    top: 0%;
     z-index: 10
 }
 .mobile-header-nav {
-    position: sticky;
+    /* position: sticky; old but doens't work??*/
+    position: fixed;
     top: 8%;
     z-index: 100;
+        
 }
 .mobile-header-nav > ul {
     /* position: relative; */
