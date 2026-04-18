@@ -34,3 +34,6 @@ article.mission-state {
 .home-page-container .section>.content img {
     display: block;
 }
+.home-page-container .section#longevitySupport > .content > .img-wrapper{
+    float: right !important;
+}
