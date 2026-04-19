@@ -1,19 +1,15 @@
 .mobile-header-nav{
     font-size: 2rem;
 }
-#sideNavBtn{
 
-    position: absolute;
-    top: 0%;
-}
 .mobile-header-nav ul{
     list-style-type: none;
 }
 
 .mobile-header-nav li a{
+    
     /* border: 3px solid blue; */
-    color: var(--font-p-clr);
-    text-align: center;
+    
     /* height: fit-content; */
     text-decoration: none;
 }

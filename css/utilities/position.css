@@ -16,3 +16,7 @@
     z-index: 2;
     top: 5%;
 }
+#sideNavBtn {
+    position: absolute;
+    top: 0%;
+}

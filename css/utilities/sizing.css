@@ -27,3 +27,8 @@
     max-height: 89px;
     transform: scale(1);
 }
+
+section img,
+article img {
+    max-width: 200px;
+}

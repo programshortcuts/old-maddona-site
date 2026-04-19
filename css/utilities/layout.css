@@ -23,6 +23,7 @@
 }
 .mobile-header-nav li a {
     display: inline-block;
+    text-align: center;
 }
 .mobile-header-nav ul li#contactNavLink {
     /* flex-basis: 20% !important; */
