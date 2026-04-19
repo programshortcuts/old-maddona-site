@@ -7,7 +7,6 @@ export function initToggleNav() {
         if(key == 'enter'){
             const mobileHeaderNavUl = document.querySelector('.mobile-header-nav > ul') 
             mobileHeaderNavUl.classList.toggle('hide')
-            console.log()
         }
     });
 }

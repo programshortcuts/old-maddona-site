@@ -1,6 +1,6 @@
 /* borders.css */
 .page-header {
-    /* border-bottom: 1px solid black; */
+    border-bottom: 1px solid black;
 }
 #mdvipImgLink {
     border-radius: 8px;
