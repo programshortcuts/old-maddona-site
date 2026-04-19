@@ -1,5 +1,5 @@
 /* sizing.css */
-img{
-    max-width: 50px;
-    max-height: 50px;
+.main-landing-page img{
+    max-width: 150px;
+    max-height: 150px;
 }
