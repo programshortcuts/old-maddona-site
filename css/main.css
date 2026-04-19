@@ -22,6 +22,10 @@
 
 
 
+/* bookins-styles */
+@import url('../pages/bookings/css/bookings.css');
+@import url('../pages/bookings/css/layout-bookings.css');
+
 /* contact-styles */
 /* @import url('../pages/contact/css/contact-styles.css'); */
 @import url('../pages/contact/css/colors-contact.css');

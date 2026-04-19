@@ -12,6 +12,8 @@
 .page-header
 {
     background-color: var(--bg-clr) ;
+    background-color: lightskyblue;
+    
 }
 
 .animation-container            { background-color: rgba(0,0,0,0);}

@@ -1,6 +1,6 @@
 // inject-content.js
-
 import { isSafePath } from "./security-utils.js";
+import { initBookingForm } from "./bookings.js";
 // import { maybeInitAnimations } from "../app.js";
 // import { initDropDown } from "../ui/drop-down.js";
 import { initSectionsDropDown } from "../ui/sections-drop-downs.js";
@@ -14,10 +14,12 @@ if (!mainLandingPage) {
     throw new Error("Missing .main-landing-page in index.html");
 }
 const DEFAULT_PAGE =
-// "pages/home/home.html";
-"pages/medical-spa-services/medical-spa-services.html";
+"pages/home/home.html";
+// "pages/medical-spa-services/medical-spa-services.html";
 // "pages/products/products.html";
     // "pages/contact/contact.html";
+    // "pages/bookings/bookings.html";
+    
 const pageCache = new Map()
 document.addEventListener("submit", (e) => {
     if (e.target.id === "contact-form") {
@@ -40,6 +42,13 @@ export function initInjectContentListeners(){
         injectPage(href);
         
     })
+    document.querySelectorAll("*").forEach(el => {
+        [...el.attributes].forEach(attr => {
+            if (attr.name.startsWith("on")) {
+                console.log("INLINE EVENT:", el, attr);
+            }
+        });
+    });
     
 }
 export async function injectPage(href){
@@ -67,11 +76,11 @@ export async function injectPage(href){
     const doc = parser.parseFromString(html, 'text/html')
 
     // Grab the actual page content
-    const newContent = doc.querySelector(".main-landing-page");
+    const newContent = doc.querySelector(".page-container");
 
 
     if (!newContent) {
-        throw new Error(`Page missing .main-landing-page wrapper: ${href}`);
+        throw new Error(`Page missing .page-container wrapper: ${href}`);
     }
 
     // ✅ Sanitize before injecting
@@ -107,4 +116,9 @@ export async function injectPage(href){
     initSectionsDropDown()   
     initFilterSortItems()
     initToggleNav()
+
+    // ✅ ONLY INIT IF ON BOOKING PAGE
+    if (href.includes("bookings")) {
+        initBookingForm();
+    }
 }
