@@ -4,31 +4,15 @@
     position: relative;
 }
 .page-header{
-    /* position: sticky; old but doens't work??*/
     position: fixed;
-    top: 0%;
-    z-index: 10
+    z-index: 1;
+}
+.page-header img#madonnaShilouetteLogo {
+    position: absolute;
+    right: 0
 }
 .mobile-header-nav {
-    /* position: sticky; old but doens't work??*/
     position: fixed;
-    top: 8%;
-    z-index: 100;
-        
-}
-.mobile-header-nav > ul {
-    /* position: relative; */
-}
-.mobile-header-nav > ul > li{
-    /* position: relative; */
-}
-.mobile-header-nav > ul > li#contactMenuNavLink{
-    position: relative;
-}
-li#contactMenuNavLink > a{
-
-    /* position: fixed; */
-}
-li#contactMenuNavLink > a > .social-media-link-container{
-    /* position: fixed; */
+    z-index: 2;
+    top: 5%;
 }

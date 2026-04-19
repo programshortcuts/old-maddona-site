@@ -1,4 +1,8 @@
-/* background.css */
+/* backgrounds.css */
+:root {
+    /* --bg-clr: rgb(183, 181, 167); */
+    --bg-clr: #ddd;
+}
 /* section#longevityMedicine {
     background-image: url('../../pages/medical-spa-services/media/longetivy-med.jpeg');
     background-repeat: no-repeat;
@@ -23,11 +27,31 @@
     background-position-x: 0%;
     filter: grayscale(50%);
 }
-/* .home-page-item{
-    background-image: url('../../imgs/facebook-page-imgs/spa-lade.jpg');
-    background-repeat: no-repeat;
-    background-position-y: 49%;
-    background-position-x: 0%;
-    filter: grayscale(50%);
-    background-size: 50%;
-} */
+.page-header {
+
+    background-color: var(--bg-clr);
+}
+.page-wrapper
+{
+    background-color: var(--bg-clr);
+}
+
+.animation-container {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.animation-container #canvas {
+    background-color: rgba(0, 0, 0, 0);
+}
+.mobile-header-nav>ul>li,
+.mobile-header-nav>ul>li>a {
+    /* background-color: rgba(0,0,0,0) !important; */
+    /* background-color: blue !important; */
+    /* filter: opacity(1); */
+    /* background-color: var(--bg-clr); */
+
+}
+
+.cat-title {
+    /* background-color: inherit; */
+}

@@ -1,56 +1,34 @@
 /* position.css */
-.home-page-container {
-    position: relative;
-    z-index: 1;
-}
+
 .page-wrapper{
     position: relative;
 }
-
-
-.page-container {
-    position: relative;
-}
-
-.home-page-container .animation-container {
-    position: absolute;
-    z-index: 0;
-    left: 40%;
-    top: 40%;
-    bottom: 0;
-}
-
-.contact-page-container .animation-container {
-    position: absolute;
-    z-index: 0;
-    left: 50%;
-    top: 50%;
-}
-
-
-
-#navBarBtn {
-    position: absolute;
-    bottom: 8%;
-    z-index: 2;
-    right: 91%;
-
-}
-
-.home-page-header {
-    z-index: 1;
-    /* position: absolute  ; */
-    /* position: absolute; */
+.page-header{
+    /* position: sticky; old but doens't work??*/
+    position: fixed;
+    top: 0%;
+    z-index: 10
 }
 .mobile-header-nav {
+    /* position: sticky; old but doens't work??*/
     position: fixed;
-    z-index: 999;
-    bottom: 0;
+    top: 8%;
+    z-index: 100;
+        
 }
-.page-container-title{
-    position: absolute;
-    bottom: -3%;
-    left: 2%;
-    font-size: 1.2rem;
-    z-index: 999
+.mobile-header-nav > ul {
+    /* position: relative; */
+}
+.mobile-header-nav > ul > li{
+    /* position: relative; */
+}
+.mobile-header-nav > ul > li#contactMenuNavLink{
+    position: relative;
+}
+li#contactMenuNavLink > a{
+
+    /* position: fixed; */
+}
+li#contactMenuNavLink > a > .social-media-link-container{
+    /* position: fixed; */
 }

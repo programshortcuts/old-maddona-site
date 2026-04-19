@@ -1,42 +1,29 @@
 
 /* main.css */
 /* @import url('responsive.css'); */
-@import url('components/page-header/page-header.css');
+@import url('components/mobile-header-nav.css');
+@import url('components/page-header.css');
+@import url('components/main-landing-page.css');
 
-@import url('components/mobile-header-nav/mobile-header-nav.css');
-@import url('components/mobile-header-nav/layout-mob-head-nav.css');
-@import url('components/mobile-header-nav/position-mob-head-nav.css');
-@import url('components/mobile-header-nav/sizing-mob-head-nav.css');
-@import url('components/mobile-header-nav/text-mob-head-nav.css');
-
-@import url('components/main-landing-page/main-landing-page.css');
-@import url('components/main-landing-page/layout-main-land-page.css');
-
-
-/* utilities */
-/* @import url('utilities/colors.css'); */
-@import url('utilities/background-colors.css');
+/* @import url('utilities/background-colors.css'); */
+@import url('utilities/backgrounds.css');
 @import url('utilities/layout.css');
 @import url('utilities/sizing.css');
-/* @import url('utilities/text.css'); */
+@import url('utilities/position.css');
+/* @import url('utilities/spacing.css'); */
 
-/* @import url('utilities/backgrounds.css'); */
 /* animations/ */
 /* @import url('visuals/animations.css'); */
 /* @import url('visuals/carousel.css'); */
 /* @import url('imgs.css'); */
 /* @import url('videos.css'); */
 
-
+/* utilities */
 /* @import url('utilities/borders.css'); */
 /* @import url('utilities/display.css'); */
 /* @import url('utilities/effects.css'); */
-
-/* @import url('utilities/position.css'); */
-/* @import url('utilities/spacing.css'); */
-
-
-
+/* @import url('utilities/text.css'); */
+/* @import url('utilities/colors.css'); */
 
 
 
@@ -96,4 +83,6 @@
 .hide {
     display: none !important;
 }
-
+:root {
+    --font-p-clr: rgb(80, 81, 75);
+}

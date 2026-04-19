@@ -1,0 +1,12 @@
+.page-header{    
+    
+    
+    
+    /* background-color: rgba(0,0,0,0) !important; */
+    /* filter: opacity(1); */
+}
+.page-header h1 a{
+    text-decoration: none;
+    color: var(--font-p-clr);
+    font-size: 100%;
+}

@@ -4,3 +4,38 @@
     overflow-x: hidden;
     flex-direction: column;
 }
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.mobile-header-nav ul {
+    display: flex;
+}
+
+.mobile-header-nav li {
+    flex-basis: 20%;
+    /* flex-grow: 1; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.mobile-header-nav li a {
+    display: inline-block;
+}
+.mobile-header-nav ul li#contactNavLink {
+    /* flex-basis: 20% !important; */
+    /* flex-shrink: 1; */
+}
+
+.social-media-link-container {
+    /* background-color: yellow; */
+}
+
+.social-media-link-container>a {
+    /* height: fit-content; */
+    /* display: inline-flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+}
