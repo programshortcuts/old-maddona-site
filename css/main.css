@@ -1,16 +1,19 @@
+
 /* main.css */
 /* @import url('responsive.css'); */
 @import url('components/mobile-header-nav.css');
+@import url('components/page-header.css');
+@import url('components/main-landing-page.css');
 
 
 /* animations/ */
-@import url('visuals/animations.css');
-@import url('visuals/carousel.css');
-@import url('imgs.css');
-@import url('videos.css');
+/* @import url('visuals/animations.css'); */
+/* @import url('visuals/carousel.css'); */
+/* @import url('imgs.css'); */
+/* @import url('videos.css'); */
 
 /* utilities */
-@import url('utilities/borders.css');
+/* @import url('utilities/borders.css'); */
 /* @import url('utilities/display.css'); */
 /* @import url('utilities/effects.css'); */
 /* @import url('utilities/layout.css'); */
@@ -18,9 +21,9 @@
 /* @import url('utilities/spacing.css'); */
 /* @import url('utilities/sizing.css'); */
 /* @import url('utilities/text.css'); */
-@import url('utilities/colors.css');
+/* @import url('utilities/colors.css'); */
 @import url('utilities/backgrounds.css');
-@import url('utilities/background-colors.css');
+/* @import url('utilities/background-colors.css'); */
 
 
 
@@ -80,3 +83,10 @@
 .hide {
     display: none !important;
 }
+:root {
+    --font-p-clr: rgb(80, 81, 75);
+}
+ .home-page-container {
+     border: 100px solid blue !important;
+     background-color: blue !important;
+ }

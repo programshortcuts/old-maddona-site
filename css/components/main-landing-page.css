@@ -1,0 +1,11 @@
+/* main-landing-page.css */
+.main-landing-page{
+    /* position: fixed; */
+    /* top: 10%; */
+    /* padding-top: 20%; */
+    
+}
+ .home-page-container{
+    border: 100px solid blue !important;
+    background-color: blue !important;   
+}

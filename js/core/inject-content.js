@@ -87,7 +87,7 @@ export async function injectPage(href){
     // const cleanHTML = DOMPurify.sanitize(fetchedHtml, {
     //     FORBID_TAGS: ['script']
     // });
-    mainLandingPage.innerHTML = DOMPurify.sanitize(newContent.innerHTML, {
+    mainLandingPage.innerHTML = DOMPurify.sanitize(newContent.outerHTML, {
         ALLOWED_TAGS: [
             'form', 'input', 'textarea', 'label',
             'div', 'p', 'span', 'ul', 'ol', 'li',
@@ -96,7 +96,8 @@ export async function injectPage(href){
             'h1', 'h2', 'h3', 'h4', 'h5', 'h6',
             'a', 'section', 'article', 'header', 'footer',
             'iframe', 'button', 'canvas',
-            'svg', 'path', 'circle', 'g'
+            'svg', 'path', 'circle', 'g',
+            // 'style' // 👈 REMOVE THIS
         ],
         ALLOWED_ATTR: [
             'src', 'href', 'class', 'id', 'alt', 'tabindex',
@@ -104,9 +105,10 @@ export async function injectPage(href){
             'width', 'height', 'viewBox', 'fill', 'd', 'cx', 'cy', 'r',
             'type', 'name', 'value', 'for', 'required', 'action', 'method'
         ],
-        FORBID_TAGS: ['script', 'style'],   // 👈 ADD THIS
+        // FORBID_TAGS: ['script', 'style'],   // 👈 ADD THIS
+        // FORBID_TAGS: ['script'],   // 👈 ADD THIS
 
-        FORBID_ATTR: ['style', 'script', 'onerror', 'onclick', 'onload']
+        // FORBID_ATTR: ['style', 'script', 'onerror', 'onclick', 'onload']
 
     })
     mainLandingPage.scrollTo(0,0)
