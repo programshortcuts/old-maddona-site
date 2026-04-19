@@ -11,7 +11,17 @@
 @import url('utilities/sizing.css');
 @import url('utilities/position.css');
 @import url('utilities/text.css');
-/* @import url('utilities/spacing.css'); */
+@import url('utilities/spacing.css');
+
+
+/* home-styles */
+/* @import url('../pages/home/css/spacing-home.css'); */
+/* @import url('../pages/home/css/borders-home.css'); */
+/* @import url('../pages/home/css/layout-home.css'); */
+/* @import url('../pages/home/css/position-home.css'); */
+/* @import url('../pages/home/css/sizing-home.css'); */
+/* @import url('../pages/home/css/txt-home.css'); */
+
 
 /* animations/ */
 /* @import url('visuals/animations.css'); */
