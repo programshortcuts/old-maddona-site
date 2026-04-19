@@ -38,12 +38,17 @@ export function initLetterNav({
 
         const key = e.key.toLowerCase();
         if (!/^[a-z]$/.test(key)) return;
+// Make different strings to append to selectors to decrease it .length()
+        // const navSelectors = '#navBtn'
 
-        const selectors = '#submitBtn,.mobile-header-nav > ul > li > a, .page-title, img, iframe, .section-title, #mdvipImgLink, .page-container-title, #navBarBtn, #madonnaMedSpa-address-header, .more-info-links > button, .product-title, .item, #instagramLogo, #facebookLogo,.filter-btn,.sort-btn';
-
+        const selectors = '#sideNavBtn,#submitBtn,.mobile-header-nav > ul > li > a, .page-title, img, iframe, .section-title, #mdvipImgLink, .page-container-title, #navBarBtn, #madonnaMedSpa-address-header, .more-info-links > button, .product-title, .item, #instagramLogo, #facebookLogo,.filter-btn,.sort-btn';
+        
         const allEls = [...document.querySelectorAll(selectors)].filter(isActuallyVisible);
 
         const firstAlpha = (el) => {
+            if (el.getAttribute('aria-label')) {
+                return el.getAttribute('aria-label')[0].toLowerCase();
+            }
             if (el.classList.contains('title-item')) {
                 const item = el.closest('.item');
                 return item?.innerText.trim()[0]?.toLowerCase();
