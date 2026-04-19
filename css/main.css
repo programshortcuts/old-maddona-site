@@ -86,7 +86,3 @@
 :root {
     --font-p-clr: rgb(80, 81, 75);
 }
- .home-page-container {
-     border: 100px solid blue !important;
-     background-color: blue !important;
- }
