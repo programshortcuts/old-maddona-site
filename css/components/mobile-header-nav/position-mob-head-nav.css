@@ -1,0 +1,20 @@
+/* position-mob-head-nav.css */
+.mobile-header-nav {
+    position: fixed;
+    position: sticky;
+    top: 3%;
+    /* top: 5%; */
+}
+
+#sideNavBtn {
+    position: absolute;
+    top: 0%;
+}
+
+.social-media-link-container{
+    position: relative;
+}
+.social-media-link-container>a>svg {
+    position: absolute;
+    right: 10%;
+}

@@ -34,6 +34,7 @@ form-action 'self';
             </div> -->
         </div>
         <nav class="mobile-header-nav">
+            <!-- THIS Inline will bite you with security probably -->
             <svg tabindex="0" id="sideNavBtn" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <line x1="3" y1="6" x2="21" y2="6"></line>
@@ -41,12 +42,11 @@ form-action 'self';
                 <line x1="3" y1="18" x2="21" y2="18"></line>
             </svg>
             <ul>
-                <li><a href="pages/home/home.html" data-link rel="noopener noreferrer">
+                <li><a id="homeNavLink" href="pages/home/home.html" data-link rel="noopener noreferrer">
                         Home</a></li>
-                        
                 <li><a id="medicalSpaServicesNavLink" href="pages/medical-spa-services/medical-spa-services.html" data-link rel="noopener noreferrer">
                         Medical Spa Services</a></li>
-                <li><a href="pages/products/products.html" data-link rel="noopener noreferrer">
+                <li><a id="productsNavLink" href="pages/products/products.html" data-link rel="noopener noreferrer">
                         Products</a>
                     </li>
                 <li id="bookinsNavLink"><a href="pages/bookings/bookings.html" data-link rel="noopener noreferrer">

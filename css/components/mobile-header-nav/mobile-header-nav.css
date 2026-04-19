@@ -1,0 +1,25 @@
+.mobile-header-nav{
+    font-size: 2rem;
+}
+.mobile-header-nav ul{
+    list-style-type: none;
+}
+.mobile-header-nav li a{
+    color: var(--font-p-clr);
+    text-decoration: none;
+    padding-left: 5%;
+}
+.mobile-header-nav li a#productsNavLink {
+    padding-left: 10% ;
+}
+.mobile-header-nav li a#homeNavLink {
+    text-align: center;
+    padding-left: 15%;
+}
+.social-media-link-container > a >svg{
+    transform: scale(1);
+}
+
+
+
+
