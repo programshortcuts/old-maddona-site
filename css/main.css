@@ -1,9 +1,7 @@
 
 /* main.css */
 /* @import url('responsive.css'); */
-@import url('components/mobile-header-nav.css');
-@import url('components/page-header.css');
-@import url('components/main-landing-page.css');
+
 
 @import url('utilities/backgrounds.css');
 @import url('utilities/colors.css');
@@ -16,10 +14,10 @@
 
 /* home-styles */
 /* @import url('../pages/home/css/spacing-home.css'); */
+/* @import url('../pages/home/css/sizing-home.css'); */
 /* @import url('../pages/home/css/borders-home.css'); */
 /* @import url('../pages/home/css/layout-home.css'); */
 /* @import url('../pages/home/css/position-home.css'); */
-/* @import url('../pages/home/css/sizing-home.css'); */
 /* @import url('../pages/home/css/txt-home.css'); */
 
 

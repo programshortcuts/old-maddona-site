@@ -9,4 +9,8 @@ export function initToggleNav() {
             mobileHeaderNavUl.classList.toggle('hide')
         }
     });
+    sideNavBtn.addEventListener('click', (e) => {
+        const mobileHeaderNavUl = document.querySelector('.mobile-header-nav > ul') 
+        mobileHeaderNavUl.classList.toggle('hide')
+    });
 }
