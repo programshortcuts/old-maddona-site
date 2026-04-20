@@ -6,26 +6,24 @@
     filter: saturate(1);
     filter: brightness(1);
 } */
-.section#botoxAndFillers {
-    background-image: url('../../../pages/medical-spa-services/media/botox-filler.webp');
+ .section{
     background-repeat: no-repeat;
     background-position-y: 30%;
     background-position-x: 0%;
-    filter: grayscale(100%);
+    /* filter: grayscale(100%); */
+ }
+.section#botoxAndFillers {
+    background-image: url('../../../pages/medical-spa-services/media/botox-filler.jpg.webp');
+    filter: grayscale(0);
+    background-position-y: 10%;
+    background-size: 190%;
 }
 .section#peptides {
     background-image: url('../../../pages/medical-spa-services/media/peptide.jpeg');
-    background-repeat: no-repeat;
-    background-position-y: 30%;
-    background-position-x: 0%;
-    filter: grayscale(100%);
 }
 .section#IVinfusionTherapy {
     background-image: url('../../../pages/medical-spa-services/media/iv-infusion.jpeg');
-    background-repeat: no-repeat;
-    background-position-y: 30%;
-    background-position-x: 0%;
-    filter: grayscale(100%);
+    filter: grayscale(40%);
 }
 /* .section#microNeedling {
     background-image: url('../../../pages/medical-spa-services/media/microneedling.jpg.webp');
