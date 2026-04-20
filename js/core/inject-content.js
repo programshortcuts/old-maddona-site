@@ -42,9 +42,12 @@ export function initInjectContentListeners(){
         if (!href || href === "#") return;
         e.preventDefault();
         injectPage(href);
+        mainLandingPage.scrollTo(0,0)
+        mainLandingPage.scrollIntoView({behavior:'smooth', 
+            inline:'nearest',
+            block: 'start'})
         if(e.target == lastClickedLink){
             mainLandingPage.focus()
-
             if(pageWrapper.classList.contains('expand')) {
                 pageWrapper.classList.remove('expand')
             }
