@@ -7,13 +7,15 @@ export function initToggleNav() {
     sideNavBtn.addEventListener('keydown', (e) => {
         const key = e.key.toLowerCase()
         if(key == 'enter'){
-            // const mobileHeaderNavUl = document.querySelector('.mobile-header-nav > ul') 
-            pageWrapper.classList.toggle('expand')
-            // imgSmoke.classList.toggle('smoke-img')
+            expandToggle()
         }
     });
     sideNavBtn.addEventListener('click', (e) => {
-        const mobileHeaderNavUl = document.querySelector('.mobile-header-nav > ul') 
-        mobileHeaderNavUl.classList.toggle('expand')
+        // const mobileHeaderNavUl = document.querySelector('.mobile-header-nav > ul') 
+        expandToggle()
+
     });
+    function expandToggle(){
+        pageWrapper.classList.toggle('expand')   
+    }
 }
