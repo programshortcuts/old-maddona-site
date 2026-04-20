@@ -24,6 +24,9 @@
         flex-basis: 90%;
         font-size: .5rem;
     }
+    .mobile-header-nav {
+        font-size: .8rem;
+    }
 }
 
 
