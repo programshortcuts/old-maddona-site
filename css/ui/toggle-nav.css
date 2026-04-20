@@ -1,31 +1,33 @@
 /* toggle-nav.css */
+.page-wrapper.expand #sideNavBtn {
+    /* z-index: 0;  */
+}
 .page-wrapper.expand >.page-header .img-wrapper {
-    position: absolute;
-    right: 0%;
-    z-index: 99 !important;
+    /* position: absolute; */
+    /* right: 0%; */
+    /* z-index: 99 !important; */
 }
 
 .page-wrapper.expand > .mobile-header-nav{
-    height: 60vh !important;
-    position: sticky;
+    height: 20vh !important;
+    /* position: ; */
     z-index: 1;
-    top: 0;
+    /* top: 0; */
     background-color: var(--bg-clr);
     border-bottom: 1px solid black;
     border-radius: 5px;
-    padding-top: 5%;
-    transition: all 800ms;
+    /* padding-top: 5%; */
+    transition: all 400ms;
 }
 
-.page-wrapper.expand>.mobile-header-nav > ul > li{
-    padding-top: 7%;
-    padding-left: 2%;
+.page-wrapper.expand>.mobile-header-nav > ul {
+    padding-top: 1%;
+    /* padding-left: 2%; */
     transition: all 250ms;
     
 }
 .page-wrapper.expand>.mobile-header-nav > ul > li > ul {
     display: flex;
-    flex-direction: column;
     /* filter: opacity(1); */
     transition: all 1s;
 }

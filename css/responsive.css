@@ -15,11 +15,13 @@
         /* border: 3px solid magenta; */
         font-size: 100% !important;
     }
-    #sideNavBtn{
-        
-    }
+    
 }
 @media screen and (max-width:600px) {
+    #sideNavBtn {
+        min-height: 30px;
+        min-width:  30px;
+    }
     .page-header .page-title-container {
         flex-basis: 90%;
         font-size: .5rem;

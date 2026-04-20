@@ -18,14 +18,18 @@ a.tel-num:visited{
 }
 .mobile-header-nav {
 }
-.mobile-header-nav ul {
+.mobile-header-nav >ul {
     list-style-type: none;
 }
 .mobile-header-nav li a{
     text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .mobile-header-nav > ul > li >a {
-    font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 600;
     font-size: 1.5rem;
+}
+.mobile-header-nav>ul>li>ul > li a {
+    font-weight: 500;
+    font-style: italic;
 }
