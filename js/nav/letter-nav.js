@@ -41,7 +41,7 @@ export function initLetterNav({
 // Make different strings to append to selectors to decrease it .length()
         // const navSelectors = '#navBtn'
 
-        const selectors = '.form-group> textarea,.form-group > input, .form-group > label, #sideNavBtn,#submitBookingBtn,.mobile-header-nav > ul > li > a, .page-title, img, iframe, .section-title, #mdvipImgLink, .page-container-title, #navBarBtn, #madonnaMedSpa-address-header, .more-info-links > button, .product-title, .item,.filter-btn,.sort-btn, .social-media-link-container a';
+        const selectors = '.main-landing-page,.form-group> textarea,.form-group > input, .form-group > label, #sideNavBtn,#submitBookingBtn,.mobile-header-nav > ul > li > a, .page-title, img, iframe, .section-title, #mdvipImgLink, .page-container-title, #navBarBtn, #madonnaMedSpa-address-header, .more-info-links > button, .product-title, .item,.filter-btn,.sort-btn, .social-media-link-container a';
         
         const allEls = [...document.querySelectorAll(selectors)].filter(isActuallyVisible);
 

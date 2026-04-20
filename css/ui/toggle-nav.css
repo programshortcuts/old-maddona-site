@@ -6,7 +6,7 @@
 }
 
 .page-wrapper.expand > .mobile-header-nav{
-    height: 50vh;
+    height: 60vh !important;
     position: sticky;
     z-index: 1;
     top: 0;
@@ -17,8 +17,12 @@
 }
 
 .page-wrapper.expand>.mobile-header-nav > ul > li{
-    padding-top: 5%;
+    padding-top: 7%;
     padding-left: 2%;
     transition: all 250ms;
-
+    
+}
+.page-wrapper.expand>.mobile-header-nav > ul > li,
+.mobile-header-nav > ul > li > u{
+    
 }

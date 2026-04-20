@@ -49,3 +49,7 @@ li#contactNavLink {
     height: auto;
     max-width: 100%;
 }
+
+.mobile-header-nav > ul > li > ul {
+    display: none;
+}
