@@ -1,4 +1,8 @@
-.expand{
+/* toggle-nav.css */
+.page-wrapper.expand{
+
+}
+.page-wrapper.expand > .mobile-header-nav{
     height: 50vh;
     position: absolute;
     top: 0;
@@ -6,4 +10,11 @@
     border-bottom: 1px solid black;
     border-radius: 5px;
     transition: all 800ms;
+}
+
+.page-wrapper.expand>.mobile-header-nav > ul > li{
+    padding-top: 3%;
+    padding-left: 4%;
+    transition: all 250ms;
+
 }
