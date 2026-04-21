@@ -5,3 +5,11 @@
 .address-num-container .address-box{
     padding: 2%
 }
+.mission-state>img {
+    margin-right: 3%;
+ }
+ .address-num-container {
+    padding: 0 5%;
+    padding-bottom: 10%;
+
+ }

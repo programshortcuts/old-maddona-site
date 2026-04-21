@@ -1,12 +1,13 @@
 /* layout-home.css*/
-.home-page-header {
-    display: flex;
-}
-.page-container.home-page-container{
+.page-container.home-page-container {
     /* width: 80% !important; */
 }
+.home-page-header {
+    display: flex;
+    /* justify-content: space-around; */
+}
 .home-page-header .img-wrapper {
-    /* flex-basis: 10%; */
+    flex-basis: 10%;
 }
 .home-page-header button.section-title{
     display: block;
@@ -36,13 +37,16 @@
     padding-top: 5%;
     flex-basis: 30%;
 }
-.reviews-address-container {
+.address-num-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.home-page-item{
-    /* display: flex */
+.mission-state img{
+    float: left;
+}
+.home-page-item .img-wrapper{
+    float: right;
 
 }

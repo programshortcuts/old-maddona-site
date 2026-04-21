@@ -1,20 +1,17 @@
 /* sizing-home.css*/
-
-.mission-state > p {
-    padding-top: 2%;
-}
-
-.home-page-item .content>.img-wrapper {
-    height: fit-content;
-    /* width: fit-content; */
-    width: 90%;
-}
-.home-page-header .contact-content >.img-wrapper > img{
+.home-page-header>.contact-content>.img-wrapper>img {
+    width: 110%;
+    height: 10vh;
 }
 .mission-state>img {
     height: 20vh;
-    border-radius: 60px;
-    margin-right: 3%;
+}
+.mission-state > p {
+    padding-top: 2%;
+}
+.home-page-item .content>.img-wrapper {
+    height: fit-content;
+    width: fit-content;
 }
 .home-page-item .content>.img-wrapper > img{
     height: 14vh;

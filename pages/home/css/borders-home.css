@@ -1,7 +1,6 @@
 /* borders-home.css */
-.reviews-address-container>.address-num-container > p{
-    /* border: ; */
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
-    color: white
-}
 
+.mission-state>img {
+    border-radius: 60px;
+    margin-right: 3%;
+}

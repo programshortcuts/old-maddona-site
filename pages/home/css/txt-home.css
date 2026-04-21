@@ -7,6 +7,8 @@
     line-height: 1.8;
 }
 
-.reviews-address-container>.address-num-container>p {
+.address-num-container>p {
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    color: white;
     font-size: 1.35rem;
 }
