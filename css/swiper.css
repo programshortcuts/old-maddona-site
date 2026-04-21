@@ -1,0 +1,11 @@
+.swiper {
+    width: 100%;
+    max-width: 600px;
+}
+
+.swiper-slide {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+}

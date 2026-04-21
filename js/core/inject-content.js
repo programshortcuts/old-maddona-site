@@ -1,6 +1,7 @@
 // inject-content.js
 import { isSafePath } from "./security-utils.js";
 import { initBookingForm } from "./bookings.js";
+import { initSwiper } from "../visuals/swiper.js";
 // import { maybeInitAnimations } from "../app.js";
 // import { initDropDown } from "../ui/drop-down.js";
 import { initSectionsDropDown } from "../ui/sections-drop-downs.js";
@@ -126,13 +127,14 @@ export async function injectPage(href){
         // FORBID_ATTR: ['style', 'script', 'onerror', 'onclick', 'onload']
 
     })
+
     mainLandingPage.scrollTo(0,0)
     initImageHandling()
     initProdImgHandle()
     initItemsScroll()
     initSectionsDropDown()   
     initFilterSortItems()
-    
+    initSwiper();
 
     // ✅ ONLY INIT IF ON BOOKING PAGE
     if (href.includes("bookings")) {

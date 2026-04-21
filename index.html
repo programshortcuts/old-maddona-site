@@ -7,11 +7,19 @@
     <link rel="stylesheet" href="css/main.css">
     <script src="js/lib/purify.min.js"></script>
     <script type="module" src="js/app.js" ></script>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!-- <link rel="stylesheet" href="css/swiper-bundle.min.css"> -->
+    <!-- Swiper JS -->
+    <script src="js/lib/swiper-bundle.min.js" defer></script>
+    
     <!-- script-src 'self' 'unsafe-inline'; -->
-<meta http-equiv="Content-Security-Policy" content="
-default-src 'self';
-script-src 'self' 'unsafe-inline';
-style-src 'self' https://unpkg.com;
+    <!-- script-src 'self' https://cdn.jsdelivr.net; -->
+    <!--style-src 'self' https://unpkg.com; -->
+    <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    script-src 'self' 'unsafe-inline';
+style-src  'self' https://cdn.jsdelivr.net;
 font-src 'self' https://unpkg.com data:;
 img-src 'self' data:;
 frame-src https://www.youtube.com;
@@ -22,8 +30,7 @@ form-action 'self';
 </head>
 <body>
     <div class="page-wrapper ">
-        <div class="page-header">
-            
+        <div class="page-header">            
             <svg autofocus tabindex="0" id="sideNavBtn" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <line x1="3" y1="6" x2="21" y2="6"></line>
@@ -46,7 +53,6 @@ form-action 'self';
         </div>
         <nav class="mobile-header-nav">
             <!-- THIS Inline will bite you with security probably -->
-            
             <ul>
                 <li><a id="homeNavLink" href="pages/home/home.html" data-link rel="noopener noreferrer">
                         Home</a></li>
@@ -104,7 +110,7 @@ form-action 'self';
             </ul>
         </nav>
         <!-- <div    class="main-landing-page"> -->
-        <div   tabindex="0" id="mainLandingPage"   class="main-landing-page">
+        <div  tabindex="0" id="mainLandingPage" class="main-landing-page">
         </div>        
         <footer>
             <ul>
