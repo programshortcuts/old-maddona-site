@@ -33,5 +33,5 @@ export function initBgSlider() {
 
         current = nextIndex;
 
-    }, 5500);
+    }, 3000);
 }
