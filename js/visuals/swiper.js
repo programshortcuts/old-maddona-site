@@ -20,7 +20,7 @@ export function initSwiper() {
         },
 
         autoplay: {
-            delay: 2000,
+            delay: 5000,
             disableOnInteraction: false
         }
     });
