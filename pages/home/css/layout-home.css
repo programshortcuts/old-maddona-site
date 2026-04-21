@@ -29,6 +29,7 @@
     flex-direction: column;
 }
 .reviews-container > .review-swiper-container{
+    align-self: flex-start;
     display: flex;
     flex-direction: column;
 }

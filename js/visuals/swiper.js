@@ -20,16 +20,16 @@ export function initSwiper() {
         loop: true,
         grabCursor: true,
 
-        spaceBetween: 20,
+        spaceBetween: 10,
 
         pagination: {
             el: '.swiper-pagination',
             clickable: true
         },
 
-        // autoplay: {
-        //     delay: 2000,   // ⏱ time between slides (ms)
-        //     disableOnInteraction: false // keeps autoplay after user swipes
-        // }
+        autoplay: {
+            delay: 3000,   // ⏱ time between slides (ms)
+            disableOnInteraction: false // keeps autoplay after user swipes
+        }
     });
 }
