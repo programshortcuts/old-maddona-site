@@ -1,4 +1,7 @@
 /* sizing-home.css*/
+.home-page-header{
+    height: 7vh;
+}
 .home-page-header>.contact-content>.img-wrapper>img {
     width: 110%;
     height: 10vh;

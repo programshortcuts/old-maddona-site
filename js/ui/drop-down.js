@@ -1,4 +1,5 @@
 // drop-down.js
+
 let lastClickedDrop 
 export function initDropDown() {
     const dropDowns = document.querySelectorAll('.drop-down')
@@ -17,7 +18,7 @@ export function initDropDown() {
     function toggleContent(e) {
         e.preventDefault()
         e.stopPropagation()
-
+        
         const catTitle = e.target.closest('.cat-title')
         const productTitle = e.target.closest('.product-title')
         const sectionTitleDropDown = e.target.closest('.section-title.drop-down')

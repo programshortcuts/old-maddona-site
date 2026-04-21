@@ -1,4 +1,6 @@
 // sections-drop-down.js
+import { initSwiper } from "../visuals/swiper.js"
+
 let lastClickedDrop 
 export function initSectionsDropDown() {
     const dropDowns = document.querySelectorAll('.drop-down')
@@ -17,7 +19,10 @@ export function initSectionsDropDown() {
     function toggleContent(e) {
         e.preventDefault()
         e.stopPropagation()
-
+        if (e.target.closest('#bioHormoneReplacementˆ')) {
+            console.log('here')
+            initSwiper()
+        }
         const catTitle = e.target.closest('.cat-title')
         const productTitle = e.target.closest('.product-title')
         const sectionTitleDropDown = e.target.closest('.section-title.drop-down')

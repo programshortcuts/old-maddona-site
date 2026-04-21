@@ -3,21 +3,10 @@
     /* margin: 0 5%; */
     margin-top: 10%;
 }
-.mission-state{
-    padding-right: 15%;
-    margin-top: -10%;
-    /* padding-bottom: 10%; */
-}
-.main-item{
+.main-item {
     margin-bottom: 2%;
 }
-.mission-state > p{
-    padding-left: 3%;
-    /* border: 1px solid blue; */
-    /* width: 50%; */
-    /* text-align: end; */
-    /* margin-left: 20%; */
-}
+
 .address-num-container .address-box{
     padding: 2%
 }
@@ -31,3 +20,11 @@
     padding-bottom: 10%;
 
  }
+ .mission-state {
+     padding-right: 15%;
+ }
+
+.mission-state>p {
+    padding-top: 10%;
+    padding-left: 3%;    
+}

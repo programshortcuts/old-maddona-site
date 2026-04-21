@@ -10,7 +10,7 @@ export function initBgSlider() {
         "pages/medical-spa-services/media/peptide.jpeg",
         "pages/medical-spa-services/media/AS-Botox2000.webp.png",
         "pages/medical-spa-services/media/iv-infusion.jpeg",
-        "imgs/MadMediSpa-sihlouette.png"
+        "../imgs/MadMediSpa-sihlouette.png"
     ];
 
     // assign images
@@ -20,6 +20,7 @@ export function initBgSlider() {
 
     let current = 0;
 
+    
     setInterval(() => {
         const currentSlide = slides[current];
         const nextIndex = (current + 1) % slides.length;

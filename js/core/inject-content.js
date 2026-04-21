@@ -17,8 +17,8 @@ if (!mainLandingPage) {
     throw new Error("Missing .main-landing-page in index.html");
 }
 const DEFAULT_PAGE =
-// "pages/home/home.html";
-"pages/medical-spa-services/medical-spa-services.html";
+"pages/home/home.html";
+// "pages/medical-spa-services/medical-spa-services.html";
 // "pages/products/products.html";
     // "pages/contact/contact.html";
     // "pages/bookings/bookings.html";
@@ -137,7 +137,6 @@ export async function injectPage(href){
     initFilterSortItems()
     initSwiper();
     initBgSlider()
-
     // ✅ ONLY INIT IF ON BOOKING PAGE
     if (href.includes("bookings")) {
         initBookingForm();

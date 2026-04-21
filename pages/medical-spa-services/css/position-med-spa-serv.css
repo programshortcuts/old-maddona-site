@@ -1,0 +1,13 @@
+/* position-med-spa-serv.css */
+
+
+.section#bioHormoneReplacement >button.section-title {
+    position: relative;
+}
+.section#bioHormoneReplacement>button.section-title>img {
+    position: absolute;
+    right: -5%;
+    top: -100%;
+    width: 50%;
+
+}
