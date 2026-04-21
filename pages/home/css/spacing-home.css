@@ -15,8 +15,8 @@
 }
 .mission-state{
 }
-.mission-state>img {
-    margin-right: 3%;
+.mission-state > .img-wrapper {
+    margin-right: 5% !important;
  }
  .address-num-container {
     padding: 0 5%;
@@ -25,9 +25,9 @@
  }
  .mission-state {
      padding-right: 15%;
+     padding-top: 5%;
  }
 
-.mission-state>p {
-    padding-top: 10%;
-    padding-left: 3%;    
+.mission-state>p{
+    padding: 0 2%;
 }
