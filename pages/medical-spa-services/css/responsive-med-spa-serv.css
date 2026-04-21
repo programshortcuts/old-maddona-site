@@ -1,15 +1,29 @@
 /* responsive-med-spa-serv.css */
 
-/* Add smooth transition for background position movement */
-#botoxAndFillers {
+/* Add smooth transition for background position movement
+/* #botoxAndFillers {
     transition: background-position-x 0.3s ease;
-}
+} */ 
 
 /* Responsive behavior for background position */
+@media screen and (min-width: 1200px) {
+.page-container.med-spa-serv-container {
+    padding-top: 0 !important;
+    margin-top:  0 !important;
+}
+}
 @media screen and (min-width: 771px) {
+    .med-spa-serv-container .section {
+        margin-top:3% ;
+    }
     #botoxAndFillers {
         /* background-repeat: ; */
         overflow: hidden;
         background-position-x: -10% !important;
+    }
+}
+@media screen and (max-width:771px) {
+    .med-spa-serv-container .section {
+        margin-top: 2%;
     }
 }

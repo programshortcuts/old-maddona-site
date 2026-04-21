@@ -1,11 +1,4 @@
 /* NEW-med-spa-serv.css - Consolidated OLD style CSS */
-
-/* ===== ROOT VARIABLES ===== */
-:root {
-    --font-p-clr: rgb(80, 81, 75);
-    --bg-clr: #ddd;
-}
-
 /* ===== LAYOUT ===== */
 .page-container.med-spa-serv-container {
     width: 100vw;
@@ -61,20 +54,6 @@ section::after {
     clear: both;
 }
 
-#botoxAndFillers {
-    width: 90%;
-    margin-right: 50%;
-    min-height: 12vh;
-    background-image: url('../../../pages/medical-spa-services/media/botox-filler.jpg.webp');
-    /* background-image: url('../../../pages/medical-spa-services/media/botox-filler-grey.webp'); */
-    /* background-repeat: no-repeat; */
-    background-position-y: 50%;
-    background-position-x: -0% !important;
-    /* background-size: 200%; */
-    filter: saturate(1);
-    filter: brightness(1);
-    border-right: 1vw solid var(--bg-clr);
-}
 
 #botoxAndFillers > .img-wrapper {
     float: left !important;

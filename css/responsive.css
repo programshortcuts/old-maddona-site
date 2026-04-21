@@ -1,11 +1,7 @@
 /* responsive.css */
 @media screen and (min-width:751px) {
-section {
-        /* padding: 1% !important;
-        */
-        background-repeat: no-repeat;
-        background-position-x: -120% !important; 
-    }
+    
+    
 }
 @media screen and (min-width:533px) {
     .home-page-container {
@@ -33,6 +29,7 @@ section {
     
 }
 @media screen and (max-width:600px) {
+    
     .swiper-slide {
         font-size: 1rem !important;
     }
@@ -51,6 +48,7 @@ section {
             padding-right: 15%;
             margin-top: -10%;
         }
+               
 }
 
 
