@@ -11,7 +11,7 @@
 .address-num-container p {
     /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
  }
- .section-title:active,.section-title:focus{
+.section-title:active,.section-title:focus{
     border: 10px solid red;
     display: block;
  }

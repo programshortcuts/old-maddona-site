@@ -44,13 +44,29 @@ export function initLetterNav({
         if (!/^[a-z]$/.test(key)) return;
 // Make different strings to append to selectors to decrease it .length()
         // const navSelectors = '#navBtn'
-        const pageSelectors = ', .mobile-header-nav li  a ,#mainLandingPage,#sideNavBtn,#submitBookingBtn, .page-title, img, iframe'
-        const mainLandingSelectors = ', button.section-title'
+        // const pageSelectors = ', .mobile-header-nav li  a ,#mainLandingPage,#sideNavBtn,#submitBookingBtn, .page-title, img, iframe'
+        // const mainLandingSelectors = ', button.section-title'
 
-        let selectors = '.form-group> textarea,.form-group > input, .form-group > label, #mdvipImgLink, .page-container-title, #navBarBtn, #madonnaMedSpa-address-header, .more-info-links > button, .product-title, .item,.filter-btn,.sort-btn, .social-media-link-container a';
-        selectors += mainLandingSelectors
-        selectors += pageSelectors
-        const allEls = [...document.querySelectorAll(selectors)].filter(isActuallyVisible);
+        // let selectors = '.form-group> textarea,.form-group > input, .form-group > label, #mdvipImgLink, .page-container-title, #navBarBtn, #madonnaMedSpa-address-header, .more-info-links > button, .product-title, .item,.filter-btn,.sort-btn, .social-media-link-container a';
+        // selectors += mainLandingSelectors
+        // selectors += pageSelectors
+
+        // const allEls = [...document.querySelectorAll(selectors)].filter(isActuallyVisible);
+
+        const allEls = [
+            // 🧭 global controls
+            ...document.querySelectorAll('#sideNavBtn, #navBarBtn'),
+            // 🔥 your intentional system FIRST
+            ...document.querySelectorAll('[data-nav-target]'),
+
+            // 🔗 navigation links
+            ...document.querySelectorAll('.mobile-header-nav a'),
+
+
+            // 🧱 fallback interactive elements
+            ...document.querySelectorAll('button, [tabindex="0"]')
+        ]
+            .filter(isActuallyVisible);
 
         const firstAlpha = (el) => {
             
@@ -86,69 +102,50 @@ export function initLetterNav({
         const matching = allEls.filter(el => firstAlpha(el) === key);
         if (!matching.length) return;
 
-        let index = matching.indexOf(document.activeElement);
+        const activeEl = document.activeElement;
+        const currentIndex = allEls.indexOf(activeEl);
 
-        // if active element is not in matching, start from 0
-        if (index === -1) index = 0;
+        let target = null;
 
         if (e.shiftKey) {
-            index = index - 1;
-            if (index < 0) index = matching.length - 1;
+            // 🔼 GO BACKWARD
+            for (let i = currentIndex - 1; i >= 0; i--) {
+                if (firstAlpha(allEls[i]) === key) {
+                    target = allEls[i];
+                    break;
+                }
+            }
+
+            // wrap to end if nothing found
+            if (!target) {
+                for (let i = allEls.length - 1; i > currentIndex; i--) {
+                    if (firstAlpha(allEls[i]) === key) {
+                        target = allEls[i];
+                        break;
+                    }
+                }
+            }
+
         } else {
-            index = index + 1;
-            if (index >= matching.length) index = 0;
+            // 🔽 GO FORWARD
+            for (let i = currentIndex + 1; i < allEls.length; i++) {
+                if (firstAlpha(allEls[i]) === key) {
+                    target = allEls[i];
+                    break;
+                }
+            }
+
+            // wrap to start if nothing found
+            if (!target) {
+                for (let i = 0; i < currentIndex; i++) {
+                    if (firstAlpha(allEls[i]) === key) {
+                        target = allEls[i];
+                        break;
+                    }
+                }
+            }
         }
-
-        const target = matching[index];
-        // const matching = allEls.filter(el => firstAlpha(el) === key);
-        // if (!matching.length) return;
-
-        // const activeEl = document.activeElement;
-        // const currentIndex = allEls.indexOf(activeEl);
-
-        // let target = null;
-
-        // if (e.shiftKey) {
-        //     // 🔼 GO BACKWARD
-        //     for (let i = currentIndex - 1; i >= 0; i--) {
-        //         if (firstAlpha(allEls[i]) === key) {
-        //             target = allEls[i];
-        //             break;
-        //         }
-        //     }
-
-        //     // wrap to end if nothing found
-        //     if (!target) {
-        //         for (let i = allEls.length - 1; i > currentIndex; i--) {
-        //             if (firstAlpha(allEls[i]) === key) {
-        //                 target = allEls[i];
-        //                 break;
-        //             }
-        //         }
-        //     }
-
-        // } else {
-        //     // 🔽 GO FORWARD
-        //     for (let i = currentIndex + 1; i < allEls.length; i++) {
-        //         if (firstAlpha(allEls[i]) === key) {
-        //             target = allEls[i];
-        //             break;
-        //         }
-        //     }
-
-        //     // wrap to start if nothing found
-        //     if (!target) {
-        //         for (let i = 0; i < currentIndex; i++) {
-        //             if (firstAlpha(allEls[i]) === key) {
-        //                 target = allEls[i];
-        //                 break;
-        //             }
-        //         }
-        //     }
-        // }
-
-        
-        // target?.focus();
+        target?.focus();
         target?.scrollIntoView({ behavior: 'instant', block: 'center', inline: 'nearest' });
         target?.focus({ preventScroll: true });
     });
