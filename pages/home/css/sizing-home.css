@@ -3,7 +3,7 @@
     height: 7vh;
 }
 .home-page-header>.contact-content>.img-wrapper>img {
-    width: 110%;
+    /* width: 110%; */
     height: 10vh;
 }
 .mission-state>.img-wrapper {
