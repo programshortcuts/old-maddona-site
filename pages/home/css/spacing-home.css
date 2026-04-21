@@ -1,17 +1,11 @@
 /* spacing-home.css */
-.home-page-header>.contact-content>.img-wrapper>img {
-    margin-left: 5%;
+.home-page-header>.contact-content>.img-wrapper>img {margin-left: 5%;
 }
-.home-page-container{
-    /* margin: 0 5%; */
-    margin-top: 10%;
-}
-.main-item {
-    margin-bottom: 2%;
-}
-
+.home-page-container{margin-top: 10%;}
+.main-item {margin-bottom: 2%;}
 .address-num-container .address-box{
-    padding: 2%
+    padding: 2%;
+    margin-right: 3;
 }
 .mission-state{
 }

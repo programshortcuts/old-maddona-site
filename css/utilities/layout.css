@@ -7,6 +7,10 @@
     overflow-x: hidden;
     flex-direction: column;
 }
+.main-landing-page {
+    overflow: hidden;
+    overflow-x: scroll;
+}
 .page-header {
     display: flex;
     
