@@ -1,17 +1,21 @@
 /* sizing-home.css*/
-.mission-state > img {
-    height: 30vh;
-    border-radius: 60px;
-    margin-right: 3%;
-}
+
 .mission-state > p {
     padding-top: 2%;
 }
 
 .home-page-item .content>.img-wrapper {
     height: fit-content;
-    width: fit-content;
+    /* width: fit-content; */
+    width: 90%;
+}
+.home-page-header .contact-content >.img-wrapper > img{
+}
+.mission-state>img {
+    height: 20vh;
+    border-radius: 60px;
+    margin-right: 3%;
 }
 .home-page-item .content>.img-wrapper > img{
-    height: 20vh;
+    height: 14vh;
 }

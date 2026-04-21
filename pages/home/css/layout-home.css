@@ -1,7 +1,12 @@
 /* layout-home.css*/
-
+.home-page-header {
+    display: flex;
+}
+.page-container.home-page-container{
+    /* width: 80% !important; */
+}
 .home-page-header .img-wrapper {
-    flex-basis: 20%;
+    /* flex-basis: 10%; */
 }
 .home-page-header button.section-title{
     display: block;
@@ -25,10 +30,7 @@
     flex-direction: column;
 }
 
-.home-page-header {
-    display: flex;
-    /* justify-content: space-around; */
-}
+
 
 .home-page-header .contact-content {
     padding-top: 5%;

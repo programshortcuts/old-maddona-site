@@ -3,10 +3,10 @@
 .home-page-container section p{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1.3rem;
+    font-size: 1rem;
     line-height: 1.8;
 }
 
 .reviews-address-container>.address-num-container>p {
-    font-size: 1.55rem;
+    font-size: 1.35rem;
 }
