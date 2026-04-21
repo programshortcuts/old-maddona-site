@@ -5,6 +5,7 @@
     }
 }
 @media screen and (max-width:890px) {
+    
     .page-header .page-title-container{
         flex-basis: 76%;
         font-size: .8rem;
@@ -17,6 +18,10 @@
         /* border: 3px solid magenta; */
         font-size: 100% !important;
     }
+        .mission-state {
+            padding-right: 5%;
+            margin-top: -5%;
+        }
     
 }
 @media screen and (max-width:600px) {
@@ -34,6 +39,10 @@
     .mobile-header-nav {
         font-size: .8rem;
     }
+        .mission-state {
+            padding-right: 15%;
+            margin-top: -10%;
+        }
 }
 
 
