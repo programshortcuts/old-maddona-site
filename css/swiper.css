@@ -1,11 +1,14 @@
-.swiper {
-    width: 100%;
-    max-width: 600px;
-}
-
+/* swiper.css */
 .swiper-slide {
     background: #fff;
-    padding: 20px;
-    border-radius: 12px;
+    font-size: 1.3rem;
+    padding: 10% 5%;
+    border-radius: 8px;
     text-align: center;
+}
+
+.stars {
+    color: darkgoldenrod;
+    font-size: 1.5rem;
+    text-shadow: 2px -1px 2px black;
 }

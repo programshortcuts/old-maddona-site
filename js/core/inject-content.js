@@ -2,6 +2,7 @@
 import { isSafePath } from "./security-utils.js";
 import { initBookingForm } from "./bookings.js";
 import { initSwiper } from "../visuals/swiper.js";
+import { initBgSlider } from "../visuals/change-background.js";
 // import { maybeInitAnimations } from "../app.js";
 // import { initDropDown } from "../ui/drop-down.js";
 import { initSectionsDropDown } from "../ui/sections-drop-downs.js";
@@ -135,6 +136,7 @@ export async function injectPage(href){
     initSectionsDropDown()   
     initFilterSortItems()
     initSwiper();
+    initBgSlider()
 
     // ✅ ONLY INIT IF ON BOOKING PAGE
     if (href.includes("bookings")) {

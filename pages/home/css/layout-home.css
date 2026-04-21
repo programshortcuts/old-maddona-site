@@ -23,3 +23,12 @@
     background-color: whitesmoke;
     /* align-items: center; */
 }
+.reviews-container {
+    /* font-size: ; */
+    display: flex;
+    flex-direction: column;
+}
+.reviews-container > .review-swiper-container{
+    display: flex;
+    flex-direction: column;
+}

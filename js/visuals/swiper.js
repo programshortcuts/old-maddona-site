@@ -27,9 +27,9 @@ export function initSwiper() {
             clickable: true
         },
 
-        autoplay: {
-            delay: 2000,   // ⏱ time between slides (ms)
-            disableOnInteraction: false // keeps autoplay after user swipes
-        }
+        // autoplay: {
+        //     delay: 2000,   // ⏱ time between slides (ms)
+        //     disableOnInteraction: false // keeps autoplay after user swipes
+        // }
     });
 }

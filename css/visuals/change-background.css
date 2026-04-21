@@ -1,0 +1,26 @@
+.bg-slider{
+    min-height: 50vh;
+}
+.bg-slide {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+
+    opacity: 0;
+    transition: opacity 1.2s ease;
+
+    z-index: 0;
+}
+
+/* visible slide */
+.bg-slide.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+/* optional safety reset */
+.bg-slide.hidden {
+    opacity: 0;
+    z-index: 0;
+}
