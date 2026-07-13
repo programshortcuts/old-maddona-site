@@ -1,39 +1,4 @@
 /* sizing.css */
-:root{
-    --social-max-height: 3vh;
-}
-
-.page-wrapper{
-    width: 100%;    
-    height: 100vh;
-}
-
-.mobile-header-nav > ul > li > a {
+.main-landing-page {
     width: 100%;
-}
-
-.social-media-container {
-    width: 100%;
-}
-.social-media-link-container a {
-    width: 100%;
-    max-height: var(--social-max-height);
-}
-.social-media-link-container svg {
-    max-height: var(--social-max-height);
-    margin-top: 4%;
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-}
-.mobile-header-nav {
-    width: 100%;
-}
-
-#sideNavBtn {
-    min-height: 50px;
-    min-width: 50px;
-}
-.mobile-header-nav>ul>li>a {
-    
 }

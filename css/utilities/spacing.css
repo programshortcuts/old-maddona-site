@@ -1,11 +1,12 @@
 /* spacing.css */
-.mobile-header-nav{
-    margin-top: .5%;
-}
-
-#sideNavBtn {
-    margin-right: 2%;
-}
 .main-landing-page {
-    padding-top: 10%;
+
+}
+.page-header>.page-title-container {
+    padding-left: 5%;
+    padding-top: 0 !important;
+}
+.page-title-container>.address-title {
+    margin-left: 50%;
+    margin-top: -2%;
 }

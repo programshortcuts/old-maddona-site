@@ -1,7 +1,7 @@
 /* spacing-products.css */
+.cat-title,
 .products-title {
-    border: none;
-    
+    border: none;    
 }
 .products-content {
     border-right: none;

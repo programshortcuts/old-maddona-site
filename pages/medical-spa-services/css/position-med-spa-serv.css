@@ -1,13 +1,26 @@
-/* position-med-spa-serv.css */
-
-
-.section#bioHormoneReplacement >button.section-title {
-    position: relative;
+/* med-spa-services.css */
+.section#bioHormoneReplacement>button.section-title{
+    /* position: relative; */
 }
 .section#bioHormoneReplacement>button.section-title>img {
-    position: absolute;
-    right: -5%;
-    top: -100%;
-    width: 50%;
-
+    z-index: 10;
+    /* position: absolute; */
+    left: 50%;
+    bottom: 50%;
 }
+
+.content-box{
+    position: relative;
+}
+.content-box::after{
+    clear: both;
+    content: ' ';
+    display: block;
+}
+.section .img-wrapper:first-of-type {
+    float: right !important;
+}
+.section .img-wrapper.float-left {
+    float: left !important;
+}
+

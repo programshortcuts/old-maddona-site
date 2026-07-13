@@ -1,54 +1,45 @@
-/* responsive.css */
-@media screen and (min-width:751px) {
-    
-    
-}
-@media screen and (min-width:533px) {
-    .home-page-container {
-        margin-top: 0% !important;
+@media screen and (max-width:920px) {
+    .page-wrapper.expand .mobile-header-nav ul li:nth-child(2) ul {
+        margin-left: -20%;
     }
-}
-@media screen and (max-width:890px) {
-    
-    .page-header .page-title-container{
-        flex-basis: 76%;
-        font-size: .8rem;
-    }
-    #sideNavBtn {
-        min-height: 39px;
-        min-width:  39px;
-    }
-    .mobile-header-nav > ul > li >a {
-        /* border: 3px solid magenta; */
-        font-size: 100% !important;
-    }
-        .mission-state {
-            padding-right: 5%;
-            margin-top: -5%;
-        }
-    
-}
-@media screen and (max-width:600px) {
-    
-    .swiper-slide {
-        font-size: 1rem !important;
-    }
-    #sideNavBtn {
-        min-height: 30px;
-        min-width:  30px;
-    }
-    .page-header .page-title-container {
-        flex-basis: 90%;
-        font-size: .5rem;
-    }
-    .mobile-header-nav {
-        font-size: .8rem;
-    }
-        .mission-state {
-            padding-right: 15%;
-            margin-top: -10%;
-        }
-               
-}
+    .page-wrapper.expand .mobile-header-nav ul li:nth-child(3) ul {
+        margin-left: 20%
 
+    }
+}
+@media screen and (min-width:520px) {
 
+    .page-container.home-page-container {
+        padding-top: 0% !important;
+
+    }
+    .home-page-container > .home-page-header.bg-slider > .bg-slide{
+        background-position-y: 10% !important;
+    }
+        .home-page-header {
+            background-position-y: -129% !important;
+            /* border: 1px solid magenta; */
+            height: 50vh !important;
+        }
+}
+@media screen and(max-width:519px) {
+    .page-container.med-spa-serv-container{
+        /* padding-top: 50% !important; */
+        margin-top: 50% !important;
+    }
+    #addressLinkHeader{
+        width: 103vw !important;
+    }
+    #addressLinkHeader > a{
+        width: 100% !important;
+    }
+    .page-title-container>h1 {
+        /* margin: 0 25%; */
+        /* margin-top: 10% !important; */
+        width: 100% !important;
+
+        border: 1px solid blue !important;
+        background-color: blue;
+    }
+    
+}

@@ -1,26 +1,9 @@
 /* layout-home.css*/
-.page-container.home-page-container {
-}
 .home-page-header {
     display: flex;
+    align-items: flex-end;
 }
-.home-page-header .img-wrapper {
-    flex-basis: 10%;
-}
-.home-page-container button.section-title{
-    display: block;
-}
-
-.reviews-container {
-    /* font-size: ; */
-    display: flex;
-    flex-direction: column;
-}
-.reviews-container > .review-swiper-container{
-    align-self: flex-start;
-    display: flex;
-    flex-direction: column;
-}
+.home-page-header .img-wrapper {flex-basis: 10%;}
 .page-container.home-page-container {
     display: flex;
     flex-direction: column;
@@ -34,20 +17,43 @@
     flex-direction: column;
     justify-content: center;
 }
-.mission-state {
+.home-page-header section {
     position: relative;
 }
-.mission-state .img-wrapper{
-    float: left;
-    z-index: 99
+.home-page-header section::after { 
+    content: "";
+    display: block;
+    clear: both;
 }
-.mission-state .img-wrapper img{
-    height: 20vh;
+/* Removed conflicting width: 250px and float: right for .swiper */
+.mission-state .img-wrapper img    {height: 20vh;}
+.img-wrapper          {float: right;}
+.content .img-wrapper {float: left;}
+#drMadonnaPhoto       {display: block;}
+.address-contact-home {display: flex;}
+
+.staff-wrapper {
+    overflow: hidden;
+    overflow-x: scroll;
+    touch-action: pan-x;
+    display: flex;
 }
-.main-item > .img-wrapper{
-    float: right;
+.staff-wrapper > .staff {
+    display: flex;
+    flex-basis:50%;
+}
+.staff-wrapper > .staff > .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.service-column > .service-col-title{
+    display: block;
+}
+
+
+.services-swiper .swiper-slide .service-title {
+    display: flex;
+    justify-content: flex-end;
     
-}
-.main-item > .content .img-wrapper{
-    float: left;
 }

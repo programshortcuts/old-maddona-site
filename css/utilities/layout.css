@@ -1,66 +1,24 @@
 /* layout.css */
-
-body{
-    overflow-x: hidden;
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
 }
+
+/* ONLY SCROLL CONTAINER IN THE ENTIRE APP */
 .page-wrapper {
-    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+
     display: flex;
     flex-direction: column;
+
+    -webkit-overflow-scrolling: touch;
 }
+
+/* NEVER let other containers scroll vertically */
 .main-landing-page {
-    /* overflow: hidden; */
-    overflow-x: scroll;
+    overflow: visible !important;
 }
-
-.mobile-header-nav ul {
-    display: flex;
-}
-.mobile-header-nav > ul > li {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex: 1 1 0;
-    min-width: 0;/* 🔥 critical */
-}
-li#contactNavLink {
-    flex: 1 1 0;
-    /* same behavior as others */
-    min-width: 0;
-    /* 🔥 allows shrinking */
-}
-
-.social-media-container {
-    display: flex;
-    flex-direction: column;
-}
-.social-media-link-container {
-    flex: 1;
-    display: flex;
-}
-.social-media-link-container a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.social-media-link-container svg {
-    height: auto;
-    max-width: 100%;
-}
-
-.mobile-header-nav li a{
-    text-decoration: none;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-.mobile-header-nav > ul > li > ul {
-    display: none;
-    flex-direction: column;
-    margin-left: 5%;
-}
-.mobile-header-nav > ul > li > ul > li{
-    width: 120%;
- }
- .mobile-header-nav>ul>li>a {
-     display: inline-block;
-     text-align: center;
- }

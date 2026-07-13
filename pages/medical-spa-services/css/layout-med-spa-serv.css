@@ -1,13 +1,15 @@
-/* layout-med-spa-serv.css */
-.page-container.med-spa-serv-container {
+/* layout-med-spa-services.css */
+.section {
+    /* Limits the section to full viewport height */
     overflow: hidden;
-    overflow-y: scroll;
-    display: flex;
-    flex-direction: column;
+    position: relative;
+    /* Add this line */
 }
-.section-title {
-    display: block;
+
+.section-title.drop-down {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    /* Ensure it's above the content */
 }
-.more-info-links {
-    display: flex;
-}
+

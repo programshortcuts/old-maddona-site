@@ -1,19 +1,5 @@
 /* position.css */
-.main-landing-page{
-    position: absolute;
-    top: 0;
-}
-.page-wrapper{
+.main-landing-page {
     position: relative;
-}
-
-
-.mobile-header-nav .social-media-link-container {
-    position: relative;
-}
-
-.mobile-header-nav {
-    position: fixed;
-    z-index: 2;
-    top: 5%;
+    z-index: 1;
 }

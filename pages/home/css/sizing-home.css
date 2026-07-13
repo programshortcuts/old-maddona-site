@@ -1,7 +1,4 @@
 /* sizing-home.css*/
-.home-page-header{
-    height: 7vh;
-}
 .home-page-header>.contact-content>.img-wrapper>img {
     width: 80%;
     height: 10vh;
@@ -16,6 +13,41 @@
     height: fit-content;
     width: fit-content;
 }
-.main-item .content>.img-wrapper > img{
-    height: 14vh;
+.img-wrapper > a img{
+    /* height: 14vh; */
+    width: 100%;
+}
+.home-page-container .animation-container{
+    width: 50%;
+}
+.home-page-container .section{
+    width: 50% !important;
+    margin: 0 5%;
+    align-self: center;
+    border: 1px solid grey;
+    box-shadow: 0 0 1px 1px grey;
+    border-radius: 4px;
+}
+[data-nav-target="bioDrMadonna"]{
+    display: flex;
+}
+#drMadonnaPhoto {
+    display: block;
+    width: 200px !important;
+    height: 200px !important;
+    max-width: unset !important;
+    max-height: unset !important;
+    object-fit: contain;
+}
+img#officeInPhoto {
+    max-width: 300px;
+    max-height: 400px;
+}
+.staff-wrapper {
+    width: 100%;
+}
+.staff-wrapper>.staff>.pic {
+    width: 100%;
+    max-width:  150px;
+    max-height: 150px;
 }

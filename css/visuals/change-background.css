@@ -1,26 +1,32 @@
+/* default/change-background.css */
+.page-wrapper {
+    /* position: relative; */
+}
 .home-page-header {
+    width: 100vw !important;
     /* .contact-container>.address-num-container { */
-    background-image: url('../../imgs/rustic\ rockymoutains-1024.JPEG');
+    /* background-image: url('../../../../imgs/peptide-header.png'); */
+    /* background-image: url('../../../../imgs/woman-man.png'); */
     /* background-repeat: no-repeat; */
-    background-repeat: repeat;
+    height: 50vh;
+    /* background-repeat: repeat; */
     background-position-y: 49%;
-    background-position-x: 0%;
+    background-position-x: 50% ;
     filter: grayscale(50%);
 }
-.bg-slider{
-    min-height: 30vh;
+.bg-slider {
 }
 .bg-slide {
     /* position: absolute; */
     inset: 0;
+    position: absolute;
+    /* background-position: center; */
+    background-position: right;
     background-size: cover;
-    background-position: center;
-    
-    background-position-x: 40%;
+    /* background-position-x: 40%; */
     opacity: 0;
     transition: opacity 1.2s ease;
 
-    position: absolute;
     inset: 0;
     z-index: 0;
 }
@@ -28,6 +34,7 @@
     position: relative;
     z-index: 2;
 }
+
 /* visible slide */
 .bg-slide.active {
     opacity: 1;
@@ -38,4 +45,24 @@
 .bg-slide.hidden {
     opacity: 0;
     z-index: 0;
+}
+
+.move-right {
+    background-position-x: -20% !important;
+    
+}
+.x-20{
+    background-position-x: 20% !important;
+
+}
+.x-50{
+    background-position-x: 70% !important;
+}
+.x-150{
+    background-position-x: 110% !important;
+    background-position-y: -20% !important;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-color: rgb(147, 139, 129)
+    /* background-position-y: 100% !important; */
 }

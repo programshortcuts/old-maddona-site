@@ -30,4 +30,20 @@ export function initToggleNav() {
             pageWrapper.classList.remove('expand')
         }
     });
+    
+
+    document.addEventListener('click', closeNavIfOutside);
+    document.addEventListener('keydown', closeNavIfOutside);
+}
+function closeNavIfOutside(e) {
+    if (!pageWrapper.classList.contains('expand')) return;
+
+    const mobileNav = document.querySelector('.mobile-header-nav');
+
+    // Don't close if click/key originated from the menu button
+    if (e.target.closest('#sideNavBtn')) return;
+
+    if (!mobileNav?.contains(e.target)) {
+        pageWrapper.classList.remove('expand');
+    }
 }

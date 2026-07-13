@@ -1,7 +1,11 @@
 /* layout-products.css */
+.page-container.products-page-container {
+    overflow-y: auto;
+    overscroll-behavior: auto;
+    /* important */
+}
 .alpha-list {display: flex;}
 .alpha-list>li {flex-basis: 4%;}
-
 .items-container {
     display: flex;
     overflow-x: auto;
@@ -12,10 +16,7 @@
     /* optional smooth scroll */
     scroll-behavior: smooth;
 }
-.items-container.sort {
-    /* display: flex; */
-    /* flex-wrap: wrap; */
-}
+
 .item {
     /* flex: 0 0 20%; */
     /* 👈 THIS is what you want */
@@ -31,16 +32,35 @@
     gap: 5%;
 }
 .products-content{
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* justify-content: space-between; */
-    /* align-items: center; */
-
     width: 100%;
     padding: 0.5rem 1rem;
-    /* background: white; */
-    /* border-bottom: 1px solid #ddd; */
-    /* background-color: blue !important; */
 }
 
  
+.cat-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.products-header > img {
+    z-index: 10;
+    /* position: absolute; */
+    max-height: 100px;
+    left: 50%;
+    bottom: 50%;
+}
+
+.items-container {
+    display: flex;
+    flex-wrap: nowrap;
+    
+    gap: 1rem;
+    
+    overscroll-behavior: contain;
+    /* overflow-x: auto; */
+    /* overflow-y: scroll; */
+    
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
