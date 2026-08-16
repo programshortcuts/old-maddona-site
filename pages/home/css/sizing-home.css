@@ -17,17 +17,10 @@
     /* height: 14vh; */
     width: 100%;
 }
-.home-page-container .animation-container{
+/* .home-page-container .animation-container{
     width: 50%;
-}
-.home-page-container .section{
-    width: 50% !important;
-    margin: 0 5%;
-    align-self: center;
-    border: 1px solid grey;
-    box-shadow: 0 0 1px 1px grey;
-    border-radius: 4px;
-}
+} */
+
 [data-nav-target="bioDrMadonna"]{
     display: flex;
 }
@@ -39,10 +32,7 @@
     max-height: unset !important;
     object-fit: contain;
 }
-img#officeInPhoto {
-    max-width: 300px;
-    max-height: 400px;
-}
+
 .staff-wrapper {
     width: 100%;
 }
@@ -50,4 +40,11 @@ img#officeInPhoto {
     width: 100%;
     max-width:  150px;
     max-height: 150px;
+}
+.home-page-container #longevityMedHomePage .title-text{
+    width: fit-content;
+}
+.home-page-container #longevityMedicine .section-preview .img-wrapper img{
+    
+    max-width: 200px !important;
 }

@@ -1,42 +1,57 @@
 /* sizing-med-spa-services.css */
-.section#bioHormoneReplacement {
-    min-height: 10vh;
-}
-
-#botoxAndFillers {
-    /* min-height: 12vh; */
-    /* Ensures the section is at least 12% of viewport height */
-}
-
-.med-spa-serv-container .section#bioHormoneReplacement {
-    min-height: 10vh;
-    /* position: relative; */
-}
-
-.med-spa-serv-container .section#bioHormoneReplacement>.section-title img {
-    max-height: 2vh;
-}
-
 .med-spa-serv-container {
-    max-height: 100vh;
-    min-width: 99vw;
-
-}
-
-.section {
-    max-height: 100vh;
-}
-
-.med-spa-serv-container .img-wrapper>img {
-    max-height: 200px;
-    max-width: 200px;
-}
-
-.img-wrapper.float-left{
-    height: 200px;
-}
-.img-wrapper>video {
-    height: 100%;
     width: 100%;
-    max-height: 200px;
+    
+}
+/*==============================================================
+  SERVICE SECTION
+==============================================================*/
+.section-preview p,
+.section-details p {
+    font-size: 1.08rem;
+    /* max-width: 78ch; */
+    display: inline;
+}
+.section-preview h2,
+.section-details h2 {
+    margin-bottom: .65rem;
+}
+/*==============================================================
+  SERVICE SECTION
+==============================================================*/
+.sections-containers {
+    max-width: var(--service-max-width);
+}
+.service-section .section-title {
+    width: 100%;
+}
+.service-section .section-title img {
+    width: 72px;
+    /* height: auto; */
+}
+/*==============================================================
+  FLOATING MEDIA
+==============================================================*/
+.service-section .img-wrapper {
+    width: fit-content;
+    height: fit-content;
+}
+.service-img ,
+.service-video {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.img-wrapper img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.women-men-nav img {
+    width: 58px;
+    height: auto;
+}
+.more-info-buttons{
+    width: 100%;
 }

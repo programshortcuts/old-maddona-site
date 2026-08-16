@@ -1,10 +1,12 @@
 // app.js
+import { initAllVideos } from "./video/video-controls.js";
 import { initFocusScroll } from "./nav/focus-scroll.js";
 import { initChangeStyles } from "./ui/change-styles.js";
 import { initInjectContentListeners } from "./core/inject-content.js";
 import { initToggleNav } from "./ui/toggle-nav.js";
 import { initKeydboardNav } from "./nav/keyboard-nav.js";
 import { initDropDown } from "./ui/drop-down.js";
+import { initDropDownMedServ } from "./ui/drop-down-med-serv.js";
 // import { initFilterSortItems } from "./ui/filter-sort-items.js";
 // import { initMedicalSpaAnimation } from "./visuals/animation.js";
 
@@ -28,9 +30,12 @@ function initMain(){
                 }
             });
         });    
+        
+    initAllVideos(document)
 }
 function setupGlobalListeners(){
     initDropDown()
+    // initDropDownMedServ()
     // initFilterSortItems()
     // initChangeStyles()
 }

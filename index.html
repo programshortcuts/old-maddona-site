@@ -1,4 +1,5 @@
 <!-- index.html -->
+ <!-- DELETE 'unsafe-inline' when not working on this -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,6 +19,7 @@
     <!-- Swiper JS -->
 
     <!-- REmove unsafe-inline When Not working On Site! -->
+    <!-- 'unsafe-inline' -->
     <meta http-equiv="Content-Security-Policy" content="
     default-src 'self';
     script-src 'self'  'unsafe-inline';
@@ -31,15 +33,18 @@
     ">
 </head>
 <body>
-    <div class="page-wrapper ">
+    <div class="page-wrapper">
         <div class="page-header">
             <div class="page-title-container">
                 <h1>
-                    <a tabindex="-1" id="" class="page-title" rel="noopener noreferrer" href="index.html">Madonna
+                    
+                    <a tabindex="-1" id="" class="page-title" rel="noopener noreferrer" href="index.html">
+                        Madonna
                         Medical Spa</a>
-                    <span class="tel-num-header">(585) 698-2212</span>
+                    <!-- <a tabindex="-1" id="" class="page-title" rel="noopener noreferrer" href="index.html">Madonna
+                        Medical Spa</a> -->
+                        <span class="tel-num-header">(585) 698-2212</span>
                 </h1>
-
                 <h2 class="address-title" id="addressLinkHeader">
                     <a tabindex="-1" href="https://www.google.com/search?q=1815+South+Clinton+Avenue%2C+Suite+450+Rochester%2C+NY+-+14618&oq=1815+South+Clinton+Avenue%2C+Suite+450+Rochester%2C+NY+-+14618&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgcIARAhGJ8FMgcIAhAhGI8CMgcIAxAhGI8C0gEHMTY2ajBqNKgCALACAQ&sourceid=chrome&ie=UTF-8
                     ">
@@ -48,7 +53,7 @@
                     </a>
                 </h2>
             </div>
-            <img class="" id="madonnaShilouetteLogo" src="imgs/Madonna-Medical-Spa-logo.png.webp" alt="">
+            <img id="madonnaShilouetteLogo" src="imgs/Madonna-Medical-Spa-logo.png.webp" alt="">
             <span id="versionTitle"></span>
         </div>
         <svg tabindex="0" data-nav-target="side-nav-btn" id="sideNavBtn" xmlns="http://www.w3.org/2000/svg" width="24"
@@ -60,25 +65,31 @@
         </svg>
         <nav class="mobile-header-nav">
             <ul>
+                <!-- HOME -->
                 <li><a data-nav-target="homeLink" href="pages/home/home.html" data-link rel="noopener noreferrer">
                         Home</a>
                 </li>
+                <!-- MEDICAL SPA SERVICES -->
                 <li id="medSpaServUL"><a data-nav-target="medSpaServLink" href="pages/medical-spa-services/medical-spa-services.html"
                         data-link rel="noopener noreferrer">
                         Medical Spa Services</a>
                     <ul>
                         <!-- <li><a href="pages/medical-spa-services/services/bio-hormone-replace.html">Bio-indentical Hormone Replacment</a></li> -->
                         <li><a data-link data-nav-target="bio-identical-sub-ul-link"
-                                href="pages/medical-spa-services/services/bio-hormone-replace.html">Bio-indentical
+                                href="pages/medical-spa-services/services/bio-hormone-replace/bio-hormone-replace.html">Bio-indentical
                                 Hormone Replacment</a></li>
-                        <li><a data-nav-target="botox-filler-sub-ul-link" href="pages/medical-spa-services/medical-spa-services.html">Botox & Filler</a></li>
-                        <li><a data-nav-target="iv-infusions-sub-ul-link" href="pages/medical-spa-services/services/ivInfustionTherepy/ivInfustionTherepy.html">IV
+                        <li><a data-link data-nav-target="botox-filler-sub-ul-link" href="pages/medical-spa-services/services/botox/botox.html">Botox & Filler</a></li>
+                        <li><a data-link data-nav-target="glp-1-sub-ul-link" href="pages/medical-spa-services/services/glp-1/glp-1.html">GLP-1</a></li>
+                        <li><a data-link data-nav-target="infrared-sub-ul-link" href="pages/medical-spa-services/services/infrared/infrared.html">
+                                Infrared Therepy</a></li>
+                        <li><a data-link data-nav-target="iv-infusions-sub-ul-link" href="pages/medical-spa-services/services/iv-infusions/iv-infusions.html">IV
                                 Infusion Therepy</a></li>
-                        <li><a data-nav-target="peptides-sub-ul-link" href="pages/medical-spa-services/services/peptides/peptides.html">Peptides</a></li>
-                        <li><a data-nav-target="glp-1-sub-ul-link" href="pages/medical-spa-services/services/glp-1/glp-1.html">GLP-1</a></li>
+                        <li><a data-link data-nav-target="peptides-sub-ul-link" href="pages/medical-spa-services/services/peptides/peptides.html">Peptides</a></li>
                     </ul>
                 </li>
-                <li><a data-nav-target="productsLink" href="pages/products/products.html" data-link
+                <!-- Products -->
+                <!-- <li>
+                    <a data-nav-target="productsLink" href="pages/products/products.html" data-link
                         rel="noopener noreferrer">
                         Products</a>
                     <ul>
@@ -86,16 +97,16 @@
                         <li><a data-nav-target="hair-skin-care-sub-ul-link" href="pages/products/products.html">hair & skin care</a></li>
 
                     </ul>
-                </li>
+                </li> -->
                 <!-- <><a href="pages/bookings/bookings.html" data-link rel="noopener noreferrer">
                         bookings</a>
                     </> -->
                 <li><a data-nav-target="contactLink" href="pages/contact/contact.html" data-link
                         rel="noopener noreferrer">
                         Contact</a>
-                    <div class="social-media-container">
-                        <div class="social-media-link-container facebook-container">
-                            <a id="facebookLogoNav" rel="noopener noreferrer"
+                    <div class="social-media-container-nav">
+                        <div class="social-media-link-container facebook-container-nav">
+                            <a tabindex="0" data-nav-target="facebook-nav" id="facebookLogoNav" rel="noopener noreferrer"
                                 href="https://www.facebook.com/madonnamedicalspa/">
                                 <!-- <svg viewBox="0 0 30 30"  fill="#1877f2"> -->
                                 <svg fill="#1877f2">
@@ -104,8 +115,8 @@
                                 </svg>
                             </a>
                         </div>
-                        <div class="social-media-link-container instagram-container">
-                            <a id="instagramLogoNav" rel="noopener noreferrer"
+                        <div class="social-media-link-container instagram-container-nav">
+                            <a tabindex="0" data-nav-target="instagram-nav"  id="instagramLogoNav" rel="noopener noreferrer"
                                 href="https://www.instagram.com/madonnamedicalspa/">
                                 <!-- <svg viewBox="0 0 40 40"  fill="none"> -->
                                 <svg fill="none">
@@ -119,22 +130,24 @@
                         </div>
                     </div>
                 </li>
-                <li class="start-hidden" id="researchAndLitLI"><a data-nav-target="research-lit-nav-link" id="researchAndLitNavLink"
+                <!-- <li class="start-hidden" id="researchAndLitLI"><a data-nav-target="research-lit-nav-link" id="researchAndLitNavLink"
                         href="pages/research-literature/researchAndLit.html" data-link rel="noopener noreferrer">
-                        Research & Literature</a>
-                        <ul>
-                            <li><a data-nav-target="vitamins-research" href="pages/vitamins/vitamins.html">Vitamins</a>
-                                <ul class="downs">
-                                    <li>vitamin a</li>
-                                </ul>
-                            </li>
-                            <li><a data-nav-target="supplement-sub-ul-link" data-link href="pages/products/products.html"> supplements</a></li>
-                        
-                        </ul>
-                </li>
+                    Research & Literature</a>
+                    <ul>
+                        <li>
+                            <a data-nav-target="vitamins-research" href="pages/vitamins/vitamins.html">Vitamins</a>
+                            <ul class="downs">
+                                <li>vitamin a</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a data-nav-target="supplement-sub-ul-link" data-link href="pages/products/products.html"> supplements</a>
+                        </li>
+                    </ul>
+                </li> -->
             </ul>
         </nav>
-        <div data-nav-target="main-landing-page" tabindex="0" id="mainLandingPage" class="main-landing-page">
+        <div  id="mainLandingPage" class="main-landing-page">
         </div>
     </div>
 </body>

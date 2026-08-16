@@ -1,22 +1,41 @@
 /* txt-med-spa-services.css */
-
-.section ul,
-.section p {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: var(--font-p-clr);
+/*==============================================================
+  SERVICE SECTION
+==============================================================*/
+.service-section .section-title .title-text {
+    font-size: clamp(1.55rem, 2vw, 2.2rem);
+    font-weight: 700;
+    /* text-transform: uppercase; */
+    font-family: 'Courier New', Courier, monospace;
 }
-
-.section-title,
-.page-title {
-    color: var(--font-p-clr);
+/*==============================================================
+  CONTENT
+==============================================================*/
+.service-section p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
-.section>button.section-title {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.section-preview p,
+.section-details p {
+    font-size: 1.08rem;
+}
+.more-info-btn {
+    font-size: .96rem;
+    font-weight: 600;
+    /* text-transform: uppercase; */
+}
+.service-section .more-info-links a {
+    text-decoration: none;
+    font-weight: 600;
+}
+.section-details h2 {
+    font-size: 1.15rem;
+}
+.women-men-nav a {
+    text-decoration: none;
+}
+#LongevityMedicineBold,
+#FunctionalMedicineBold {
+    font-weight: 900;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 1.4rem;
-    border: none;
-    background: transparent;
-    /* border: 10px solid red; */
-    outline: none;
+    font-size: 101%;
 }
